@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/Transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/topMenu" layout="@layout/epub_templete_viewerheader" />
+    <include android:id="@id/bottomMenu" layout="@layout/epub_templete_viewerbottom" />
+    <View android:id="@id/menu_backclick" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottomMenu" android:layout_below="@id/topMenu" />
+    <TextView android:textSize="@dimen/al_font" android:gravity="center" android:id="@id/menuviewer_textView_selectToc" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_above="@id/bottomMenu" android:layout_centerHorizontal="true" style="?popup_msg" />
+</RelativeLayout>

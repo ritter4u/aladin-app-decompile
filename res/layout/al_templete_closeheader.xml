@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_h" style="?app_color_header"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/al_font" android:gravity="center" android:layout_gravity="center|right" android:id="@id/alTempHeader_button_back" android:background="@drawable/al_button_white_clear" android:layout_width="@dimen/al_layout_header_h" android:layout_height="fill_parent" android:text="@string/close" style="?app_fontcolor_header" />
+    <TextView android:textSize="@dimen/al_font_header" android:gravity="center" android:layout_gravity="center" android:id="@id/alTempHeader_text_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?app_fontcolor_header" />
+    <Button android:textSize="@dimen/al_font" android:gravity="center" android:layout_gravity="center|left" android:id="@id/alTempHeader_button_edit" android:background="@drawable/al_button_white_clear" android:visibility="gone" android:layout_width="@dimen/al_layout_header_h" android:layout_height="fill_parent" android:text="@string/edit" style="?app_fontcolor_header" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/first_intro_back_patturn" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/aladin_intro_main_5" android:scaleType="fitCenter" />
+    <LinearLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="101.32999dip">
+        <ImageButton android:layout_gravity="center" android:id="@id/guide_start" android:background="@color/Transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/intro_aladin_bt_start" />
+    </LinearLayout>
+</FrameLayout>

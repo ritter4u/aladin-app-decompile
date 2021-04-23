@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/inpage_setting_allset_layout_all" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/inpage_setting_allset_inside" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <include android:layout_gravity="center_horizontal" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/inpage_setting_allsetview" />
+            <include android:layout_gravity="center_horizontal" android:background="#ffffffff" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/inpage_setting_allsetview_annotation" />
+            <include android:layout_gravity="center_horizontal" android:background="#ffffffff" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/inpage_setting_allsetview_fontcolor" />
+            <include android:layout_gravity="center_horizontal" android:background="#ffffffff" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/inpage_touch_area_selection_view" />
+        </FrameLayout>
+        <include layout="@layout/al_templete_bottom_updown" />
+    </LinearLayout>
+</RelativeLayout>

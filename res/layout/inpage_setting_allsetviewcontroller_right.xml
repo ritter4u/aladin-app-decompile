@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="?setting_back"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="하이라이트 컬러" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_width="40.0dip" android:layout_height="30.0dip">
+            <ImageView android:background="@drawable/inpage_popup_body_bg_small" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+            <View android:id="@id/inpage_allset_highlight_color" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/al_templete_setting_line" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="메모장 컬러" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_width="40.0dip" android:layout_height="30.0dip">
+            <ImageView android:background="@drawable/inpage_popup_body_bg_small" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+            <View android:id="@id/inpage_allset_memo_color" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/al_templete_setting_line" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_setting_borderBottom" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_borderBottom" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/al_viewerSetting_section_h" style="?viewer_setting_viewline" />
+    <LinearLayout android:orientation="vertical" android:id="@id/inpage_brightness_allView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="화면밝기" />
+                <include android:layout_gravity="center_vertical" android:id="@id/inpage_brightness_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/al_layout_margin_LR_1" android:layout_weight="1.0" layout="@layout/inpage_seekbar_module" />
+            </LinearLayout>
+            <ImageView android:id="@id/inpage_allset_brightness_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <include layout="@layout/al_templete_setting_line" />
+        <LinearLayout android:orientation="vertical" android:id="@id/inpage_allset_layout_user_bright" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_setting_user_bright" />
+                <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_user_bright" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include layout="@layout/al_templete_setting_line" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_setting_gesture_bright" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_gesture_bright" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView android:id="@id/inpage_allset_gestureBright_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/al_viewerSetting_section_h" style="?viewer_setting_viewline" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/inpage_allset_verticalOn_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="세로 스크롤 모드" />
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_verticalOn" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/al_templete_setting_line" />
+    </LinearLayout>
+    <FrameLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_env_fastChapterAndHilight" />
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_speedChapterloading" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/inpage_allset_speedChapterloading_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="가로모드 양면 읽기" />
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_landscape_twopage" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/inpage_allset_twopage_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <include layout="@layout/al_templete_setting_line" />
+    <LinearLayout android:orientation="vertical" android:id="@id/inpage_allset_view_portrait_twopage" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/viewersetting_portTwo" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_portrait_twopage" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView android:id="@id/inpage_allset_twopage_disable_port" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <include layout="@layout/al_templete_setting_line" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/inpage_allset_pageeffect_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+            <include android:layout_gravity="center_horizontal" android:id="@id/inpage_allset_page_effect" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/al_layout_margin_LR_1" android:layout_marginRight="@dimen/al_layout_margin_LR_1_2" android:drawSelectorOnTop="true" layout="@layout/ep_selection_view_item" />
+            <ImageView android:id="@id/inpage_allset_pageeffect_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <include layout="@layout/al_templete_setting_line" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_gravity="center_horizontal" android:id="@id/inpage_allset_touch_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/al_layout_margin_LR_1" android:layout_marginRight="@dimen/al_layout_margin_LR_1_2" android:drawSelectorOnTop="true" layout="@layout/ep_selection_view_item" />
+        </LinearLayout>
+        <ImageView android:id="@id/inpage_allset_touchArea_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <include layout="@layout/al_templete_setting_line" />
+    <LinearLayout android:orientation="vertical" android:id="@id/inpage_allset_eink_flingRefresh" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/al_layout_margin_LR_1" android:text="@string/setting_env_eink_flingRefresh" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_flingRefresh" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/al_layout_margin_LR_1" />
+            </LinearLayout>
+            <ImageView android:id="@id/inpage_allset_einkFlingRefresh_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <include layout="@layout/al_templete_setting_line" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_env_lock_screen" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_lockscreen" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/al_templete_setting_line" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_env_pageNumberView" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_pagenumView" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/inpage_allset_view_topTitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/al_templete_setting_line" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_env_topTitleView" />
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_topTitleView" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/al_viewerSetting_section_h" style="?viewer_setting_viewline" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="책갈피 메모 추가" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@null" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_bookmark_link_memo" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

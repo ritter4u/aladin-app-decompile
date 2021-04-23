@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/memo_dialog_layout" android:background="@drawable/memo_bg" android:layout_width="wrap_content" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/al_btfont_1" android:textColor="#88000000" android:layout_gravity="right" android:id="@id/store_memo_btn" android:background="@drawable/al_button_black_t" android:layout_width="70.0dip" android:layout_height="28.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/alert_ok" />
+    <EditText android:textSize="@dimen/al_font" android:gravity="top" android:id="@id/edittext_memo" android:background="@android:color/transparent" android:scrollbars="vertical" android:layout_width="300.0dip" android:layout_height="0.0dip" android:layout_margin="10.0dip" android:minLines="5" android:singleLine="false" android:layout_weight="1.0" android:inputType="textImeMultiLine|textMultiLine" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/inpage_allset_insideview" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?viewer_setting_viewback">
+        <LinearLayout android:orientation="horizontal" android:id="@id/inpage_allset_controller_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/inpage_setting_allsetviewcontroller_left" />
+            <View android:id="@id/inpage_allset_controller_layout_center_horizontal_bar" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="fill_parent" style="?viewer_setting_viewback" />
+            <View android:id="@id/inpage_allset_controller_layout_center_vertical_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" style="?viewer_setting_viewline" />
+            <include android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/inpage_setting_allsetviewcontroller_right" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

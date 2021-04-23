@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:text="다운로드 여부" />
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:foreground="?android:selectableItemBackground" app:cardBackgroundColor="#fff2f2f2" app:cardCornerRadius="5.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false">
+            <RadioGroup android:id="@id/purchase_radiogroup_purchase_down" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" android:text="전체" />
+                <RadioButton android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" android:text="다운로드" />
+                <RadioButton android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" android:text="미다운로드" />
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:text="유형별" />
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:foreground="?android:selectableItemBackground" app:cardBackgroundColor="#fff2f2f2" app:cardCornerRadius="5.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false">
+            <RadioGroup android:id="@id/purchase_radiogroup_purchasetype" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" android:text="전체도서" />
+                <RadioButton android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" android:text="구매도서" />
+                <RadioButton android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" android:text="대여도서" />
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:text="파일 포맷별" />
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:foreground="?android:selectableItemBackground" app:cardBackgroundColor="#fff2f2f2" app:cardCornerRadius="5.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false">
+            <RadioGroup android:id="@id/purchase_radiogroup_filetype" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/dlg_sdselect_in" android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" android:text="전체" />
+                <RadioButton android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" android:text="ePub" />
+                <RadioButton android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" android:text="PDF" />
+                <RadioButton android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" android:text="만화" />
+                <RadioButton android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" android:text="오디오북" />
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/alLogin_view_forSetupWizardHead" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <Button android:textColor="#ff3b3b3b" android:id="@id/alLogin_btn_skip" android:background="@drawable/bg_skipbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="건너뛰기" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_skip" android:paddingStart="32.0dip" android:paddingEnd="20.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+        <Button android:textColor="#ff3b3b3b" android:id="@id/alLogin_btn_back" android:background="@drawable/bg_skipbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="뒤로" android:layout_centerVertical="true" android:drawableStart="@drawable/ic_back" android:paddingStart="20.0dip" android:paddingEnd="32.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:layout_alignParentStart="true" />
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:id="@id/alLogin_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="로그인" android:singleLine="true" android:layout_centerInParent="true" />
+        <View android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

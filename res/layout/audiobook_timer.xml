@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/Transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:background="@color/al_appColor" android:layout_width="fill_parent" android:layout_height="@dimen/al_login_h">
+            <TextView android:textSize="@dimen/al_font_bookTitle" android:textStyle="bold" android:textColor="@color/al_color_w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="타이머 설정" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/al_setting_touch_area_selection_item_view" android:background="@color/al_back_w" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|right" android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_touch_area_height" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/al_font_toucharea_item" android:textStyle="bold" android:textColor="@color/al_font" android:id="@id/al_setting_touch_area_selection_item_title" android:layout_width="@dimen/al_layout_touch_area_text_width" android:layout_height="wrap_content" android:text="5:5" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_touch_area_height" android:layout_weight="1.0">
+        <ImageView android:id="@id/al_setting_touch_area_selection_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/touch_area_item_1" />
+    </LinearLayout>
+</LinearLayout>

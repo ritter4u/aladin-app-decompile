@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/purchaseList_bookInfo_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/al_templete_closeheader" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/al_back_w" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="end" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip">
+                    <Button android:textSize="@dimen/al_btfont_1" android:textColor="@color/al_button_blue" android:gravity="center" android:layout_gravity="end" android:id="@id/alBookInfo_button_annotationOrganize" android:background="@drawable/al_button_blue" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="28.0dip" android:text="@string/bookInfo_annotationOrganize" android:singleLine="true" />
+                    <LinearLayout android:gravity="center" android:id="@id/alBookInfo_view_secret" android:background="@drawable/al_button_blue" android:layout_width="95.0dip" android:layout_height="28.0dip" android:layout_alignParentRight="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/alBookInfo_ImageView_secret" android:background="@drawable/icon_secret_blue" android:duplicateParentState="true" android:layout_width="17.0dip" android:layout_height="17.0dip" />
+                        <TextView android:textSize="@dimen/al_btfont_1" android:textColor="@color/al_button_blue" android:gravity="center|right" android:id="@id/alBookInfo_TextView_secret" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/bookInfo_secret" />
+                    </LinearLayout>
+                    <Button android:textSize="@dimen/al_btfont_1" android:textColor="@color/al_button_red" android:gravity="center" android:layout_gravity="end" android:id="@id/alBookInfo_button_purchaseDelete" android:background="@drawable/al_button_red" android:layout_width="95.0dip" android:layout_height="28.0dip" android:text="@string/removeFromPurchaseList" android:singleLine="true" android:layout_alignParentRight="true" />
+                    <Button android:textSize="@dimen/al_btfont_1" android:textColor="@color/al_button_red" android:gravity="center" android:layout_gravity="end" android:id="@id/alBookInfo_button_rentalDelete" android:background="@drawable/al_button_red" android:layout_width="95.0dip" android:layout_height="28.0dip" android:text="@string/removeFromRentalEnd" android:layout_alignParentRight="true" />
+                    <Button android:textSize="@dimen/al_btfont_1" android:id="@id/alBookInfo_Button_readComplete" android:layout_width="70.0dip" android:layout_height="28.0dip" android:layout_marginRight="5.0dip" android:text="@string/al_bookinfo_readCompleteYes" android:layout_toLeftOf="@id/alBookInfo_view_secret" style="?button_blue" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="27.0dip">
+                    <LinearLayout android:background="@color/al_back_2" android:padding="0.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.keph.crema.module.ui.AsyncImageView android:id="@id/alBookInfo_AsyncImage_bookCover" android:background="@drawable/bg_shelf_listview_cover" android:layout_width="70.0dip" android:layout_height="104.0dip" android:src="@drawable/cover_book_bg1" android:scaleType="fitXY" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:ellipsize="marquee" android:gravity="left" android:id="@id/alBookInfo_text_bookTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff444e57" android:gravity="left" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_publish" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff444e57" android:ellipsize="marquee" android:gravity="left" android:layout_gravity="start|center" android:id="@id/alBookInfo_text_publish" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff444e57" android:gravity="left" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_author" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff444e57" android:ellipsize="marquee" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/alBookInfo_text_author" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+                        </LinearLayout>
+                        <RelativeLayout android:id="@id/alBookInfo_view_downloadOrOpen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <ProgressBar android:layout_gravity="center|left" android:id="@id/alBookInfo_progress" android:layout_width="70.0dip" android:layout_height="28.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/al_progress_download" style="@android:style/Widget.ProgressBar.Horizontal" />
+                            <Button android:textSize="@dimen/al_btfont_1" android:layout_gravity="center_vertical" android:id="@id/alBookInfo_Button_downloadOrOpen" android:layout_width="70.0dip" android:layout_height="28.0dip" android:text="@string/download" style="?button_blue" />
+                            <Button android:textSize="@dimen/al_btfont_1" android:textColor="@color/al_button_red" android:layout_gravity="center_vertical" android:id="@id/alBookInfo_Button_bookDelete" android:background="@drawable/al_button_red" android:layout_width="70.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:text="@string/delete" android:layout_toRightOf="@id/alBookInfo_Button_downloadOrOpen" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#ffe6e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/alBookInfo_view_normalInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bookInfo" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff444e57" android:id="@id/alBookInfo_Text_buyDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/buyDate_10" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/alBookInfo_view_rendEndDate" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:background="@drawable/clock_pink" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/al_button_red" android:id="@id/alBookInfo_text_rendEndDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/rent_endDate" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="#ffe6e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fileInfo" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff444e57" android:layout_gravity="left" android:id="@id/alBookInfo_Text_contentType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/fileType" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff444e57" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fileSize" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff4886b7" android:id="@id/alBookInfo_Text_contentSize" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="end|center" android:orientation="vertical" android:id="@id/alBookInfo_view_rating" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:background="#ffe6e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" />
+                        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/rating" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff444e57" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/ratingComment" />
+                        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <kr.co.aladin.lib.widget.ALRatingBar android:layout_gravity="center_vertical" android:id="@id/alBookInfo_Ratingbar" android:layout_width="wrap_content" android:layout_height="15.0dip" android:progressDrawable="@drawable/al_rating_info" android:numStars="5" android:isIndicator="true" style="?android:ratingBarStyleIndicator" />
+                            <Button android:textSize="@dimen/al_btfont_1" android:layout_gravity="end|center" android:id="@id/alBookInfo_Button_starSubmit" android:layout_width="70.0dip" android:layout_height="25.0dip" android:layout_marginRight="6.0dip" android:text="@string/submit" style="?button_blue" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <View android:background="#ffe6e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+                    <Button android:textSize="@dimen/al_btfont_1" android:layout_gravity="center_vertical" android:id="@id/alBookInfo_Button_shortcut" android:layout_width="fill_parent" android:layout_height="28.0dip" android:text="@string/btn_shortcut" style="?button_blue" />
+                    <View android:id="@id/purchaseList_space" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+                    <Button android:id="@id/alBookInfo_Button_gotoLockcover" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="책락스크린전달 - 디버그용" />
+                    <Button android:id="@id/alBookInfo_Button_saveTest" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="책저장하기 DB만 " />
+                    <Button android:id="@id/alBookInfo_Button_bookpleInfo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="책정보보기-디버그용" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

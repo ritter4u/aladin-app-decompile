@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="audio_jump_list">
+        <item>5 second</item>
+        <item>10 second</item>
+        <item>15 second</item>
+        <item>20 second</item>
+        <item>30 second</item>
+        <item>45 second</item>
+        <item>60 second</item>
+        <item>75 second</item>
+        <item>90 second</item>
+    </string-array>
+    <string-array name="audio_timer_set">
+        <item>사용안함</item>
+        <item>5분</item>
+        <item>10분</item>
+        <item>15분</item>
+        <item>30분</item>
+        <item>1시간</item>
+        <item>1시간30분</item>
+        <item>2시간</item>
+        <item>챕터 끝까지</item>
+        <item>책 끝까지</item>
+    </string-array>
+    <string-array name="brightness_type_entries">
+        <item>기본값</item>
+        <item>1단계</item>
+        <item>2단계</item>
+        <item>3단계</item>
+        <item>4단계</item>
+        <item>5단계</item>
+    </string-array>
+    <string-array name="brightness_type_entry_values">
+        <item>1.0f</item>
+        <item>0.1f</item>
+        <item>0.2f</item>
+        <item>0.4f</item>
+        <item>0.8f</item>
+        <item>1.0f</item>
+    </string-array>
+    <string-array name="effect_type">
+        <item>넘김효과 없음</item>
+        <item>페이지 롤링</item>
+    </string-array>
+    <string-array name="effect_type_pdf">
+        <item>효과 없음</item>
+        <item>슬라이드 효과</item>
+    </string-array>
+    <string-array name="font_for_share">
+        <item>kopub 바탕</item>
+        <item>나눔명조</item>
+        <item>나눔 고딕</item>
+    </string-array>
+    <string-array name="font_size_entries">
+        <item>기본값</item>
+        <item>매우 작게</item>
+        <item>작게</item>
+        <item>조금 작게</item>
+        <item>보통</item>
+        <item>조금 크게</item>
+        <item>크게</item>
+        <item>매우 크게</item>
+    </string-array>
+    <string-array name="font_size_entry_values">
+        <item>null</item>
+        <item>xx-small</item>
+        <item>x-small</item>
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+        <item>x-large</item>
+        <item>xx-large</item>
+    </string-array>
+    <string-array name="font_type_entries">
+        <item>기본값</item>
+        <item>Clockopia</item>
+        <item>DroidSans</item>
+        <item>DroidSansArabic</item>
+        <item>DroidSansFallback</item>
+        <item>DroidSansHebrew</item>
+        <item>DroidSansMono</item>
+        <item>DroidSansThai</item>
+        <item>DroidSerif-Regular</item>
+    </string-array>
+    <string-array name="font_type_entry_values">
+        <item>null</item>
+        <item>/system/fonts/Clockopia.ttf</item>
+        <item>/system/fonts/DroidSans.ttf</item>
+        <item>/system/fonts/DroidSansArabic.ttf</item>
+        <item>/system/fonts/DroidSansFallback.ttf</item>
+        <item>/system/fonts/DroidSansHebrew.ttf</item>
+        <item>/system/fonts/DroidSansMono.ttf</item>
+        <item>/system/fonts/DroidSansThai.ttf</item>
+        <item>/system/fonts/DroidSerif-Regular.ttf</item>
+    </string-array>
+    <string-array name="fontlist">
+        <item>기본글꼴</item>
+        <item>KoPub 바탕</item>
+        <item>함초롬 돋움</item>
+        <item>함초롬 바탕</item>
+    </string-array>
+    <string-array name="line_height_entries">
+        <item>기본값</item>
+        <item>1</item>
+        <item>1.1</item>
+        <item>1.2</item>
+        <item>1.3</item>
+        <item>1.4</item>
+        <item>1.5</item>
+        <item>1.6</item>
+        <item>1.7</item>
+        <item>1.8</item>
+        <item>1.9</item>
+        <item>2.0</item>
+        <item>2.1</item>
+        <item>2.2</item>
+        <item>2.3</item>
+        <item>2.4</item>
+        <item>2.5</item>
+        <item>2.6</item>
+        <item>2.7</item>
+        <item>2.8</item>
+        <item>2.9</item>
+        <item>3.0</item>
+    </string-array>
+    <string-array name="line_height_entry_values">
+        <item>null</item>
+        <item>100%</item>
+        <item>110%</item>
+        <item>120%</item>
+        <item>130%</item>
+        <item>140%</item>
+        <item>150%</item>
+        <item>160%</item>
+        <item>170%</item>
+        <item>180%</item>
+        <item>190%</item>
+        <item>200%</item>
+        <item>210%</item>
+        <item>220%</item>
+        <item>230%</item>
+        <item>240%</item>
+        <item>250%</item>
+        <item>260%</item>
+        <item>270%</item>
+        <item>280%</item>
+        <item>290%</item>
+        <item>300%</item>
+    </string-array>
+    <string-array name="page_twopage_array">
+        <item>한화면 읽기</item>
+        <item>양면 읽기</item>
+    </string-array>
+    <string-array name="page_volum_type">
+        <item>볼륨키 넘김 없음</item>
+        <item>볼륨업 다음페이지</item>
+        <item>볼륨업 이전페이지</item>
+    </string-array>
+    <string-array name="rotation_type_entries">
+        <item>항상</item>
+        <item>세로보기</item>
+        <item>가로보기</item>
+        <item>없음</item>
+        <item>기기 설정에 따름</item>
+    </string-array>
+    <string-array name="rotation_type_entry_values">
+        <item>Always</item>
+        <item>Portrait</item>
+        <item>Landscape</item>
+        <item>Never</item>
+        <item>Use Global Preference</item>
+    </string-array>
+    <string-array name="screen_page_entries">
+        <item>한페이지</item>
+        <item>두페이지</item>
+    </string-array>
+    <string-array name="screen_page_entry_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="setting_sd_select">
+        <item>내부 저장소</item>
+        <item>외부 저장소(SD카드)</item>
+    </string-array>
+    <string-array name="text_align_entries">
+        <item>기본</item>
+        <item>왼쪽</item>
+        <item>오른쪽</item>
+        <item>양쪽</item>
+    </string-array>
+    <string-array name="text_align_entry_values">
+        <item>null</item>
+        <item>left</item>
+        <item>right</item>
+        <item>justify</item>
+    </string-array>
+    <string-array name="touch_area_type">
+        <item>좌우 터치</item>
+        <item>상하 터치(5:5)</item>
+        <item>상하 터치(8:2)</item>
+        <item>상하 터치(2:8)</item>
+        <item>"모두
+다음 페이지"</item>
+    </string-array>
+    <string-array name="view_scrap_select">
+        <item>@string/title_chapterlist</item>
+        <item>@string/title_bookmarklist</item>
+        <item>@string/title_memohighlightlist</item>
+    </string-array>
+    <string-array name="view_search_select">
+        <item>본문</item>
+        <item>네이버</item>
+        <item>다음</item>
+        <item>위키백과</item>
+    </string-array>
+    <string-array name="view_search_select_crema">
+        <item>프라임사전</item>
+        <item>본문</item>
+        <item>네이버</item>
+        <item>다음</item>
+        <item>위키백과</item>
+    </string-array>
+    <string-array name="view_setting_select_fontsize">
+        <item>원본</item>
+        <item>사용자</item>
+    </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/inpage_colorset_annotation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/inpage_colorpicker_insideview" android:padding="@dimen/al_layout_margin_TB_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/inpage_colorset" />
+    </RelativeLayout>
+</ScrollView>

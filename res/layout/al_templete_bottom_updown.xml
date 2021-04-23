@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/tempUpDown_layout" android:background="@drawable/bk_bottombg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/tempUpDown_ibt_up_top" android:background="@drawable/al_button_black_clear" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_up_top" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/tempUpDown_ibt_up" android:background="@drawable/al_button_black_clear" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_expand_less_black_48dp" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/tempUpDown_ibt_refresh" android:background="@drawable/al_button_black_clear" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_refresh_black_48dp" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/tempUpDown_ibt_down" android:background="@drawable/al_button_black_clear" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_expand_more_black_48dp" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/tempUpDown_ibt_down_bottom" android:background="@drawable/al_button_black_clear" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_down_bottom" android:layout_weight="1.0" />
+    <Button android:textSize="@dimen/al_font" android:gravity="center" android:layout_gravity="center|left" android:id="@id/tempUpDown_ibt_close" android:background="@drawable/al_button_black_clear" android:visibility="gone" android:layout_width="@dimen/al_layout_header_h" android:layout_height="fill_parent" android:text="@string/close" style="?app_fontcolor_header" />
+</LinearLayout>

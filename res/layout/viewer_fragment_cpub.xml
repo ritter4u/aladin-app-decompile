@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/Content_Container" android:background="@color/al_color_w" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <kr.co.aladin.ebook.bdb.cpub.view.BDBImageView android:layout_gravity="center|left|top" android:id="@id/imageView" android:background="@color/al_color_w" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    <ListView android:id="@id/scrollZoomListView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/button_bookmark_on" android:background="@color/Transparent" android:layout_width="25.0dip" android:layout_height="62.0dip" android:layout_marginTop="-10.0dip" android:src="@drawable/inpage_button_bookmarked" android:contentDescription="@string/description_bookmark" />
+    <FrameLayout android:id="@id/layout_loading" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleSmall" />
+    </FrameLayout>
+</FrameLayout>

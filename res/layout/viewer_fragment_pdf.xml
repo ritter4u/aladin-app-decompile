@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/al_color_w" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/surfaceview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/al_layout_header_sub_h" />
+    <RelativeLayout android:id="@id/RelativeLayout_PDF_Viewer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.radaee.reader.PDFLayoutView android:id="@id/PDF_viewer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <ImageButton android:layout_gravity="center|right|top" android:id="@id/pdfviewer_button_screenBookmark" android:background="@color/Transparent" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="62.0dip" android:src="@drawable/bookmark_y" />
+    <include android:visibility="gone" layout="@layout/viewer_fragment_pdf_pen" />
+    <include layout="@layout/al_templete_tts" />
+</FrameLayout>

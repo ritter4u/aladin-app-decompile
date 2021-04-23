@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/inpage_image_viewer_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <kr.co.aladin.epubreader.readonbook.bookrender.inpagemenu.imageviewer.ImageViewerImageView android:id="@id/inpage_image_viewer_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/inpage_image_viewer_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h">
+        <ImageView android:background="@color/al_line_1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <Button android:textSize="@dimen/al_btfont_1" android:id="@id/inpage_imageviwer_prev" android:background="@drawable/al_button_black_clear" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="@string/prev" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="@dimen/al_btfont_1" android:id="@id/inpage_imageviwer_go_page" android:background="@drawable/al_button_black_clear" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/image_viewer_move_image_page" android:layout_centerInParent="true" />
+        <Button android:textSize="@dimen/al_btfont_1" android:id="@id/inpage_imageviwer_next" android:background="@drawable/al_button_black_clear" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="@string/next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

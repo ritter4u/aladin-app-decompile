@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="?app_color_bottom_grey"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_line_h" style="?app_color_setting_line" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/al_font" android:textStyle="bold" android:ellipsize="middle" android:layout_gravity="center" android:id="@id/viewer_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="" android:singleLine="true" style="?app_fontcolor" />
+            <TextView android:textSize="@dimen/al_font" android:layout_gravity="center" android:id="@id/viewermenu_text_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="?app_fontcolor_content" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <SeekBar android:layout_gravity="center_vertical" android:id="@id/viewer_seekbar_page" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/al_layout_margin_LR_2" android:layout_marginRight="@dimen/al_layout_margin_LR_2" android:max="100" android:thumbOffset="0.0dip" style="?progress" />
+                <SeekBar android:id="@id/viewer_seekbar_percent" android:padding="2.0dip" android:paddingLeft="@dimen/al_layout_margin_LR_2" android:paddingRight="@dimen/al_layout_margin_LR_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" style="?progress" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="41.0dip">
+            <Button android:textSize="@dimen/al_font" android:textColor="@drawable/al_text_enable" android:id="@id/viewer_button_undo" android:background="@drawable/al_button_black_clear" android:layout_width="80.0dip" android:layout_height="@dimen/al_button_menubottom_h" android:text="@string/al_viewer_undo" />
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:layout_gravity="bottom|center" android:id="@id/viewermenu_ibt_tts" android:background="@color/Transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="?viewer_tts_starticon" />
+            </FrameLayout>
+            <Button android:textSize="@dimen/al_font" android:textColor="@drawable/al_text_enable" android:id="@id/viewer_button_redo" android:background="@drawable/al_button_black_clear" android:layout_width="80.0dip" android:layout_height="@dimen/al_button_menubottom_h" android:text="@string/al_viewer_redo" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

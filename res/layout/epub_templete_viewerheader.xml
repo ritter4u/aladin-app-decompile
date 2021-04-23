@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_h" style="?app_color_header">
+        <ImageButton android:id="@id/viewer_ibt_movebookshelf" android:background="@drawable/al_button_black_clear" android:layout_width="@dimen/al_layout_header_item_w" android:layout_height="fill_parent" style="?bookcase_src" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="3.3299866dip">
+            <kr.co.aladin.lib.widget.ButtonHeader android:id="@id/viewer_ButtonHeader_toc" android:background="@drawable/al_button_black_clear" android:layout_width="wrap_content" android:layout_height="fill_parent" app:buttonIcon="@drawable/contentlist_icon" app:buttonText="@string/viewerTopmenu_content" app:buttonTextColor="@color/al_font_w" app:phoneWidth="@dimen/al_layout_header_item_w" />
+            <kr.co.aladin.lib.widget.ButtonHeader android:id="@id/viewer_ButtonHeader_readernote" android:background="@drawable/al_button_black_clear" android:layout_width="wrap_content" android:layout_height="fill_parent" app:buttonIcon="@drawable/readernote_btn" app:buttonText="@string/viewerTopmenu_readerNote" app:buttonTextColor="@color/al_font_w" app:phoneWidth="@dimen/al_layout_header_item_w" />
+            <kr.co.aladin.lib.widget.ButtonHeader android:id="@id/viewer_ButtonHeader_search" android:background="@drawable/al_button_black_clear" android:layout_width="wrap_content" android:layout_height="fill_parent" app:buttonIcon="@drawable/search_w_icon" app:buttonText="@string/viewerTopmenu_search" app:buttonTextColor="@color/al_font_w" app:phoneWidth="@dimen/al_layout_header_item_w" />
+            <kr.co.aladin.lib.widget.ButtonHeader android:id="@id/viewer_ButtonHeader_setting" android:background="@drawable/al_button_black_clear" android:layout_width="wrap_content" android:layout_height="fill_parent" app:buttonIcon="@drawable/viewer_setting" app:buttonText="@string/viewerTopmenu_setting" app:buttonTextColor="@color/al_font_w" app:phoneWidth="@dimen/al_layout_header_item_w" />
+            <ImageButton android:id="@id/viewer_ibt_bookmark" android:background="@drawable/al_button_black_clear" android:layout_width="@dimen/al_layout_header_item_w" android:layout_height="fill_parent" style="?bookmark_src" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/inpageviewer_top_subBright" android:background="@color/al_back_2" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/al_back_w" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="@string/setting_env_brightness" />
+            <SeekBar android:id="@id/inpage_seekbar_imageBright" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?progress_grey" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/audio_rl_book_footer" android:focusable="false" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/Transparent" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <RelativeLayout android:id="@id/audio_rl_shadow" android:background="@drawable/player_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/al_color_w" android:layout_width="fill_parent" android:layout_height="@dimen/audio_book_footer_layout_h" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/audio_ll_footer_book_infos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/audio_ll_footer_buttons" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/audio_iv_footer_book" android:background="@drawable/border_book" android:layout_width="@dimen/audio_book_footer_layout_cover_w" android:layout_height="@dimen/audio_book_footer_layout_cover_h" android:layout_marginLeft="10.0dip" android:layout_marginRight="@dimen/audio_footer_right_margin" android:src="@drawable/cover_book_bg1" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/audio_book_footer_layout_h" android:layout_marginTop="10.0dip" android:layout_toLeftOf="@id/audio_ll_footer_buttons" android:layout_toRightOf="@id/audio_iv_footer_book">
+                <TextView android:textSize="@dimen/audio_font_footer_title" android:textStyle="bold" android:ellipsize="end" android:id="@id/audio_tv_footer_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="내게 무해한 사람" android:maxLines="1" style="@style/app_font_book_menu" />
+                <TextView android:textSize="@dimen/audio_font_footer_chapter" android:textColor="@color/al_font_content" android:ellipsize="end" android:id="@id/audio_tv_footer_chapter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="챕터 1" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/audio_ll_footer_buttons" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/audio_book_footer_layout_h" android:layout_marginTop="10.0dip" android:layout_alignParentRight="true">
+            <RelativeLayout android:id="@id/audio_btn_footer_replay" android:background="@drawable/al_button_black_clear" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="@dimen/audio_book_footer_layout_button_w" android:layout_height="fill_parent">
+                <ImageView android:id="@id/audio_iv_footer_replay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/replay" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/audio_book_footer_replayTime" android:textColor="@color/al_font" android:id="@id/audio_tv_footer_replay_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ImageButton android:id="@id/audio_iv_footer_play" android:background="@drawable/al_button_black_clear" android:layout_width="@dimen/audio_book_footer_layout_button_w" android:layout_height="fill_parent" android:src="@drawable/play_circle" />
+            <ImageButton android:id="@id/audio_iv_footer_drive" android:background="@drawable/al_button_black_clear" android:layout_width="@dimen/audio_book_footer_layout_button_w" android:layout_height="fill_parent" android:src="@drawable/drive" />
+            <ImageButton android:id="@id/audio_iv_footer_close" android:background="@drawable/al_button_black_clear" android:layout_width="@dimen/audio_book_footer_layout_button_w" android:layout_height="fill_parent" android:src="@drawable/close_audio" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

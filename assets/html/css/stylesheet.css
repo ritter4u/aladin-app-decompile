@@ -1,0 +1,153 @@
+body {
+	font-family:diypia_book; 
+	margin:0%; 
+	padding:0%; 
+	}
+
+body.book {
+	font-family:diypia_book; 
+	font-size:0.9em;
+	line-height:2em;
+	margin: 0%; 
+	margin-left:0.5%;
+	margin-right:4%;
+	padding: 0%; 
+	text-align: 
+	justify; 
+	}
+
+.cover {
+	font-family:diypia_book; 
+	color: #FFFFFF;	
+	font-size:0em;
+	padding: 0pt; 
+	margin:0pt;
+	height: 100%;
+	text-align:center; 
+	}
+
+.diypia_t {
+	font-family:diypia_book; 
+	color: #FFFFFF;	
+	font-size:0em;
+	padding: 0pt; 
+	margin:0pt;
+	width: 30%;
+	text-align:center; 
+	}
+
+.title {
+	font-family:diypia_title; 
+	font-size:0.8em;
+	line-height:2.0em;
+	margin: 0%; 
+	margin-left:0.5%;
+	margin-right:4%;
+	padding: 0%; 
+	text-align:
+	justify; 
+	}
+
+.auther {
+	font-family:diypia_author; 
+	font-size:0.8em;
+	font-weight:bold;
+	line-height:1.4em;
+	margin: 0%; 
+	margin-left:0.5%;
+	margin-right:4%;
+	padding: 0%; 
+	text-align:
+	justify; 
+	}
+
+.caution {
+	font-family:diypia_author; 
+	font-size:0.8em;
+	line-height:1.4em;
+	margin: 0%; 
+	margin-left:0.5%;
+	margin-right:4%;
+	padding: 0%; 
+	text-align:
+	justify; 
+	}
+.block {
+    display: block
+    }
+.caption {
+    display: block;
+    font-family:diypia_author;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 0.3em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: right;
+    text-indent: 0
+    }
+
+.pic_left {
+    border-collapse: collapse;
+    border-color: #aaa;
+    border-style: outset;
+    border-width: 0;
+    color: #191970;
+    font-size: 0.8em;
+    display: block;
+    float: left;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-top: 0;
+    padding-bottom: 0.4em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    padding-top: 0.4em;
+    width: 32%;
+    text-align: center;
+    line-height: 1.4em;
+    }
+
+.pic_right {
+    border-collapse: collapse;
+    border-color: #aaa;
+    border-style: outset;
+    border-width: 1;
+    color: #191970;
+    font-size: 0.8em;
+    display: block;
+    float: right;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-top: 0;
+    padding-bottom: 0em;
+    padding-left: 0.0em;
+    padding-right: 0.6em;
+    padding-top: 0em;
+    width: 32%;
+    text-align: center;
+    }
+
+.pictures {
+    height: auto;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 1.0%;
+    width: 100%
+    }
+
+.index {
+    color: darkblue;
+    cursor: pointer;
+    text-decoration: none
+    }
+

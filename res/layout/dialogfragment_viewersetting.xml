@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/al_layout_dlg_w" android:layout_height="@dimen/al_layout_dlg_h" style="?viewer_setting_viewback">
+        <include layout="@layout/al_templete_closeheader" />
+        <RelativeLayout android:id="@id/viewersetting_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ListView android:id="@id/viewersetting_List_select" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?viewer_setting_viewback" />
+            <ScrollView android:id="@id/viewersetting_Scroll_main" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?setting_back">
+                    <LinearLayout android:orientation="vertical" android:id="@id/viewerSetting_view_BrightAllLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                            <TextView android:textSize="@dimen/al_font" android:layout_gravity="center_vertical" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="@string/al_viewersetting_bright" style="?app_fontcolor_lb" />
+                            <SeekBar android:id="@id/viewerSetting_seekbar_Bright" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="255" android:progressDrawable="@drawable/al_progress_grey" android:thumb="@drawable/al_circle_brightbar" android:thumbOffset="0.0dip" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <include android:id="@id/viewerSetting_view_brighsav_line" layout="@layout/al_templete_setting_line" />
+                        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewerSetting_view_brighsave" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                            <TextView android:textSize="@dimen/al_font" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_viewersetting_brightsave" style="?app_fontcolor_lb" />
+                            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center|right" android:id="@id/viewerSetting_check_brightsave" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </FrameLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/viewerSetting_view_blackNegative" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <include layout="@layout/al_templete_setting_line" />
+                            <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                                <TextView android:textSize="@dimen/al_font" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_viewersetting_blackNegative" style="?app_fontcolor_lb" />
+                                <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center|right" android:id="@id/viewerSetting_chb_blackNegative" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </FrameLayout>
+                        </LinearLayout>
+                        <View android:layout_width="fill_parent" android:layout_height="@dimen/al_viewerSetting_section_h" style="?viewer_setting_viewline" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/viewerSetting_view_landTwo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                            <TextView android:textSize="@dimen/al_font" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_viewersetting_landTwo" style="?app_fontcolor_lb" />
+                            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center|right" android:id="@id/viewerSetting_chb_landTwo" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <View android:id="@id/viewerSetting_chb_landTwo_backopac" android:background="@color/al_back_opacity_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        </FrameLayout>
+                        <include layout="@layout/al_templete_setting_line" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/viewerSetting_view_portTwo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                            <TextView android:textSize="@dimen/al_font" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/viewersetting_portTwo" style="?app_fontcolor_lb" />
+                            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center|right" android:id="@id/viewerSetting_chb_portTwo" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <View android:id="@id/viewerSetting_chb_portTwo_backopac" android:background="@color/al_back_opacity_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        </FrameLayout>
+                        <include layout="@layout/al_templete_setting_line" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/viewerSetting_view_landTwo_firstOnePage" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                            <TextView android:textSize="@dimen/al_font" android:layout_gravity="center|left" android:id="@id/viewerSetting_tv_addPage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_viewersetting_addPage_PDF" style="?app_fontcolor_lb" />
+                            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center|right" android:id="@id/viewerSetting_chb_landTwo_firstOnePage" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <View android:id="@id/viewerSetting_chb_landTwo_firstOnePage_backopac" android:background="@color/al_back_opacity_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        </FrameLayout>
+                        <include layout="@layout/al_templete_setting_line" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/viewerSetting_view_pageEffect" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <kr.co.aladin.lib.widget.SettingItem android:id="@id/viewerSetting_pageEffect" android:background="@drawable/al_button_black_clear" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:selectMode="true" app:textTitle="@string/al_viewersetting_pageeffect" />
+                            <View android:id="@id/viewerSetting_view_pageEffect_back" android:background="@color/al_back_opacity_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        </FrameLayout>
+                        <include layout="@layout/al_templete_setting_line" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/viewerSetting_view_scrollMode_PDF" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                            <TextView android:textSize="@dimen/al_font" android:layout_gravity="center|left" android:id="@id/viewerSetting_tv_scroll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_viewersetting_scrollmode_PDF" style="?app_fontcolor_lb" />
+                            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center|right" android:id="@id/viewerSetting_chb_scroll" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <View android:id="@id/viewerSetting_view_scroll_back" android:background="@color/al_back_opacity_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        </FrameLayout>
+                        <include layout="@layout/al_templete_setting_line" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/viewerSetting_view_flingRefresh" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                            <TextView android:textSize="@dimen/al_font" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_env_eink_flingRefresh" style="?app_fontcolor_lb" />
+                            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center|right" android:id="@id/viewerSetting_chb_flingRefresh" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </FrameLayout>
+                        <include layout="@layout/al_templete_setting_line" />
+                    </LinearLayout>
+                    <kr.co.aladin.lib.widget.SettingItem android:id="@id/viewerSetting_touchmode" android:background="@drawable/al_button_black_clear" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:selectMode="true" app:textTitle="@string/al_viewersetting_touchmode" />
+                    <include layout="@layout/al_templete_setting_line" />
+                    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+                        <TextView android:textSize="@dimen/al_font" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_viewersetting_orientationLock" style="?app_fontcolor_lb" />
+                        <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center|right" android:id="@id/viewerSetting_check_orientationLock" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

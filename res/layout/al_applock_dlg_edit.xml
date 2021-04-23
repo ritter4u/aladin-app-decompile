@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="30.0sp" android:textStyle="bold" android:id="@id/appLock_tx_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_lock_input" style="?app_fontcolor_w" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff818181" android:gravity="center_horizontal" android:id="@id/appLock_tx_inputInstruction" android:layout_width="210.0dip" android:layout_height="45.0dip" android:layout_marginTop="@dimen/al_layout_margin_TB_setting" android:text="@string/app_lock_input_Instruction" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/al_divider_empty_line_w15" android:showDividers="middle">
+        <ImageView android:id="@id/appLock_img_edit1" android:background="@color/al_button_gray2" android:layout_width="15.0dip" android:layout_height="5.0dip" />
+        <ImageView android:id="@id/appLock_img_edit2" android:background="@color/al_button_gray2" android:layout_width="15.0dip" android:layout_height="5.0dip" />
+        <ImageView android:id="@id/appLock_img_edit3" android:background="@color/al_button_gray2" android:layout_width="15.0dip" android:layout_height="5.0dip" />
+        <ImageView android:id="@id/appLock_img_edit4" android:background="@color/al_button_gray2" android:layout_width="15.0dip" android:layout_height="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

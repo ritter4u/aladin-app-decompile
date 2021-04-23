@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#ff1496e4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" style="?app_intro_back" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/intro_paturn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/first_intro_back_patturn" android:scaleType="fitXY" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/intro_pager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <kr.co.aladin.lib.widget.pagerIndicator.CirclePageIndicator android:layout_gravity="center_horizontal" android:id="@id/al_intro_indicator" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginTop="12.0dip" />
+    </FrameLayout>
+</FrameLayout>

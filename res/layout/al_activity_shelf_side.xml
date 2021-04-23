@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/alShelfSide_all" android:background="#ffffffff" android:fitsSystemWindows="true" android:layout_width="@dimen/al_sidedrawer_w" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dslv="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_h" style="?app_color_header">
+                <TextView android:textSize="@dimen/al_font_header" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/al_layout_margin_LR_1" android:text="@string/bookshelf" android:layout_weight="1.0" style="?app_fontcolor_header" />
+                <androidx.appcompat.widget.AppCompatImageButton android:id="@id/shelfSide_ibt_cloud" android:background="@drawable/al_button_black_clear" android:layout_width="@dimen/al_layout_header_sub_h" android:layout_height="fill_parent" app:srcCompat="@drawable/vic_bookshelf_cloud" />
+                <ImageButton android:id="@id/alShelfSide_button_shelfAdd" android:background="@drawable/al_button_white_clear" android:layout_width="40.0dip" android:layout_height="fill_parent" style="?shelf_plus_img" />
+                <Button android:textSize="@dimen/al_font" android:gravity="center" android:id="@id/alShelfSide_button_edit" android:background="@drawable/al_button_white_clear" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="@string/edit" style="?app_fontcolor_header" />
+                <ImageButton android:id="@id/alShelfSide_ibt_einkClose" android:background="#00000000" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_close_black_36dp" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <kr.co.aladin.lib.widget.dslv.DragSortListView android:id="@id/mainSide_list_bookshelf" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" app:collapsed_height="1.0px" app:drag_enabled="false" app:drag_scroll_start="0.33" app:drag_start_mode="onDown" app:float_alpha="0.6" app:max_drag_scroll_speed="0.5" app:remove_enabled="false" app:remove_mode="flingRemove" app:slide_shuffle_speed="0.3" app:sort_enabled="true" app:track_drag_sort="false" app:use_default_controller="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right" android:id="@id/alShelfSide_left_line" android:background="#ff000000" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

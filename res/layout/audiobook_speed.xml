@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/Transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:background="@color/al_appColor" android:layout_width="fill_parent" android:layout_height="@dimen/al_login_h">
+            <TextView android:textSize="@dimen/al_font_bookTitle" android:textStyle="bold" android:textColor="@color/al_color_w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="읽기 속도" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="23.0dip" android:textStyle="bold" android:textColor="@color/al_font" android:gravity="center_horizontal" android:id="@id/audio_speed_tv_speedx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="25.0dip" android:text="1.0X" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="@color/al_font" android:id="@id/audio_speed_tv_0_5" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.5" android:layout_alignParentLeft="true" />
+                <androidx.appcompat.widget.AppCompatSeekBar android:layout_gravity="center" android:id="@id/audio_speed_seekbar" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:max="100" android:thumbOffset="-1.0dip" android:layout_toLeftOf="@id/audio_speed_tv_3_0" android:layout_toRightOf="@id/audio_speed_tv_0_5" android:layout_centerVertical="true" style="?progress_play" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/al_font" android:id="@id/audio_speed_tv_3_0" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.0" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

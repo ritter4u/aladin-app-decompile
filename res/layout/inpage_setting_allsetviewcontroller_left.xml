@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?setting_back"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/inpage_allset_panel_fonttype" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <include android:id="@id/inpage_allset_panel_selection_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ep_selection_view_item" />
+        <ImageView android:id="@id/inpage_allset_fonttype_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    </RelativeLayout>
+    <include layout="@layout/al_templete_setting_line" />
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="글자굵기" />
+        <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <kr.co.aladin.lib.widget.SegmentedGroup android:orientation="horizontal" android:id="@id/inpage_allset_fontbold_group" android:layout_width="160.0dip" android:layout_height="25.0dip" app:border_width="1.0dip" app:corner_radius="5.0dip" app:tint_color="@color/al_appColor2">
+                <androidx.appcompat.widget.AppCompatRadioButton android:textSize="@dimen/al_font" android:gravity="center" android:id="@id/inpage_allset_fontbold_bt1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="원본" android:layout_weight="1.0" app:buttonCompat="@null" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:textSize="@dimen/al_font" android:gravity="center" android:id="@id/inpage_allset_fontbold_bt2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="굵게" android:layout_weight="1.0" app:buttonCompat="@null" />
+            </kr.co.aladin.lib.widget.SegmentedGroup>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/al_templete_setting_line" />
+    <RelativeLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/inpage_allset_fontsize_layout_tmp" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="글자크기" />
+            <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <kr.co.aladin.lib.widget.SegmentedGroup android:orientation="horizontal" android:id="@id/inpage_allset_fontsize_SegmentedGroup" android:layout_width="160.0dip" android:layout_height="25.0dip" app:border_width="1.0dip" app:corner_radius="5.0dip" app:tint_color="@color/al_appColor2">
+                    <androidx.appcompat.widget.AppCompatRadioButton android:textSize="@dimen/al_font" android:gravity="center" android:id="@id/button21" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="원본" android:layout_weight="1.0" app:buttonCompat="@null" />
+                    <androidx.appcompat.widget.AppCompatRadioButton android:textSize="@dimen/al_font" android:gravity="center" android:id="@id/button22" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="사용자" android:layout_weight="1.0" app:buttonCompat="@null" />
+                </kr.co.aladin.lib.widget.SegmentedGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/inpage_allset_fontsize_layout" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/inpage_allset_wheel_control_fontsize_down" android:background="#00000000" android:layout_width="@dimen/al_viewerSetting_wheelbutton_w" android:layout_height="fill_parent" android:src="@drawable/inpage_allset_wheel_control_down" android:contentDescription="@null" />
+                <TextView android:textSize="@dimen/al_font" android:textStyle="bold" android:textColor="@color/al_appColor2" android:gravity="center" android:id="@id/inpage_setting_fontsize_textview" android:layout_width="@dimen/al_viewerSetting_wheel_text_w" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/al_layout_margin_LR_2" android:layout_marginRight="@dimen/al_layout_margin_LR_2" />
+                <ImageButton android:id="@id/inpage_allset_wheel_control_fontsize_up" android:background="#00000000" android:layout_width="@dimen/al_viewerSetting_wheelbutton_w" android:layout_height="fill_parent" android:src="@drawable/inpage_allset_wheel_control_up" android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/inpage_allset_fontsize_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/inpage_setting_fontsize_wheel_main_view_org" android:paddingRight="@dimen/al_layout_margin_LR_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <kr.co.aladin.epubreader.custom.ui.WheelView android:id="@id/inpage_setting_fontsize_wheel_view_org" android:layout_width="@dimen/al_viewerSetting_wheel_view_w" android:layout_height="@dimen/al_fontset_colormode_h" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/inpage_setting_fontsize_wheel_main_view_custom" android:paddingRight="@dimen/al_layout_margin_LR_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <kr.co.aladin.epubreader.custom.ui.WheelView android:id="@id/inpage_setting_fontsize_wheel_view_custom" android:layout_width="@dimen/al_viewerSetting_wheel_view_w" android:layout_height="@dimen/al_fontset_colormode_h" />
+    </LinearLayout>
+    <include layout="@layout/al_templete_setting_line" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/inpage_allset_lineheight_layout" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="줄간격" />
+            <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/inpage_allset_wheel_control_lineheight_down" android:background="#00000000" android:layout_width="@dimen/al_viewerSetting_wheelbutton_w" android:layout_height="fill_parent" android:src="@drawable/inpage_allset_wheel_control_down" />
+                <TextView android:textSize="@dimen/al_font" android:textStyle="bold" android:textColor="@color/al_appColor2" android:gravity="center" android:id="@id/inpage_setting_lineheight_textview" android:layout_width="@dimen/al_viewerSetting_wheel_text_w" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/al_layout_margin_LR_2" android:layout_marginRight="@dimen/al_layout_margin_LR_2" android:text="" />
+                <ImageButton android:id="@id/inpage_allset_wheel_control_lineheight_up" android:background="#00000000" android:layout_width="@dimen/al_viewerSetting_wheelbutton_w" android:layout_height="fill_parent" android:src="@drawable/inpage_allset_wheel_control_up" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/inpage_allset_lineheight_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/inpage_setting_lineheight_wheel_main_view" android:paddingRight="@dimen/al_layout_margin_LR_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <kr.co.aladin.epubreader.custom.ui.WheelView android:id="@id/inpage_setting_lineheight_wheel_view" android:layout_width="@dimen/al_viewerSetting_wheel_view_w" android:layout_height="@dimen/al_fontset_colormode_h" />
+    </LinearLayout>
+    <include layout="@layout/al_templete_setting_line" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/inpage_allset_margin_layout" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="여백설정" />
+            <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/inpage_allset_wheel_control_margin_down" android:background="#00000000" android:layout_width="@dimen/al_viewerSetting_wheelbutton_w" android:layout_height="fill_parent" android:src="@drawable/inpage_allset_wheel_control_down" android:contentDescription="@null" />
+                <TextView android:textSize="@dimen/al_font" android:textStyle="bold" android:textColor="@color/al_appColor2" android:gravity="center" android:id="@id/inpage_setting_margin_textview" android:layout_width="@dimen/al_viewerSetting_wheel_text_w" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/al_layout_margin_LR_2" android:layout_marginRight="@dimen/al_layout_margin_LR_2" />
+                <ImageButton android:id="@id/inpage_allset_wheel_control_margin_up" android:background="#00000000" android:layout_width="@dimen/al_viewerSetting_wheelbutton_w" android:layout_height="fill_parent" android:src="@drawable/inpage_allset_wheel_control_up" android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/inpage_allset_margin_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/inpage_setting_margin_wheel_main_view" android:paddingRight="@dimen/al_layout_margin_LR_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <kr.co.aladin.epubreader.custom.ui.WheelView android:id="@id/inpage_setting_margin_wheel_view" android:layout_width="@dimen/al_viewerSetting_wheel_view_w" android:layout_height="@dimen/al_fontset_colormode_h" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/al_viewerSetting_section_h" style="?viewer_setting_viewline" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/inpage_allset_textindent_layout" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="들여쓰기" />
+            <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/inpage_allset_wheel_control_textindent_down" android:background="#00000000" android:layout_width="@dimen/al_viewerSetting_wheelbutton_w" android:layout_height="fill_parent" android:src="@drawable/inpage_allset_wheel_control_down" />
+                <TextView android:textSize="@dimen/al_font" android:textStyle="bold" android:textColor="@color/al_appColor2" android:gravity="center" android:id="@id/inpage_setting_textindent_textview" android:layout_width="@dimen/al_viewerSetting_wheel_text_w" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/al_layout_margin_LR_2" android:layout_marginRight="@dimen/al_layout_margin_LR_2" />
+                <ImageButton android:id="@id/inpage_allset_wheel_control_textindent_up" android:background="#00000000" android:layout_width="@dimen/al_viewerSetting_wheelbutton_w" android:layout_height="fill_parent" android:src="@drawable/inpage_allset_wheel_control_up" android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/inpage_allset_textindent_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/inpage_setting_textindent_wheel_main_view" android:paddingRight="@dimen/al_layout_margin_LR_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <kr.co.aladin.epubreader.custom.ui.WheelView android:id="@id/inpage_setting_textindent_wheel_view" android:layout_width="@dimen/al_viewerSetting_wheel_view_w" android:layout_height="@dimen/al_fontset_colormode_h" />
+    </LinearLayout>
+    <include layout="@layout/al_templete_setting_line" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/inpage_allset_paragraph_height_layout" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="문단간격" />
+            <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/inpage_allset_wheel_control_paragraph_height_down" android:background="#00000000" android:layout_width="@dimen/al_viewerSetting_wheelbutton_w" android:layout_height="fill_parent" android:src="@drawable/inpage_allset_wheel_control_down" />
+                <TextView android:textSize="@dimen/al_font" android:textStyle="bold" android:textColor="@color/al_appColor2" android:gravity="center" android:id="@id/inpage_setting_paragraph_height_textview" android:layout_width="@dimen/al_viewerSetting_wheel_text_w" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/al_layout_margin_LR_2" android:layout_marginRight="@dimen/al_layout_margin_LR_2" />
+                <ImageButton android:id="@id/inpage_allset_wheel_control_paragraph_height_up" android:background="#00000000" android:layout_width="@dimen/al_viewerSetting_wheelbutton_w" android:layout_height="fill_parent" android:src="@drawable/inpage_allset_wheel_control_up" android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/inpage_allset_paragraph_height_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/inpage_setting_paragraph_height_wheel_main_view" android:paddingRight="@dimen/al_layout_margin_LR_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <kr.co.aladin.epubreader.custom.ui.WheelView android:id="@id/inpage_setting_paragraph_height_wheel_view" android:layout_width="@dimen/al_viewerSetting_wheel_view_w" android:layout_height="@dimen/al_fontset_colormode_h" />
+    </LinearLayout>
+    <include layout="@layout/al_templete_setting_line" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/inpage_allset_textalign_layout" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="문단정렬" />
+            <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/inpage_allset_wheel_control_textalign_down" android:background="#00000000" android:layout_width="@dimen/al_viewerSetting_wheelbutton_w" android:layout_height="fill_parent" android:src="@drawable/inpage_allset_wheel_control_down" />
+                <TextView android:textSize="@dimen/al_font" android:textStyle="bold" android:textColor="@color/al_appColor2" android:gravity="center" android:id="@id/inpage_setting_textalign_textview" android:layout_width="@dimen/al_viewerSetting_wheel_text_w" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/al_layout_margin_LR_2" android:layout_marginRight="@dimen/al_layout_margin_LR_2" />
+                <ImageButton android:id="@id/inpage_allset_wheel_control_textalign_up" android:background="#00000000" android:layout_width="@dimen/al_viewerSetting_wheelbutton_w" android:layout_height="fill_parent" android:src="@drawable/inpage_allset_wheel_control_up" android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/inpage_allset_textalign_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/inpage_setting_textalign_wheel_main_view" android:paddingRight="@dimen/al_layout_margin_LR_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <kr.co.aladin.epubreader.custom.ui.WheelView android:id="@id/inpage_setting_textalign_wheel_view" android:layout_width="@dimen/al_viewerSetting_wheel_view_w" android:layout_height="@dimen/al_fontset_colormode_h" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/al_viewerSetting_section_h" style="?viewer_setting_viewline" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/inpage_allset_colormode_layout" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingTop="5.0dip" android:paddingRight="@dimen/al_layout_margin_LR_1" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="배경색상" />
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TableLayout android:id="@id/inpage_allset_table_radioButtons" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TableRow>
+                    <kr.co.aladin.epubreader.readonbook.bookrender.inpagemenu.controls.RoundRadioButton android:id="@id/inpage_allset_pagecolor_white" android:background="@drawable/setting_btn_color_mode_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:button="@null" />
+                    <kr.co.aladin.epubreader.readonbook.bookrender.inpagemenu.controls.RoundRadioButton android:id="@id/inpage_allset_pagecolor_brown" android:background="@drawable/setting_btn_color_mode_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:button="@null" />
+                    <kr.co.aladin.epubreader.readonbook.bookrender.inpagemenu.controls.RoundRadioButton android:id="@id/inpage_allset_pagecolor_black" android:background="@drawable/setting_btn_color_mode_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:button="@null" />
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/inpage_allset_pagecolor_defualt_bg" android:layout_width="30.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+                        <TextView android:textStyle="bold" android:id="@id/inpage_allset_pagecolor_defualt_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="설정" android:layout_centerInParent="true" />
+                        <kr.co.aladin.epubreader.readonbook.bookrender.inpagemenu.controls.RoundRadioButton android:id="@id/inpage_allset_pagecolor_default" android:background="@drawable/setting_btn_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+                    </RelativeLayout>
+                </TableRow>
+                <TableRow>
+                    <kr.co.aladin.epubreader.readonbook.bookrender.inpagemenu.controls.RoundRadioButton android:id="@id/inpage_allset_pagecolor_2_lightgray" android:background="@drawable/al_setting_btn_color_mode_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="4.0dip" android:button="@null" />
+                    <kr.co.aladin.epubreader.readonbook.bookrender.inpagemenu.controls.RoundRadioButton android:id="@id/inpage_allset_pagecolor_2_lightsepia" android:background="@drawable/al_setting_btn_color_mode_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="4.0dip" android:button="@null" />
+                    <kr.co.aladin.epubreader.readonbook.bookrender.inpagemenu.controls.RoundRadioButton android:id="@id/inpage_allset_pagecolor_2_brown" android:background="@drawable/al_setting_btn_color_mode_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="4.0dip" android:button="@null" />
+                    <kr.co.aladin.epubreader.readonbook.bookrender.inpagemenu.controls.RoundRadioButton android:id="@id/inpage_allset_pagecolor_2_bluegray" android:background="@drawable/al_setting_btn_color_mode_04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:button="@null" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/inpage_allset_colormode_disable" android:background="#99ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/al_viewerSetting_section_h" style="?viewer_setting_viewline" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+        <TextView android:textSize="@dimen/al_font" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="모든 텍스트에 밑줄 긋기" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@null" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/inpage_allset_chb_textUnderline" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

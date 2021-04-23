@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppThemeLib" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textColorSecondary">?vector_path_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/al_appColor_back</item>
+        <item name="colorAccent">@color/al_appColor</item>
+        <item name="colorPrimary">@color/al_appColor</item>
+        <item name="colorPrimaryDark">@color/al_appColor_back</item>
+    </style>
+</resources>

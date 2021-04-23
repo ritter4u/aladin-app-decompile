@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/al_layout_margin_TB_setting" android:layout_marginBottom="@dimen/al_layout_margin_TB_setting">
+        <TextView android:textSize="@dimen/al_font" android:id="@id/ALSetting_TextView_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?app_fontcolor_lb" />
+        <TextView android:textSize="@dimen/al_font_content" android:textStyle="bold" android:textColor="@color/al_font_content" android:autoLink="web" android:id="@id/ALSetting_TextView_sub" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/al_font" android:gravity="right" android:id="@id/ALSetting_TextView_sub2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/al_layout_margin_LR_1" android:layout_marginRight="@dimen/al_layout_margin_LR_2" android:layout_weight="1.0" style="?app_fontcolor_viewersetting_selector" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ALSetting_Imageview_select" android:background="@drawable/next_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/ALSetting_CheckBox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

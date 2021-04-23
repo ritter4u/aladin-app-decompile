@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/al_read_on_subtext_footer_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="@dimen/al_font" android:textStyle="bold" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/remark_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="@dimen/al_font" android:textColor="#ff555555" android:id="@id/remark_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+    </ScrollView>
+</LinearLayout>

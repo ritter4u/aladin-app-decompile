@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/book_cover_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/viewer_bookmark_list_selector" android:paddingLeft="8.0dip" android:paddingRight="17.0dip" android:layout_width="fill_parent" android:layout_height="102.0dip" android:layout_margin="6.0dip">
+        <ImageView android:id="@id/bookmark_on" android:background="@drawable/cover_bookmark_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/cover_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/bookmark_on" android:layout_centerVertical="true">
+            <View android:layout_gravity="center_vertical" android:id="@id/check" android:background="@drawable/al_checkbox" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="17.0dip" />
+            <ImageView android:id="@id/cover" android:background="#ff000000" android:padding="1.0dip" android:layout_width="51.0dip" android:layout_height="73.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/page_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="15.0dip" android:text="p" android:layout_toRightOf="@id/cover_frame" android:layout_alignParentRight="true" />
+        <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="18.0dip" android:layout_marginTop="37.0dip" android:layout_toRightOf="@id/cover_frame" />
+        <LinearLayout android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="18.0dip" android:layout_marginTop="37.0dip" android:layout_toRightOf="@id/cover_frame" android:layout_alignParentRight="true">
+            <View android:background="@drawable/icon_sd_date" android:layout_width="10.659973dip" android:layout_height="10.659973dip" android:layout_marginRight="3.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff6a6a6a" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.659973dip" android:text="2014.12.17" />
+            <View android:background="@drawable/icon_sd_time" android:layout_width="10.659973dip" android:layout_height="10.659973dip" android:layout_marginRight="3.3299866dip" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff6a6a6a" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="02:44" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

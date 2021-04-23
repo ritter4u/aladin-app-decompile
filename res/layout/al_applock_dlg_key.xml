@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/appLock_layout_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/al_divider_empty_line_h15" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/al_divider_empty_line_w15" android:showDividers="middle">
+        <Button android:textSize="41.0sp" android:id="@id/appLock_bt_key1" android:layout_width="@dimen/al_applock_circle" android:layout_height="@dimen/al_applock_circle" android:text="1" style="?button_circle_blue" />
+        <Button android:textSize="41.0sp" android:id="@id/appLock_bt_key2" android:layout_width="@dimen/al_applock_circle" android:layout_height="@dimen/al_applock_circle" android:text="2" style="?button_circle_blue" />
+        <Button android:textSize="41.0sp" android:id="@id/appLock_bt_key3" android:layout_width="@dimen/al_applock_circle" android:layout_height="@dimen/al_applock_circle" android:text="3" style="?button_circle_blue" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/al_divider_empty_line_w15" android:showDividers="middle">
+        <Button android:textSize="41.0sp" android:id="@id/appLock_bt_key4" android:layout_width="@dimen/al_applock_circle" android:layout_height="@dimen/al_applock_circle" android:text="4" style="?button_circle_blue" />
+        <Button android:textSize="41.0sp" android:id="@id/appLock_bt_key5" android:layout_width="@dimen/al_applock_circle" android:layout_height="@dimen/al_applock_circle" android:text="5" style="?button_circle_blue" />
+        <Button android:textSize="41.0sp" android:id="@id/appLock_bt_key6" android:layout_width="@dimen/al_applock_circle" android:layout_height="@dimen/al_applock_circle" android:text="6" style="?button_circle_blue" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/al_divider_empty_line_w15" android:showDividers="middle">
+        <Button android:textSize="41.0sp" android:id="@id/appLock_bt_key7" android:layout_width="@dimen/al_applock_circle" android:layout_height="@dimen/al_applock_circle" android:text="7" style="?button_circle_blue" />
+        <Button android:textSize="41.0sp" android:id="@id/appLock_bt_key8" android:layout_width="@dimen/al_applock_circle" android:layout_height="@dimen/al_applock_circle" android:text="8" style="?button_circle_blue" />
+        <Button android:textSize="41.0sp" android:id="@id/appLock_bt_key9" android:layout_width="@dimen/al_applock_circle" android:layout_height="@dimen/al_applock_circle" android:text="9" style="?button_circle_blue" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/al_divider_empty_line_w15" android:showDividers="middle">
+        <ImageView android:layout_gravity="center" android:id="@id/appLock_bt_key_finger" android:background="@color/Transparent" android:visibility="gone" android:layout_width="@dimen/al_applock_circle" android:layout_height="@dimen/al_applock_circle" android:src="@drawable/icon_fingerprint_applock" android:scaleType="center" />
+        <Button android:textSize="16.0sp" android:textColor="#ff4582a0" android:id="@id/appLock_bt_key_cancel" android:background="@drawable/al_button_blue_circle_solid_clear" android:layout_width="@dimen/al_applock_circle" android:layout_height="fill_parent" android:text="@string/alert_cancel" />
+        <Button android:textSize="41.0sp" android:id="@id/appLock_bt_key0" android:layout_width="@dimen/al_applock_circle" android:layout_height="@dimen/al_applock_circle" android:text="0" style="?button_circle_blue" />
+        <ImageButton android:id="@id/appLock_bt_key_back" android:background="@drawable/al_button_blue_circle_solid_clear" android:layout_width="@dimen/al_applock_circle" android:layout_height="@dimen/al_applock_circle" style="?back_pwddel_img" />
+    </LinearLayout>
+</LinearLayout>

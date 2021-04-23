@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bookrender_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <kr.co.aladin.epubreader.readonbook.bookrender.ReadOnSizeChangedView android:orientation="vertical" android:id="@id/epub_size_change_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="center" android:id="@id/epublayout" android:focusable="false" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/epub_content" />
+    <FrameLayout android:id="@id/epub_zoomview_back" android:background="@drawable/img_zoom_view_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/epub_zoomview_scale" android:background="#ffffffff" android:layout_width="@dimen/ZOOMVIEW_WIDTH" android:layout_height="@dimen/ZOOMVIEW_HEIGHT" />
+    </FrameLayout>
+    <ImageButton android:id="@id/inpage_but_bookmark_hidden" android:background="#00000000" android:visibility="visible" android:layout_width="@dimen/viewer_bookmarkon_imgw" android:layout_height="@dimen/viewer_bookmarkon_imgh" android:layout_marginRight="@dimen/viewer_bookmarkon_rightmargin" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageButton android:id="@id/inpage_but_bookmarkon" android:background="@drawable/inpage_button_bookmarked" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/inpage_margin_right" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <FrameLayout android:id="@id/bookrender_view_topTitle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center" android:id="@id/bookrender_txt_topTitle_one" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@id/bookrender_txt_topTitle_two_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@id/bookrender_txt_topTitle_two_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/bookrender_view_page" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:layout_gravity="center" android:id="@id/bookrender_txt_page_onepage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@id/bookrender_txt_page_twopage_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@id/bookrender_txt_page_twopage_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <ProgressBar android:id="@id/bookrender_epubload_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+    <include layout="@layout/al_templete_tts" />
+</RelativeLayout>

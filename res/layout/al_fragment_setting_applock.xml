@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/al_back_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/al_templete_backheader" />
+    <LinearLayout android:orientation="vertical" android:background="@color/al_back_w" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/al_divider_horizontal_line" android:showDividers="end|middle">
+        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/alsettingApplock_off" android:background="@drawable/al_button_black_clear" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@color/al_font" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_applock_off" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/alsettingApplock_change" android:background="@drawable/al_button_black_clear" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@color/al_font" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_applock_change" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@color/al_font" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_applock_finger" />
+            <CheckBox android:layout_gravity="center|right" android:id="@id/alsettingApplock_check_finger" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_setting_sub_h">
+            <TextView android:textSize="@dimen/al_font" android:textColor="@color/al_font" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_applock_onlyAppStart" />
+            <CheckBox android:layout_gravity="center|right" android:id="@id/alsettingApplock_check_appStart" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/al_font" android:textColor="@color/al_font" android:layout_gravity="center|left" android:padding="@dimen/al_layout_margin_LR_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_lock_start_noti" />
+</LinearLayout>

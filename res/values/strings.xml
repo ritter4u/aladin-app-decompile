@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Already_BookImport">책장 목록에 존재하는 책입니다.</string>
+    <string name="DRM_Not_Certified">DRM 인증에 실패해서 이용하실 수 없는 책입니다.</string>
+    <string name="DRM_Not_Passed_License">라이센스가 경과되서 이용하실 수 없는 책입니다.</string>
+    <string name="Error_drm_message01">파일복호화 오류가 발생하였습니다. 다시 다운로드 받으시거나 고객센터에 문의해 주시기 바랍니다.</string>
+    <string name="Error_drm_message02">일시적으로 서버에 장애가 발생하였습니다.잠시 후 다시 시도해 주시기 바랍니다.</string>
+    <string name="Error_drm_message03">파일복호화 오류가 발생하였습니다. 다시 다운로드 받으시거나 고객센터에 문의해 주시기 바랍니다.</string>
+    <string name="Preference3DEffectTitle">3D효과 설정</string>
+    <string name="PreferenceFacebookSummary">인증 해제하기.</string>
+    <string name="PreferenceFacebookSummary2">인증 저장 필요.</string>
+    <string name="PreferenceFacebookTitle">페이스북 인증설정</string>
+    <string name="PreferenceLotationTitle">가로세로 자동 회전</string>
+    <string name="PreferenceMinutes">분</string>
+    <string name="PreferenceMotionPage">모션 페이지 넘김</string>
+    <string name="PreferencePageTitle">자동 페이지 넘김</string>
+    <string name="PreferencePageTitle0">자동 페이지 넘김 설정</string>
+    <string name="PreferencePage_MinutesLabel">분</string>
+    <string name="PreferencePage_Seconds1">1분</string>
+    <string name="PreferencePage_Seconds10">10초</string>
+    <string name="PreferencePage_Seconds2">2분</string>
+    <string name="PreferencePage_Seconds20">20초</string>
+    <string name="PreferencePage_Seconds30">30초</string>
+    <string name="PreferencePage_Seconds5">5분</string>
+    <string name="PreferencePage_SecondsLabel">초</string>
+    <string name="PreferencePage_SettingTitle">자동 페이지 넘김</string>
+    <string name="PreferencePage_SettingTitle0">자동 페이지 넘김 설정</string>
+    <string name="PreferencePage_TTSAutoPage">TTS 자동넘김</string>
+    <string name="PreferencePage_TTSAutoPageInfo">TTS속도에 맞춰 페이지 넘김 시간이 자동으로 설정</string>
+    <string name="PreferencePage_TimeSet_Label">자동 페이지 넘김 시간 설정</string>
+    <string name="PreferenceTTSTitle">TTS 기능 설정</string>
+    <string name="PreferenceTitle">설정</string>
+    <string name="PreferenceTwitterDialogAuthBtn">인증</string>
+    <string name="PreferenceTwitterDialogCancelBtn">취소</string>
+    <string name="PreferenceTwitterDialogId">아 이 디</string>
+    <string name="PreferenceTwitterDialogPw">패스워드</string>
+    <string name="PreferenceTwitterFailedMsg">Wifi나 모바일가 활성화 되었는지 또는 트위터 계정을 바르게 입력이 되었는지 확인하여 주세요.</string>
+    <string name="PreferenceTwitterNoInternetWarning">Wifi나 3G/4G가 활성화 되었는지 또는 트위터 계정을 바르게 입력이 되었는지 확인하여 주세요.</string>
+    <string name="PreferenceTwitterNoInternetWarningTitle">경고</string>
+    <string name="PreferenceTwitterSummary">인증 저장 되어있음.</string>
+    <string name="PreferenceTwitterSummary2">인증 저장 필요.</string>
+    <string name="PreferenceTwitterTitle">트위터 인증설정</string>
+    <string name="PreferenceTwitter_AuthButton">인증 버튼</string>
+    <string name="PreferenceTwitter_AuthCancelButton">인증 해제하기</string>
+    <string name="PreferenceTwitter_AuthCancelStep1">1. \"인증 해제하기\" 버튼 클릭</string>
+    <string name="PreferenceTwitter_AuthCancelStep2">2. 트위터 인증 해제완료</string>
+    <string name="PreferenceTwitter_AuthCancelStepTitle">인증 해제 절차</string>
+    <string name="PreferenceTwitter_AuthStep1">1.아이디와 패스워드를 입력 한뒤 인증버튼을 누릅니다.</string>
+    <string name="PreferenceTwitter_AuthStep2">2.APP 실행시 자동인증하기를 설정하면 APP 실행시 트위터 인증이 유지됩니다.</string>
+    <string name="PreferenceTwitter_AuthStepTitle">인증 절차</string>
+    <string name="PreferenceTwitter_AuthorizingMessage">인증 완료</string>
+    <string name="PreferenceTwitter_AutoAuthentication">APP 실행시 자동 인증하기</string>
+    <string name="PreferenceTwitter_Info">트위터 인증을 통해 읽고있는 책정보, 본문내용, 메모를 트위터로 포스트 할 수 있습니다.</string>
+    <string name="PreferenceValueOff">끔</string>
+    <string name="PreferenceValueOn">켬</string>
+    <string name="Preference_set">설정</string>
+    <string name="Preferences_page_envset">페이지 환경설정</string>
+    <string name="Preferences_page_timeset">페이지 시간설정</string>
+    <string name="Preferences_twitter_envset">트위터 환경설정</string>
+    <string name="Preferences_twitter_title_text">트위터 인증 설정</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="about">About</string>
+    <string name="accept_infomation">위 내용을 확인하였습니다.</string>
+    <string name="account_manage">계정 관리</string>
+    <string name="action_connect">연결</string>
+    <string name="action_delete">삭제</string>
+    <string name="action_readon_exit">APP 종료</string>
+    <string name="add">추가</string>
+    <string name="add_complete">추가 완료</string>
+    <string name="advance">Advance</string>
+    <string name="al_applock_change">암호 변경</string>
+    <string name="al_applock_finger">지문인식</string>
+    <string name="al_applock_off">암호 해제</string>
+    <string name="al_applock_onlyAppStart">앱 실행 시에만 사용</string>
+    <string name="al_audiobook_data_is_null">도서 파일이 손상되었습니다. 삭제 및 재다운로드 하시겠습니까?</string>
+    <string name="al_audiobook_delete_all_bookmark">모든 항목을 삭제 하시겠습니까?</string>
+    <string name="al_audiobook_msg_under_jellybean">오디오북은 OS 4.1 이상의 기기에서 이용 가능합니다.</string>
+    <string name="al_audiobook_settings_jump">앞/뒤 점프 시간 설정</string>
+    <string name="al_audiobook_settings_move_chapter">챕터 이동 시 듣기 설정</string>
+    <string name="al_audiobook_settings_move_chapter_default">챕터 처음부터</string>
+    <string name="al_audiobook_settings_move_chapter_lastOffset">챕터 듣기 종료시점부터</string>
+    <string name="al_audiobook_user_data_is_null">도서 파일이 손상되었습니다.</string>
+    <string name="al_bookinfo_favorite">별점 전송 중..</string>
+    <string name="al_bookinfo_lock">도서잠금</string>
+    <string name="al_bookinfo_lock_set">시리즈잠금</string>
+    <string name="al_bookinfo_readCompleteNo">완독해제</string>
+    <string name="al_bookinfo_readCompleteYes">완독설정</string>
+    <string name="al_bookinfo_readComplete_send">전송 중..</string>
+    <string name="al_bookinfo_unlock">잠금해제</string>
+    <string name="al_bookshelf_Login">"전자책 서재 로그인 상태가 아닙니다.
+로그인 하시겠습니까?"</string>
+    <string name="al_bookshelf_airplain_alert">"비행기 탑승 모드 입니다.
+이미 다운로드 된 도서는 독서가 가능합니다."</string>
+    <string name="al_bookshelf_authDevice">"다른 단말기에서 이 단말기 인증을 해제하였습니다. 
+
+로그인 화면으로 이동합니다."</string>
+    <string name="al_bookshelf_authError">"계정이 로그아웃 되었습니다.
+도서 다운로드 및 구매목록 동기화를 하시려면 로그인이 필요합니다.
+로그인 하시겠습니까?"</string>
+    <string name="al_bookshelf_bookfileCheck">"도서 파일이 타 앱(예. V3 클리너 기능 등) 또는 사용자에 의해 삭제되었거나 손상되었습니다.
+
+책장에서 삭제 후 재다운로드 받으시겠습니까?"</string>
+    <string name="al_bookshelf_deleteSyncCheck">동기화 서버로 전송되지 않은 정보(하이라이트, 책갈피 등)가 있습니다. 그래도 삭제하시겠습니까?</string>
+    <string name="al_bookshelf_purchase">"구매목록이 변경되었습니다.
+확인하시겠습니까?"</string>
+    <string name="al_bookshelf_purchaseUpdate2016">"세트(시리즈) 묶음 등 최신 기능의 업데이트 적용을 위해 구매목록 동기화가 필요합니다.
+
+구매목록을 동기화 하시겠습니까?
+(Wi-Fi / 4G 등 네트워크가 연결되어 있어야 합니다.)"</string>
+    <string name="al_bookshelf_purchaseUpdate2016_421">책장 정보 업데이트를 위해 구매목록 동기화가 필요합니다.</string>
+    <string name="al_bookshelf_rotation">회전</string>
+    <string name="al_bookshelf_shopApp">서점</string>
+    <string name="al_bookshelf_sync">도서들의 스크랩 정보를 동기화 중 입니다.</string>
+    <string name="al_bookshelf_sync_error">동기화가 정상 처리되지 않았습니다. 고객팀 혹은 ebook@aladin.co.kr로 신고 바랍니다.</string>
+    <string name="al_bookshelf_sync_error_net">네트워크 접속이 불안정하여 동기화가 정상 처리되지 않았습니다. 잠시 후 다시 시도해 주시기 바랍니다.</string>
+    <string name="al_bookshelf_sync_noNetwork">스크랩 정보 동기화가 중지되었습니다. 네트워크 연결상태를 확인해 주시기 바랍니다.</string>
+    <string name="al_bookshelf_toBundle">묶음</string>
+    <string name="al_bookshelf_toBundleClear">묶음해제</string>
+    <string name="al_bookshelf_viewmodeGrid">썸네일보기</string>
+    <string name="al_bookshelf_viewmodeList">리스트보기</string>
+    <string name="al_chrome72error_lollipop">"도서 로딩 속도 개선을 위해 안드로이드 웹뷰를 이전 버전으로 변경해야합니다.
+최신 웹뷰 버전 제거 화면으로 이동하시겠습니까?"</string>
+    <string name="al_click_share_limit_word_size">1000자가 초과되었습니다. 공유는 1000자까지 가능합니다.</string>
+    <string name="al_delete_font_dialog_cancel">취소</string>
+    <string name="al_delete_font_dialog_cannotredownload">(본 글꼴은 삭제 후 재설치가 불가능합니다.)</string>
+    <string name="al_delete_font_dialog_changeorg">(설정된 글꼴은 원본 글꼴로 교체 됩니다.)</string>
+    <string name="al_delete_font_dialog_message">글꼴을 삭제하시겠습니까?</string>
+    <string name="al_delete_font_dialog_title">알림!!</string>
+    <string name="al_delete_ing">삭제중</string>
+    <string name="al_device_edit">수정할 단말기 명을 입력해주세요</string>
+    <string name="al_device_pwd">알라딘 비밀번호를 입력하세요</string>
+    <string name="al_device_pwd_hint">비밀번호 입력</string>
+    <string name="al_exsd_select">선택</string>
+    <string name="al_exsd_title">외부 저장 위치</string>
+    <string name="al_inpage_menu_bottom_next">다음</string>
+    <string name="al_inpage_menu_bottom_prev">이전</string>
+    <string name="al_login_aladinAuthError">알라딘 계정과 연동이 필요합니다.</string>
+    <string name="al_login_aladinAuthError2">알라딘 인증에 실패하였습니다.</string>
+    <string name="al_login_aladinAuthNotEqual">동일한 아이디가 아닙니다.</string>
+    <string name="al_login_facebookAuthError">페이스북 인증에 실패하였습니다.</string>
+    <string name="al_login_facebookTokenError">"페이스북 인증이 해제되었습니다.
+로그인 화면으로 이동하겠습니까?"</string>
+    <string name="al_login_facebook_text">페이스북 아이디로 로그인</string>
+    <string name="al_login_googleAuthError">구글 인증에 실패하였습니다.</string>
+    <string name="al_login_googleTokenError">"구글 인증에 실패하였습니다.
+로그인 화면으로 이동하겠습니까?"</string>
+    <string name="al_login_google_text">구글 아이디로 로그인</string>
+    <string name="al_login_id">아이디</string>
+    <string name="al_login_id_hint">아이디 또는 이메일</string>
+    <string name="al_login_join">간편 회원가입</string>
+    <string name="al_login_kakao_alert">"죄송합니다. 뷰어앱에서는 '카카오 ID 간편가입 / 로그인'이 지원되지 않습니다.
+
+이전에 알라딘에서 카카오ID로 가입한 후 지금 뷰어앱에서 로그인을 하려는 경우, 카카오 로그인은 할 수 없으며 아래와 같은 방법으로 뷰어앱에 로그인할 수 있습니다.
+(1)알라딘 웹사이트에서 카카오 로그인
+(2)'카카오 회원'을 '일반회원'으로 변경
+(3) 뷰어앱에서 '알라딘 로그인' 이용
+
+지금 알라딘 웹사이트에서 회원타입을 국내일반회원 타입으로 변경하시겠습니까?"</string>
+    <string name="al_login_kakao_text">카카오톡 아이디로 로그인</string>
+    <string name="al_login_naverAuthError">네이버 인증에 실패하였습니다.</string>
+    <string name="al_login_naverTokenError">"네이버 인증이 해제되었습니다.
+로그인 화면으로 이동하겠습니까?"</string>
+    <string name="al_login_naver_text">네이버 아이디로 로그인</string>
+    <string name="al_login_needAladinJoin">해당 계정은 알라딘 가입 또는 계정연동이 필요합니다.</string>
+    <string name="al_login_pwd">비밀번호 찾기</string>
+    <string name="al_login_pwd_hint">비밀번호</string>
+    <string name="al_login_pwd_view">비밀번호 표시</string>
+    <string name="al_login_samsunpassAuthError">삼성패스 알라딘 서버 연동에 실패하였습니다.</string>
+    <string name="al_login_snsToAladin">알라딘 인증 중입니다.</string>
+    <string name="al_login_snsdesc">SNS 아이디로 간편하게 로그인 할 수 있어요</string>
+    <string name="al_login_snslogin">간편 로그인</string>
+    <string name="al_login_snstokenError">"단말기 관리 메뉴를 이용하려면 재로그인 해야합니다.
+로그인 하시겠습니까?"</string>
+    <string name="al_login_spass_text">로그인</string>
+    <string name="al_login_title">알라딘 로그인</string>
+    <string name="al_login_twitterAuthError">"트위터 인증에 실패하였습니다.
+로그인 화면으로 이동하겠습니까?"</string>
+    <string name="al_login_twitter_text">트위터 아이디로 로그인</string>
+    <string name="al_network_timeout">문제가 발생했습니다. 다시 시도 부탁드리겠습니다.</string>
+    <string name="al_noti_download_fail_msg">앱 종료로 도서 다운로드가 완료되지 않았습니다. 재시도 해 주시기 바랍니다.</string>
+    <string name="al_noti_download_fail_title">다운로드 취소</string>
+    <string name="al_purchase_down_complete">개 도서 다운로드 완료</string>
+    <string name="al_purchase_down_ing">진행 중</string>
+    <string name="al_purchase_down_network">"3G/LTE 환경에서 도서 다운로드시 데이터요금이 발생될 수 있습니다.
+계속 다운로드 하시겠습니까?
+
+(본 알림 팝업 메세지는 [설정] 메뉴에서 변경하실 수 있습니다.)"</string>
+    <string name="al_purchase_download_errorNetwork">네트워크가 불안정하여 다운로드에 실패했습니다. 네트워크 확인 후 재시도 바랍니다.</string>
+    <string name="al_purchase_download_errorNetwork2">서버 불안정하여 다운로드에 실패했습니다. 재시도 바랍니다.</string>
+    <string name="al_purchase_download_errorParsing">다운로드 중에 문제가 발생했습니다. 인증 부분을 확인 바랍니다.</string>
+    <string name="al_purchase_download_nopurchase">다운로드 중에는 진행 할 수 없습니다.</string>
+    <string name="al_purchase_select_all">전체 다운로드</string>
+    <string name="al_purchase_select_all_cancel">다운로드 취소</string>
+    <string name="al_purchase_waiting">개 대기 중</string>
+    <string name="al_readernote_delete_text">삭제</string>
+    <string name="al_readernote_edit_text">편집</string>
+    <string name="al_readernote_entire_delete_text">전체삭제</string>
+    <string name="al_readernote_return_text">완료</string>
+    <string name="al_readers_note_delete_question">선택하신 항목을 삭제하시겠습니까?</string>
+    <string name="al_readers_note_delete_question_all">항목을 전체 삭제하시겠습니까?</string>
+    <string name="al_readers_pagecount_overbig_counted">"최신 안드로이드웹뷰에서 설정한 페이지 범위를 넘은 챕터가 있습니다.
+ 빈 공백 페이지 노출 오류가 발생할 수 있습니다."</string>
+    <string name="al_readers_pagecount_overbig_viewing">"최신 안드로이드웹뷰에서 설정한 페이지 범위를 넘었습니다. 
+글꼴 크기, 줄간격 등을 조정하여 챕터 당 500페이지 이내로 설정해야 정상적인 표현이 가능합니다.
+설정 조정으로 개선이 불가능할 경우 파일 수정 및 교체가 필요하니 고객센터로 신고해주세요."</string>
+    <string name="al_readon_book_ctl_logout_and_relogin_fail">"계정이 로그아웃  되었습니다.  로그인이 필요합니다."</string>
+    <string name="al_setting_TTSHidden">TTS버튼 숨김</string>
+    <string name="al_setting_aladinErrorReport">뷰어 오류 신고</string>
+    <string name="al_setting_aladinErrorReport_log">뷰어 오류 신고 - 오류정보</string>
+    <string name="al_setting_aladinErrorReport_log_msg">에러 정보 수집을 준비합니다.</string>
+    <string name="al_setting_aladinErrorReport_msg">"기기 정보, 책장의 다운로드 도서 정보 등이 전송됩니다.
+
+전송하시겠습니까?"</string>
+    <string name="al_setting_aladinNotifications">공지사항</string>
+    <string name="al_setting_appLock">암호 잠금</string>
+    <string name="al_setting_appLock_header">암호 잠금 설정</string>
+    <string name="al_setting_autoReadComplete">진도율 99% 이상 시 자동 완독 설정</string>
+    <string name="al_setting_autoReadComplete_api">완독 기준을 충족하는 모든 도서의 완독 설정이 완료되었습니다.</string>
+    <string name="al_setting_bookshelfSync">책장 동기화</string>
+    <string name="al_setting_bookshelfSync_backupLoad">동기화 이전의 책장 정보로 복원</string>
+    <string name="al_setting_bookshelfSync_check">개인책장 정보 동기화</string>
+    <string name="al_setting_bookshelfSync_newSync">이 기기의 책장 정보로 초기화</string>
+    <string name="al_setting_bookshelfSync_up">올리기</string>
+    <string name="al_setting_borderBottom">하이라이트 밑줄 변환</string>
+    <string name="al_setting_cacheDelete">임시 데이터 삭제</string>
+    <string name="al_setting_cacheDelete_msg">저장 공간 확보를 위해 임시 데이터 파일을 삭제 합니다.</string>
+    <string name="al_setting_customerService">고객센터</string>
+    <string name="al_setting_device">단말기 관리</string>
+    <string name="al_setting_einkMode">e-ink 모드</string>
+    <string name="al_setting_einkMode_land">앱 가로모드</string>
+    <string name="al_setting_email">이메일 문의</string>
+    <string name="al_setting_extsd_dlg_title">도서 저장 경로</string>
+    <string name="al_setting_font_selector_title">폰트파일 선택</string>
+    <string name="al_setting_fullscreen">전체화면으로 읽기</string>
+    <string name="al_setting_gesture_bright">제스쳐 밝기 사용</string>
+    <string name="al_setting_landscape_two_page">페이지 양면읽기</string>
+    <string name="al_setting_license">오픈소스 라이선스</string>
+    <string name="al_setting_login">로그인</string>
+    <string name="al_setting_logout">로그아웃</string>
+    <string name="al_setting_logout_msg">"로그아웃 시 책/책장정보가 삭제되며, 개인파일은 기본책장으로 이동합니다.
+
+로그아웃 하시겠습니까?"</string>
+    <string name="al_setting_logout_result">등록해제 되었습니다.</string>
+    <string name="al_setting_managementSettings">일반 설정</string>
+    <string name="al_setting_managementViewerSettings">뷰어 설정</string>
+    <string name="al_setting_networkAlert">다운로드 3G/LTE 사용 시 알림 팝업</string>
+    <string name="al_setting_personal">개인정보 취급 방침</string>
+    <string name="al_setting_readingView">책장 하단 읽고 있는 책 팝업 숨김</string>
+    <string name="al_setting_rentAutoDelete">대여기간 만료 도서 자동 삭제</string>
+    <string name="al_setting_screenlockOff">화면 자동 잠금 방지</string>
+    <string name="al_setting_secondExtSD_dialogNoti">"-외부저장소(SD카드)를 선택한 경우 다운로드 받은 도서는 외장 SD카드로 저장되므로 다운로드 중에는 외장 SD카드를 제거하지 마시기 바랍니다.
+
+-외부저장소(SD카드)로 다운로드 받은 도서는 외장 SD카드를 제거하면 도서를 읽을 수 없으니 외장 SD카드를 반드시 삽입한 상태에서 열어주시기 바랍니다."</string>
+    <string name="al_setting_softkeyHidden">소프트키 숨김</string>
+    <string name="al_setting_statusbarOn">상단 상태바 상시 노출</string>
+    <string name="al_setting_sync">읽은 페이지/스크랩 자동 동기화</string>
+    <string name="al_setting_term">이용약관</string>
+    <string name="al_setting_user_bright">화면 밝기 유지</string>
+    <string name="al_setting_version">버전</string>
+    <string name="al_setting_version_current">현재버전</string>
+    <string name="al_setting_version_new">최신버전</string>
+    <string name="al_setting_volumeScroll">볼륨키 스크롤모드</string>
+    <string name="al_setting_volumkey_pagemove">볼륨키로 페이지 이동</string>
+    <string name="al_share_to_bookple">"북플에
+공유하기"</string>
+    <string name="al_share_to_image">"이미지로
+공유하기"</string>
+    <string name="al_share_to_text">"텍스트로
+공유하기"</string>
+    <string name="al_side_bookShelf_add">추가할 책장 이름을 입력해주세요</string>
+    <string name="al_side_bookShelf_edit">수정할 책장 이름을 입력해주세요</string>
+    <string name="al_subtext_move_page">> 페이지로 이동</string>
+    <string name="al_ttsSetting_continueReading">현재 기기 TTS 이어 읽기 팝업</string>
+    <string name="al_ttsSetting_end">종료</string>
+    <string name="al_ttsSetting_eng_changer_dialog">"영어화자로 사용할 내장TTS를 구글TTS로 설정하신 후 TTS 한영 자동전환 옵션을 체크해주세요.
+내장TTS를 설정하시겠습니까?"</string>
+    <string name="al_ttsSetting_hour">시간</string>
+    <string name="al_ttsSetting_minute">분</string>
+    <string name="al_ttsSetting_otherMediaPlaying">타 미디어 재생 허용</string>
+    <string name="al_ttsSetting_readOption">읽기 옵션</string>
+    <string name="al_ttsSetting_readOption_parentheses">괄호 생략하기</string>
+    <string name="al_ttsSetting_readOption_regulation">한글영어 연속 생략하기</string>
+    <string name="al_ttsSetting_readOption_skipch">특수기호 생략</string>
+    <string name="al_ttsSetting_read_eng_changer">TTS 한영 자동전환</string>
+    <string name="al_ttsSetting_set">TTS설정</string>
+    <string name="al_ttsSetting_speaker">화자</string>
+    <string name="al_ttsSetting_speaker_innertts">내장TTS</string>
+    <string name="al_ttsSetting_speaker_minjun">민준</string>
+    <string name="al_ttsSetting_speaker_sujin">수진</string>
+    <string name="al_ttsSetting_speaker_yujin">유진</string>
+    <string name="al_ttsSetting_speed">속도</string>
+    <string name="al_ttsSetting_start">시작</string>
+    <string name="al_ttsSetting_tone">톤</string>
+    <string name="al_viewer_password_pdf">"암호가 설정된 문서입니다.
+암호를 입력해주세요."</string>
+    <string name="al_viewer_redo">다음</string>
+    <string name="al_viewer_undo">이전</string>
+    <string name="al_viewersetting">뷰어 설정</string>
+    <string name="al_viewersetting_addPage_CPUB">만화 양면 페이지 교정</string>
+    <string name="al_viewersetting_addPage_PDF">PDF 양면 페이지 교정</string>
+    <string name="al_viewersetting_blackNegative">흑백 반전</string>
+    <string name="al_viewersetting_bright">밝기</string>
+    <string name="al_viewersetting_brightsave">화면 밝기 유지</string>
+    <string name="al_viewersetting_imageBright">밝게</string>
+    <string name="al_viewersetting_imageContrast">진하게</string>
+    <string name="al_viewersetting_keExactly">물리키 페이지 이동 방향 설정</string>
+    <string name="al_viewersetting_keExactly_allNext">모두 정방향 (다음/다음)</string>
+    <string name="al_viewersetting_keExactly_false">역방향 (다음/이전)</string>
+    <string name="al_viewersetting_keExactly_true">정방향 (이전/다음)</string>
+    <string name="al_viewersetting_landTwo">가로모드 양면 읽기</string>
+    <string name="al_viewersetting_orientationLock">화면 회전 잠금</string>
+    <string name="al_viewersetting_pageeffect">페이지 넘김 효과</string>
+    <string name="al_viewersetting_scrollmode_CPUB">만화 단면읽기 / 스크롤 뷰</string>
+    <string name="al_viewersetting_scrollmode_PDF">PDF 단면읽기 / 스크롤 뷰</string>
+    <string name="al_viewersetting_touchmode">터치 영역</string>
+    <string name="al_viewersetting_touchmode_set">터치 영역 설정</string>
+    <string name="al_viewersetting_vibration">진동</string>
+    <string name="al_viewersetting_volume">볼륨키로 페이지 이동</string>
+    <string name="alert_app_land_uncheck">앱 가로모드를 해제바랍니다.</string>
+    <string name="alert_cancel">취소</string>
+    <string name="alert_delete_user_image">배경 이미지를 삭제하시겠습니까?</string>
+    <string name="alert_message_download_path_is_internal">외장 SD 카드가 없습니다. 내부 저장소로 다운로드 합니다.</string>
+    <string name="alert_message_ex_sdcard_removed">외장 SD 카드의 파일을 찾을 수 없습니다.</string>
+    <string name="alert_message_in_sdcard_removed">내부 저장소가 활성화 되지 않았습니다.</string>
+    <string name="alert_message_password_is_empty">비밀번호 설정이 완료되지 않았습니다.</string>
+    <string name="alert_message_storage_permission">"저장소 권한이 활성화 되지 않았습니다.
+[설정] > [권한]에서 해당 권한을 활성화 해주세요."</string>
+    <string name="alert_network_not_use">네트워크가 불안정하여 도서 목록을 불러오는 데 실패하였습니다.네트워크 연결을 확인해 주세요.</string>
+    <string name="alert_no_file">도서 파일을 찾을 수 없습니다.</string>
+    <string name="alert_ok">확인</string>
+    <string name="alpha">Alpha</string>
+    <string name="amendment">수정</string>
+    <string name="annot_color">Color</string>
+    <string name="annot_edit">poptext</string>
+    <string name="annot_lock">Lock</string>
+    <string name="annot_perform">Perform</string>
+    <string name="annot_property">property</string>
+    <string name="annot_remove">remove</string>
+    <string name="annotation_failed">Add annotation failed!</string>
+    <string name="appPermission_phone">"기기등록을 위해 다음의 권한이 필요합니다. 
+미승인 시, 등록에 제약이 발생될 수 있습니다.
+
+('전화'에서 제공하는 정보를 기기등록 시 활용합니다.)"</string>
+    <string name="appPermission_sd">파일 등록 및 폰트 적용을 위해 다음의 권한이 필요합니다.</string>
+    <string name="appPermission_sd_deviceSetMove">"파일을 불러오기 위해 저장공간 접근권한이 필요합니다.
+[알라딘 ebook > 권한]에서 저장공간 권한을 허용으로 변경해주세요."</string>
+    <string name="app_lock_finger_error">지문 인식 실패했습니다. 암호를 입력해주세요.</string>
+    <string name="app_lock_finger_reTry">지문 인식 실패했습니다. 재시도 바랍니다.</string>
+    <string name="app_lock_input">암호입력</string>
+    <string name="app_lock_input_Instruction">암호를 입력해주세요</string>
+    <string name="app_lock_input_Instruction_error">"암호가 일치하지 않습니다.
+다시 입력해 주세요."</string>
+    <string name="app_lock_input_Instruction_onemore">암호를 한 번 더 입력해주세요</string>
+    <string name="app_lock_input_Instruction_onemore_error">"암호가 일치하지 않습니다.
+처음부터 다시 입력해 주세요."</string>
+    <string name="app_lock_start_noti">"※ 주의!
+
+암호를 분실하실 경우, 앱 삭제 후 재설치 하셔야 합니다.
+(다운로드 받은 도서들도 재다운로드 필요)"</string>
+    <string name="app_name">알라딘 ebook</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="bookInfo">도서정보</string>
+    <string name="bookInfo_annotationOrganize">독서노트 정리</string>
+    <string name="bookInfo_secret">암호설정</string>
+    <string name="bookInfo_title">정보보기</string>
+    <string name="bookInfo_title_set">시리즈 정보</string>
+    <string name="book_author">"저자 : "</string>
+    <string name="book_author_string">지은이</string>
+    <string name="book_bookinfo">도서정보</string>
+    <string name="book_cover">표지 이미지</string>
+    <string name="book_coverimage_string">그림</string>
+    <string name="book_file_size">"용량 : "</string>
+    <string name="book_file_string">파일명</string>
+    <string name="book_first_page">첫 페이지입니다.</string>
+    <string name="book_genre_string">장르</string>
+    <string name="book_info_title_string">도서정보</string>
+    <string name="book_infor_ok_button_string">확인</string>
+    <string name="book_publish">"출판사 : "</string>
+    <string name="book_publisher_string">발행자</string>
+    <string name="book_setting">설정</string>
+    <string name="book_shelf_button_string">책장</string>
+    <string name="book_title">"도서명 : "</string>
+    <string name="book_title_string">책 제목</string>
+    <string name="book_translator_string">옮긴이</string>
+    <string name="bookinfo_description">[책소개]</string>
+    <string name="bookmark_add">Add to Bookmarks</string>
+    <string name="bookmark_already_added">Bookmark already exists</string>
+    <string name="bookmark_error">Error: Cannot add bookmark</string>
+    <string name="bookmark_label">Page: %1$d</string>
+    <string name="bookmark_remove_error">Error: Cannot delete bookmark</string>
+    <string name="bookmark_show">Show Bookmarks</string>
+    <string name="bookmark_success">Bookmark (%1$s) added successfully.</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="bookshelf">책장</string>
+    <string name="bookshelf_allbook_unselect">선택해제</string>
+    <string name="bookshelf_book_move">책장이동</string>
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="browse_open_file">Browse And Open File (CPU)</string>
+    <string name="btn_shortcut">홈화면에 바로가기 만들기</string>
+    <string name="buyDate_10">"구매일 : "</string>
+    <string name="buypayback_check_nocash">"전자책 캐시 잔액이 부족합니다.
+충전 화면으로 이동하시겠습니까?"</string>
+    <string name="buypayback_check_ok">"대여 후 7일 이내 구매전환 시, 대여 구매 금액 전액을 전자책몰별전용적립금으로 페이백 해 드립니다.(구매전환 시, 취소불가)
+
+구매금액 : %1$s원 
+보유 전자캐시 : %2$s원
+
+결제하시겠습니까?"</string>
+    <string name="cancel">Cancel</string>
+    <string name="cannot_open_document">문서를 열 수 없습니다.</string>
+    <string name="cannot_write_or_encrypted">Cannot write or encrypted!</string>
+    <string name="catalog_not_found">Catalog object is not a dictionary.</string>
+    <string name="category">카테고리</string>
+    <string name="change_save_path">도서 저장 경로 변경하기</string>
+    <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
+    <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="checkboxOff">off</string>
+    <string name="checkboxOn">on</string>
+    <string name="chip_text">Chip text</string>
+    <string name="clear">Clear</string>
+    <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="close">닫기</string>
+    <string name="com.crashlytics.android.build_id">f891e1a527ca443eaf2637cabd9b19f6</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_file_error_msg">Epub파일에 문제가 있어 종료합니다.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="common_wait_msg">잠시만 기다려주세요.</string>
+    <string name="common_working_load">불러오는중</string>
+    <string name="common_working_msg">도서 추가중</string>
+    <string name="common_working_msg_hwp">문서 추가중</string>
+    <string name="complete">완료</string>
+    <string name="confirm">Confirm</string>
+    <string name="content_type_audio">AUDIO</string>
+    <string name="content_type_cpub">CPUB</string>
+    <string name="content_type_epub">EPUB</string>
+    <string name="content_type_pdf">PDF</string>
+    <string name="content_type_zip">ZIP</string>
+    <string name="copy_text">Text copied to clipboard: %1$s</string>
+    <string name="copy_text_to_clipboard">Copy text to clipboard</string>
+    <string name="cpub_button_inverse_on">역순보기를 시작합니다</string>
+    <string name="cpub_popup_delete_all_bookmark">모든 항목을 삭제 하시겠습니까?</string>
+    <string name="create_pdf">CreatePDF</string>
+    <string name="crop_pick_error">이미지가 존재하지 않습니다.</string>
+    <string name="crop_saving">이미지를 적용 중입니다.</string>
+    <string name="curl">Curl</string>
+    <string name="curl_pages">Curl Pages</string>
+    <string name="days">일</string>
+    <string name="default_shelf">기본책장</string>
+    <string name="default_web_client_id">516378457182-a4ispeje6o01ivudi2ptfn6pvm0pre4u.apps.googleusercontent.com</string>
+    <string name="delete">삭제</string>
+    <string name="delete_bookshelf_body">"책장을 삭제하시겠습니까?
+책장 삭제 시 책장의 도서들은 기본 책장으로 이동합니다."</string>
+    <string name="delete_bookshelf_book">선택한 책을 정말로 삭제하시겠습니까?</string>
+    <string name="delete_signature_message">A signature is already present, do you want to delete it?</string>
+    <string name="description_bookmark">Bookmark</string>
+    <string name="device_manage">단말기 관리</string>
+    <string name="device_name_colon">"단말기명 : "</string>
+    <string name="device_regDate">"등록일 : "</string>
+    <string name="device_type_colon">"타입 : "</string>
+    <string name="download">다운로드</string>
+    <string name="download_ing">다운로드 중</string>
+    <string name="download_regist">등록중</string>
+    <string name="download_stay">대기중</string>
+    <string name="dual_page">Dual Page</string>
+    <string name="edit">편집</string>
+    <string name="edit_catalog_failed">Edit catalog failed.</string>
+    <string name="enter_book_password">비밀번호가 설정되어 있는 책입니다.</string>
+    <string name="enter_book_password_set">비밀번호가 설정되어 있는 시리즈 입니다.</string>
+    <string name="enter_password">비밀번호 입력</string>
+    <string name="ep_multi_apply_text">설정</string>
+    <string name="ep_multi_close_text">닫기</string>
+    <string name="ep_multi_complete_text">완료</string>
+    <string name="ep_multi_done_text">완료</string>
+    <string name="ep_multi_prev_text">이전</string>
+    <string name="ep_multi_send_text">보내기</string>
+    <string name="error_Device_Authentication_Delete_Fail">단말기 해제를 실패하였습니다.</string>
+    <string name="error_Device_Authentication_No_Data">다른 단말기에서 이 단말기 인증을 해제하였습니다.</string>
+    <string name="error_Device_Authentication_OverFlow">등록된 단말기 대수(5대)를 초과하였습니다.사용하지 않는 단말기 해제 후 진행해 주시기 바랍니다.</string>
+    <string name="error_Device_Authentication_Update_Fail">단말기 인증 업데이트를 실패하였습니다.</string>
+    <string name="error_License_Issue_Data_InVaild">[error code:-101]유효하지 않은 라이선스 데이터입니다.</string>
+    <string name="error_License_Issue_Fail">서버 응답이 지연되고 있습니다. 잠시 후 다시 시도해주세요. 반복될 경우 고객센터에 신고 바랍니다.</string>
+    <string name="error_License_Issue_RentalEnd">이용기간이 만료된 도서입니다.</string>
+    <string name="error_Server_No_Data">인증서버에서 오류가 발생되었습니다. 잠시 후 재시도 바랍니다.</string>
+    <string name="error_User_Authentication_Fail">등록되지 않은 아이디이거나, 아이디 또는 비밀번호를 잘못 입력하셨습니다.</string>
+    <string name="error_User_Authentication_Incorrect_ID">아이디, 비밀번호를 다시 확인해 주세요.</string>
+    <string name="error_User_Authentication_Incorrect_password">아이디, 비밀번호를 다시 확인해 주세요.</string>
+    <string name="error_User_Authentication_Incorrect_password_only">비밀번호를 다시 확인해 주세요.</string>
+    <string name="error_User_Authentication_Insert_Update_Error">계정 등록을 실패하였습니다.</string>
+    <string name="error_drm_cannotopenepub">이 파일은 열 수 없는 파일입니다. 다른 파일을 선택해 주시기 바랍니다.</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="exiting">Exiting</string>
+    <string name="exo_controls_fastforward_description">Fast forward</string>
+    <string name="exo_controls_fullscreen_description">Fullscreen mode</string>
+    <string name="exo_controls_next_description">Next track</string>
+    <string name="exo_controls_pause_description">Pause</string>
+    <string name="exo_controls_play_description">Play</string>
+    <string name="exo_controls_previous_description">Previous track</string>
+    <string name="exo_controls_repeat_all_description">Repeat all</string>
+    <string name="exo_controls_repeat_off_description">Repeat none</string>
+    <string name="exo_controls_repeat_one_description">Repeat one</string>
+    <string name="exo_controls_rewind_description">Rewind</string>
+    <string name="exo_controls_shuffle_description">Shuffle</string>
+    <string name="exo_controls_stop_description">Stop</string>
+    <string name="exo_download_completed">Download completed</string>
+    <string name="exo_download_description">Download</string>
+    <string name="exo_download_downloading">Downloading</string>
+    <string name="exo_download_failed">Download failed</string>
+    <string name="exo_download_notification_channel_name">Downloads</string>
+    <string name="exo_download_removing">Removing downloads</string>
+    <string name="exo_item_list">%1$s, %2$s</string>
+    <string name="exo_track_bitrate">%1$.2f Mbps</string>
+    <string name="exo_track_mono">Mono</string>
+    <string name="exo_track_resolution">%1$d × %2$d</string>
+    <string name="exo_track_selection_auto">Auto</string>
+    <string name="exo_track_selection_none">None</string>
+    <string name="exo_track_selection_title_audio">Audio</string>
+    <string name="exo_track_selection_title_text">Text</string>
+    <string name="exo_track_selection_title_video">Video</string>
+    <string name="exo_track_stereo">Stereo</string>
+    <string name="exo_track_surround">Surround sound</string>
+    <string name="exo_track_surround_5_point_1">5.1 surround sound</string>
+    <string name="exo_track_surround_7_point_1">7.1 surround sound</string>
+    <string name="exo_track_unknown">Unknown</string>
+    <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="external_storage">외부 저장소(SD카드)</string>
+    <string name="external_storage_sd">외부 저장소 (SD카드)</string>
+    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="facebook_app_id">1530465580588914</string>
+    <string name="failed_encryption">Open Failed: Unknown Encryption</string>
+    <string name="failed_invalid_format">Open Failed: Damaged or Invalid PDF file</string>
+    <string name="failed_invalid_password">Open Failed: Invalid Password</string>
+    <string name="failed_invalid_path">Open Failed: Access denied or Invalid path</string>
+    <string name="failed_unknown">Open Failed: Unknown Error</string>
+    <string name="fileInfo">파일정보</string>
+    <string name="fileSize">"파일용량 : "</string>
+    <string name="fileType">"파일형식 : "</string>
+    <string name="file_not_exist">File not exists:</string>
+    <string name="file_not_exist_error">%1$s not exists or not a file.</string>
+    <string name="file_not_opened">Cannot open %1$s.</string>
+    <string name="fill_color">Fill color</string>
+    <string name="firebase_database_url">https://viewerappmain.firebaseio.com</string>
+    <string name="fixed_charge_shelf">정액제 책장</string>
+    <string name="folder">폴더</string>
+    <string name="font_DroidSans">기본 글꼴</string>
+    <string name="fontset_setting_drm_user_device">다운로드</string>
+    <string name="fontset_setting_setting_font_downloading">폰트 다운로드가 진행중입니다.</string>
+    <string name="fontset_title">뷰어 설정</string>
+    <string name="gcm_defaultSenderId">516378457182</string>
+    <string name="google_api_key">AIzaSyATjGVEW9BUapJp37cAjQcp4rgVKWuAPOk</string>
+    <string name="google_app_id">1:516378457182:android:449a662b304fe5ef4d70cf</string>
+    <string name="google_client_id">936115707403-3daenv8e8pre0adqhufktffrmhonrmek.apps.googleusercontent.com</string>
+    <string name="google_crash_reporting_api_key">AIzaSyATjGVEW9BUapJp37cAjQcp4rgVKWuAPOk</string>
+    <string name="google_storage_bucket">viewerappmain.appspot.com</string>
+    <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="highlightAmemo_cancel">취소</string>
+    <string name="highlightAmemo_continue">계속</string>
+    <string name="highlightAmemo_edit">"메모/하이라이트를 변경 하시겠습니까?
+(메모가 존재할 경우 삭제됩니다.)"</string>
+    <string name="highlightAmemo_title">이미 작성된 메모(또는 하이라이트)는 현재 작성된 메모(또는 하이라이트)으로 대체 됩니다. 계속 하시겠습니까?</string>
+    <string name="highlight_texts">Highlight texts</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="hours">시간</string>
+    <string name="icon">icon</string>
+    <string name="icon_content_description">Dialog Icon</string>
+    <string name="image_viewer_first_image">첫번째 이미지입니다.</string>
+    <string name="image_viewer_last_image">마지막 이미지입니다.</string>
+    <string name="image_viewer_move_image_page">이미지 페이지로 이동</string>
+    <string name="image_viewer_title">이미지 보기</string>
+    <string name="incorrect_password">비밀번호가 맞지 않습니다.</string>
+    <string name="ing">진행 중..</string>
+    <string name="inpage_select_after_turn_off_bookstyle_button">\"도서 스타일 유지\"를 해제한 후 선택하세요.</string>
+    <string name="inputPassword">비밀번호 입력</string>
+    <string name="input_password">Input Password</string>
+    <string name="internal_storage">내부 저장소</string>
+    <string name="internalsizeMinimun">"앱 사용 공간이 부족하여 문제가 발생할 수 있습니다.
+
+사용공간 확보 바랍니다."</string>
+    <string name="javascript">JavaScript</string>
+    <string name="line_color">Line color</string>
+    <string name="line_end">Line end</string>
+    <string name="line_start">Line start</string>
+    <string name="line_style">Line style</string>
+    <string name="line_width">Line width</string>
+    <string name="list_no">목록이 없습니다.</string>
+    <string name="loading">Loading…</string>
+    <string name="loading_pdf">Loading PDF file…</string>
+    <string name="login">로그인</string>
+    <string name="login_failed_device_count">"등록하신 단말기 대수(5대)를 초과하였습니다.
+사용하지 않는 단말기를 해제 후 진행해 주시기 바랍니다."</string>
+    <string name="mallName">"구매서점 : "</string>
+    <string name="memo_title">메모</string>
+    <string name="mtrl_badge_numberless_content_description">New notification</string>
+    <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_suffix">%1$d%2$s</string>
+    <string name="mtrl_picker_a11y_next_month">Change to next month</string>
+    <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
+    <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
+    <string name="mtrl_picker_cancel">@android:string/cancel</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Select a Date</string>
+    <string name="mtrl_picker_date_header_unselected">Selected date</string>
+    <string name="mtrl_picker_day_of_week_column_header">Column of days: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Invalid format.</string>
+    <string name="mtrl_picker_invalid_format_example">Example: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Use: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Invalid range.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$s</string>
+    <string name="mtrl_picker_out_of_range">Out of range: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Start date – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – End date</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Select a Date Range</string>
+    <string name="mtrl_picker_range_header_unselected">Start date – End date</string>
+    <string name="mtrl_picker_save">Save</string>
+    <string name="mtrl_picker_text_input_date_hint">Date</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">End date</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Start date</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to selecting a day</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
+    <string name="naveroauthlogin_string_browser_app_issue">Your device must have a browser app.</string>
+    <string name="naveroauthlogin_string_getting_token">Sign in with NAVER</string>
+    <string name="naveroauthlogin_string_group_id_not_available">"Group ID can't be used to 'Sign in with NAVER'. Please sign in as a normal account."</string>
+    <string name="naveroauthlogin_string_msg_naverapp_download_desc">Get NAVER App and sign in faster</string>
+    <string name="naveroauthlogin_string_msg_naverapp_download_link">Download App</string>
+    <string name="naveroauthlogin_string_network_state_not_available">Network is not available. Please check your network connection and try again.</string>
+    <string name="naveroauthlogin_string_token_invalid">Quick Sign-in account has been expired.</string>
+    <string name="naveroauthlogin_string_update_naverapp">Please update your Naver app to use this service.</string>
+    <string name="need_check_network">네트워크 연결상태를 확인해 주시기 바랍니다.</string>
+    <string name="networkcheck_for_crema">"네크워크가 연결되지 않았습니다.
+Wi-Fi를 연결하시겠습니까?"</string>
+    <string name="next">다음</string>
+    <string name="no">아니오</string>
+    <string name="noMoreSearch">더이상 검색할 내용이 없습니다 .</string>
+    <string name="no_bookmarks">No bookmarks to show</string>
+    <string name="no_more_found">No more found</string>
+    <string name="no_more_redo">No more redo.</string>
+    <string name="no_more_undo">No more undo.</string>
+    <string name="no_pdf_outlines">PDF does not contain outlines</string>
+    <string name="no_search_reflow">Search not supported in Reflow mode!</string>
+    <string name="no_set_up_calc_not_completed">페이지 계산이 완료되지 않아 설정을 변경할 수 없습니다.</string>
+    <string name="noregist">미등록</string>
+    <string name="note_content">Note Content</string>
+    <string name="note_subject">Subject:</string>
+    <string name="note_text">Content:</string>
+    <string name="noti_another_device">"단말기를 등록해제 하시겠습니까?
+해당 아이디로
+다운로드 한 도서는 모두 삭제됩니다."</string>
+    <string name="noti_using_device">"현재 이용중인 단말기입니다.
+현재 단말기에서 해당 아이디로 다운로드 한 도서는 모두 삭제됩니다."</string>
+    <string name="ok">OK</string>
+    <string name="one_level_up">한 단계 위로</string>
+    <string name="open">열기</string>
+    <string name="open_asset">Open From Assets (ReadOnly)</string>
+    <string name="open_http">Open Http Link (INTERNET access)</string>
+    <string name="open_rentEnd">기간만료</string>
+    <string name="open_sdcard">Open From sdcard</string>
+    <string name="page_change_block">You cannot change page while page is zoomed, Zoom out first!</string>
+    <string name="page_effect_type">페이지 넘김 효과</string>
+    <string name="pages_list">Pages List</string>
+    <string name="passwordAlert">입력하신 비밀번호가 일치하지 않습니다.</string>
+    <string name="passwordCaution">"비밀번호 분실 시 책장에서
+'[v](편집버튼)'을 눌러 책을 삭제하고 다시 다운로드 해야 합니다.
+
+비밀번호를 잊지 않도록 주의하세요 !"</string>
+    <string name="passwordCaution_set">시리즈 내 모든 도서의 비밀번호가 이 번호로 변경됩니다.</string>
+    <string name="passwordRetype">비밀번호 재입력</string>
+    <string name="passwordSuccess">도서잠금 기능이 설정되었습니다.</string>
+    <string name="password_toggle_content_description">Show password</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="pdf_contextmenu_colorchange">색상변경</string>
+    <string name="pdf_contextmenu_del">삭제</string>
+    <string name="pdf_contextmenu_draw">그리기</string>
+    <string name="pdf_contextmenu_highlight">하이라이트</string>
+    <string name="pdf_contextmenu_memo">메모</string>
+    <string name="pdf_contextmenu_share">공유</string>
+    <string name="pdf_outline">PDF Outlines</string>
+    <string name="pdf_print_calculation_failed">Page count calculation failed.</string>
+    <string name="pdf_print_not_available">PDF File is not available for print.</string>
+    <string name="pdf_share_not_available">PDF File is not available for share.</string>
+    <string name="please_wait">Please wait</string>
+    <string name="prev">이전</string>
+    <string name="print">Print</string>
+    <string name="process_selected_text">Process selected text</string>
+    <string name="project_id">viewerappmain</string>
+    <string name="purchaseList_filter">필터</string>
+    <string name="purchaseList_get_error">"구매목록 리스트를 가져오는데 실패하였습니다.
+잠시후 재시도 해주세요."</string>
+    <string name="purchaseList_setCount">총 %1$s권 ></string>
+    <string name="purchaseRental_delete_Request_Fail">대여제 삭제에 실패하였습니다.</string>
+    <string name="purchase_date">"구매일 : "</string>
+    <string name="purchase_delete_Request_Fail">구매목록 삭제에 실패하였습니다.</string>
+    <string name="purchase_type_all">전체도서</string>
+    <string name="purchase_type_buy">구매도서</string>
+    <string name="purchase_type_fixed">정액도서</string>
+    <string name="purchase_type_notdown">미다운로드</string>
+    <string name="purchase_type_rent">대여도서</string>
+    <string name="purchased_shelf">구매목록</string>
+    <string name="rating">별점</string>
+    <string name="ratingComment">평가 해 주세요.</string>
+    <string name="read_only_annotation">Read only annotation</string>
+    <string name="readers_note_dialog_title">독서노트</string>
+    <string name="reflow">Text reflow</string>
+    <string name="removeFromPurchaseList">구매목록 숨김</string>
+    <string name="removeFromRentalEnd">대여 삭제</string>
+    <string name="remove_from_purchaselist_msg">"구매목록 숨김 시 도서를 다운로드 하신 경우 책장에서 삭제되며, 다시 다운로드 받으실 수 없습니다.
+
+숨긴 처리된 구매목록은 알라딘 PC 사이트의 eBook 주문내역에서 다시 해제하실 수 있습니다."</string>
+    <string name="remove_from_purchaselist_title">숨김</string>
+    <string name="rent_date_over">"이용기간이 만료된 도서입니다.
+책장에서 삭제하시겠습니까?"</string>
+    <string name="rent_endDate">만료일: %1$s</string>
+    <string name="rent_priod">기간 : %1$s ~ %2$s (남은기간 %3$s)</string>
+    <string name="rent_shelf">대여</string>
+    <string name="req_input_id">아이디를 입력해 주세요</string>
+    <string name="req_input_pw">비밀번호를 입력해 주세요</string>
+    <string name="retry">Retry</string>
+    <string name="sa_1">"뷰'라이센스"</string>
+    <string name="sa_2">체크!뷰어다</string>
+    <string name="save">Save</string>
+    <string name="save_msg">"Document modified.
+Do you want to save it?"</string>
+    <string name="saved_message">Document saved</string>
+    <string name="scrab_delete_text">삭제</string>
+    <string name="scrab_edit_text">편집</string>
+    <string name="scrab_entire_delete_text">전체삭제</string>
+    <string name="scrab_prev_text">이전</string>
+    <string name="scrab_return_text">완료</string>
+    <string name="search_hint">도서명/출판사/작가</string>
+    <string name="search_menu_title">Search</string>
+    <string name="search_result_calc_not_completed">페이지 계산이 완료되지 않아 검색할 수 없습니다.</string>
+    <string name="search_result_complete_not_found">"검색을 완료하였습니다.
+일치하는 내용이 없습니다."</string>
+    <string name="search_result_need_more_chars">2글자 이상의 검색어를 넣어주세요.</string>
+    <string name="search_result_not_found">일치하는 내용이 없습니다.</string>
+    <string name="search_warning_message_text">사전 검색은 단어 단위로 해 주세요.</string>
+    <string name="searchword_title">검색</string>
+    <string name="select_all">전체선택</string>
+    <string name="setPasswd">비밀번호 설정</string>
+    <string name="setting">설정</string>
+    <string name="setting_env_bookmark_memo">책갈피 메모 추가</string>
+    <string name="setting_env_brightness">화면밝기</string>
+    <string name="setting_env_eink_flingRefresh">스와이프/잔상제거</string>
+    <string name="setting_env_fastChapterAndHilight">많은 독서노트 시 로딩 속도 향상</string>
+    <string name="setting_env_highlight_color">하이라이트 컬러</string>
+    <string name="setting_env_lock_screen">화면 회전 잠금</string>
+    <string name="setting_env_memo_color">메모장 컬러</string>
+    <string name="setting_env_pageNumberView">하단 페이지 번호 표시</string>
+    <string name="setting_env_topTitleView">책제목/목차명 표시</string>
+    <string name="setting_env_touch_area">터치 영역 선택</string>
+    <string name="share">Share</string>
+    <string name="shareTextChooser_select">선택:</string>
+    <string name="share_facebook_toast_text_clipboard">"클립보드에 복사되었습니다.
+페이스북 입력창을 길게 눌러 붙여넣기 해 주세요."</string>
+    <string name="share_no_app_no_play">해당앱을 설치 바랍니다.</string>
+    <string name="share_title">공유하기</string>
+    <string name="share_toast_text_clipboard">"클립보드에 복사되었습니다.
+입력창을 길게 눌러 붙여넣기로 사용할 수 있습니다."</string>
+    <string name="shelfsync_backupPopup">"개인책장 정보 동기화 이전의 책장 화면으로 되돌아가고, 책장 동기화는 OFF 됩니다.
+
+책장 동기화를 다시 이용하시려면, '이 기기의 책장 정보로 올리기'를 하시거나 서버의 책장 정보로 변경(동기화)하셔야 합니다."</string>
+    <string name="shelfsync_cloud_syncON">책장 동기화 기능을 이용하려면 설정에서 책장 정보 동기화 on 후 이용해주세요</string>
+    <string name="shelfsync_info_init">"4.12.0 버전부터 책장 동기화 기능이 제공됩니다.
+
+책장 정보를 서버와 동기화 하면, 다른 기기에서도 동일한 책장이 생성되고, 책장이 지정된 도서를 다운로드 받으면 자동으로 분류됩니다.
+현재 기기의 책장 정보를 서버에 동기화 하시겠습니까?"</string>
+    <string name="shelfsync_info_init_count">"4.12.0 버전부터 책장 동기화 기능이 제공됩니다.
+
+서버에 다른 기기에서 동기화 된 책장 정보가 존재합니다. 서버의 책장 정보로 업데이트 하시겠습니까?
+
+(설정 내의 [복원하기] 기능을 통해 언제든 책장 동기화 이전의 화면으로 되돌릴 수 있습니다.)"</string>
+    <string name="shelfsync_only_upload_msg1">"동기화 서버에 저장된 책장 정보가 있습니다.
+(%1$s)
+"</string>
+    <string name="shelfsync_only_upload_msg2">"이 메뉴를 실행하면 본 기기의 책장 정보로 초기화 됩니다.
+
+실행하시겠습니까?"</string>
+    <string name="show_password">Show password</string>
+    <string name="simple_open_gl">Simple OpenGL</string>
+    <string name="single_page">Single Page</string>
+    <string name="spen_dpad_left">이전</string>
+    <string name="spen_dpad_right">다음</string>
+    <string name="squiggly">Squiggly</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="strikeout">StrikeOut</string>
+    <string name="submit">전송하기</string>
+    <string name="syncServerModify">도서 이용기간과 일치하지 않습니다. 고객센터로 문의바랍니다.</string>
+    <string name="syncServerTimeError">이용기간이 만료된 도서입니다. 단말기 시간을 점검해주세요.</string>
+    <string name="sync_completed">읽던 책 정보를 동기화 서버에 저장했습니다.</string>
+    <string name="synchronize_lastpage_from_server_savetime">저장일시</string>
+    <string name="synchronize_lastpage_from_server_title">에 읽던 페이지로 이동하시겠습니까?</string>
+    <string name="synchronize_lastpage_tts_from_server_title">TTS 이어읽기를 하시겠습니까? 마지막에 읽은 문장의 첫 단어부터 시작합니다.</string>
+    <string name="tedpermission_close">Close</string>
+    <string name="tedpermission_confirm">Confirm</string>
+    <string name="tedpermission_setting">Setting</string>
+    <string name="this_is_first_page">첫 페이지 입니다.</string>
+    <string name="thumbnail_creation_running">Thumbnail creation is running…</string>
+    <string name="title_bookmark">책갈피</string>
+    <string name="title_bookmarklist">책갈피</string>
+    <string name="title_chapterlist">목차</string>
+    <string name="title_font_selection">글꼴</string>
+    <string name="title_highlight">하이라이트 &amp; 메모</string>
+    <string name="title_memo">메모</string>
+    <string name="title_memohighlightlist">하이라이트/메모</string>
+    <string name="toast_meessge_no_app_to_share">공유할 수 있는 앱이 없습니다.</string>
+    <string name="toast_message_completed_save">갤러리에 저장되었습니다.</string>
+    <string name="todo_3d">todo: play 3D module</string>
+    <string name="todo_attachment">todo: treat attachment</string>
+    <string name="todo_java_script">todo: execute java script</string>
+    <string name="todo_open_url">todo: open url:</string>
+    <string name="todo_play_movie">todo: play movie</string>
+    <string name="todo_play_sound">todo: play sound</string>
+    <string name="tts_dialog_title_setting">읽어주기 설정</string>
+    <string name="tts_dialog_title_timer">타이머 설정</string>
+    <string name="underline">Underline</string>
+    <string name="unlock">비밀번호 해제</string>
+    <string name="unlockMessage">비밀번호가 해제되었습니다.</string>
+    <string name="unlock_password">도서잠금 기능을 해제 하시겠습니까?</string>
+    <string name="unlock_password_setLock">"시리즈잠금 도서 입니다. 동일 시리즈의 모든 낱권이 잠금해제 됩니다.
+잠금해제 하시겠습니까?"</string>
+    <string name="unregist">해제</string>
+    <string name="usable_date">"이용기간 : "</string>
+    <string name="use_application">Open with</string>
+    <string name="user_book_add">사용자 도서 추가</string>
+    <string name="userbook_add_body">잠시만 기다려주세요</string>
+    <string name="userbook_add_date">"추가일 : "</string>
+    <string name="userbook_add_false">"정상적으로 등록되지 않은 파일이 있습니다.
+지원하는 파일 형식
+EPUB, PDF, TXT,
+ZIP(JPEG,PNG,BMP,GIF)"</string>
+    <string name="userbook_add_title">도서 추가 중</string>
+    <string name="userbook_over_4MB">알라딘 뷰어 앱에서는 txt 파일도 epub 뷰어의 설정 화면을 그대로 이용할 수 있으며, 안정적인 서비스를 위해 4MB 이상의 파일인 경우 분할 이용을 권장합니다.</string>
+    <string name="using_RGB_4444">Using RGB_4444 (CPU)</string>
+    <string name="using_RGB_565">Using RGB_565 (CPU)</string>
+    <string name="vertical">Vertical</string>
+    <string name="view_pager">ViewPager</string>
+    <string name="viewerTopmenu_content">목차</string>
+    <string name="viewerTopmenu_correction">보정</string>
+    <string name="viewerTopmenu_delete">삭제</string>
+    <string name="viewerTopmenu_delmode_off">OFF</string>
+    <string name="viewerTopmenu_delmode_on">ON</string>
+    <string name="viewerTopmenu_draw">그리기</string>
+    <string name="viewerTopmenu_draw_setting">설정</string>
+    <string name="viewerTopmenu_inverseOff">정방향</string>
+    <string name="viewerTopmenu_inverseOn">역순</string>
+    <string name="viewerTopmenu_move">넘김</string>
+    <string name="viewerTopmenu_readerNote">독서노트</string>
+    <string name="viewerTopmenu_redo">다음</string>
+    <string name="viewerTopmenu_search">검색</string>
+    <string name="viewerTopmenu_setting">설정</string>
+    <string name="viewerTopmenu_undo">이전</string>
+    <string name="viewer_networkalert_msg_ok_text">확인</string>
+    <string name="viewer_networkalert_msg_question_text">네트워크 상태를 확인해 주시기 바랍니다.</string>
+    <string name="viewer_networkalert_msg_title_text">네트워크 경고</string>
+    <string name="viewer_screenshot_detect">작품의 내용과 이미지가 포함된 캡쳐화면을 온라인/오프라인 상에 유포, 공유할 경우 법적 제재를 받을 수 있습니다.</string>
+    <string name="viewer_typoError_title">오타 신고</string>
+    <string name="viewerend_description">마지막 페이지 입니다.</string>
+    <string name="viewerend_end">책장으로 ></string>
+    <string name="viewerend_endAlert">"'완독설정' 및 '다 읽은 책'으로 분류되며 
+다시 책을 읽으실 때 불편함이 없도록 '첫 페이지'로 이동/저장됩니다."</string>
+    <string name="viewerend_endAlert_end">다음부터 보지않기</string>
+    <string name="viewerend_firstPage">첫 페이지로 ></string>
+    <string name="viewerend_next_down">다음 권 다운로드 ></string>
+    <string name="viewerend_next_open">다음 권 읽기 ></string>
+    <string name="viewerend_next_purchase">다음 권 구매하기 ></string>
+    <string name="viewerend_org_down">본권 다운로드 ></string>
+    <string name="viewerend_org_open">본권 읽기 ></string>
+    <string name="viewerend_org_purchase">본권 구매하기 ></string>
+    <string name="viewerend_rating">평점을 남겨주세요</string>
+    <string name="viewerend_readCompleteCheck">"책을 다 읽으셨나요?
+
+확인을 누르시면 완독 도서로 설정합니다.
+(최근 읽은 페이지는 첫 페이지로 자동 이동)"</string>
+    <string name="viewerend_readCompleteCheck_auto">진도율 99% 이상 시 자동 완독 설정 하기</string>
+    <string name="viewermenu_searchhint">검색어 입력</string>
+    <string name="viewersetting_portTwo">세로모드 양면 읽기</string>
+    <string name="viewersetting_portTwo_popup">"[세로모드 양면 읽기] 옵션이 추가됐습니다.
+세로화면에서 양면으로 읽으시겠습니까?
+(뷰어 > 설정 화면에서 on/off 가능)"</string>
+    <string name="warning">Warning</string>
+    <string name="webview_context1_copy">복사</string>
+    <string name="webview_context1_dic">사전</string>
+    <string name="webview_context1_dic_prime">프라임사전</string>
+    <string name="webview_context1_errorWord">오타신고</string>
+    <string name="webview_context1_highlight">하이라이트</string>
+    <string name="webview_context1_highlight_continue">이어서 선택하기</string>
+    <string name="webview_context1_memo">메모</string>
+    <string name="webview_context1_search">검색</string>
+    <string name="webview_context1_sendShare">공유</string>
+    <string name="webview_context1_tts">듣기</string>
+    <string name="webview_context_change_highlight_color">색상변경</string>
+    <string name="webview_context_del_highlight">삭제</string>
+    <string name="webview_context_del_memo">메모 삭제</string>
+    <string name="webview_context_highlight_add_memo">메모 추가</string>
+    <string name="webview_context_highlight_color_blue">파랑</string>
+    <string name="webview_context_highlight_color_green">초록</string>
+    <string name="webview_context_highlight_color_pink">분홍</string>
+    <string name="webview_context_highlight_color_yello">노랑</string>
+    <string name="webview_context_memo_highlight">메모</string>
+    <string name="webview_context_watch_memo">메모 보기</string>
+    <string name="yes">예</string>
+</resources>

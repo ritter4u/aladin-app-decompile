@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarSize="0.0sp" android:id="@id/inpage_colorpicker_font_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/inpage_colorpicker_insideview" android:padding="@dimen/al_layout_margin_TB_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <kr.co.aladin.lib.widget.SegmentedGroup android:orientation="horizontal" android:id="@id/inpage_allset_csscolorset_SegmentedGroup" android:layout_width="fill_parent" android:layout_height="30.0dip" app:border_width="1.0dip" app:corner_radius="5.0dip" app:tint_color="@color/al_appColor2">
+                <androidx.appcompat.widget.AppCompatRadioButton android:gravity="center" android:id="@id/inpage_allset_csscolorset_textcolor" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="글자컬러" android:layout_weight="1.0" app:buttonCompat="@null" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:gravity="center" android:id="@id/inpage_allset_csscolorset_backcolor" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="배경컬러" android:layout_weight="1.0" app:buttonCompat="@null" />
+            </kr.co.aladin.lib.widget.SegmentedGroup>
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/inpage_colorset" />
+    </LinearLayout>
+</ScrollView>

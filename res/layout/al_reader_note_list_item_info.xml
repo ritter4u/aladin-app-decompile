@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/al_readers_note_item_info" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/al_readers_note_item_splitor_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="15.0dip" style="?app_color_setting_line" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/al_back_3" android:gravity="center" android:id="@id/al_readers_note_item_splitor_chapter_text" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="\ 123523623346236523652364" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+        <CheckBox android:layout_gravity="top" android:id="@id/al_readers_note_item_info_annotation_top_checkbox" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/al_layout_margin_LR_2" android:button="@drawable/al_checkbox_black" />
+        <LinearLayout android:orientation="vertical" android:id="@id/al_readers_note_item_info_layout" android:background="@drawable/al_readers_note_item_outline" android:padding="1.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/al_readers_note_item_info_annotation_top_view" android:background="@color/al_back_5" android:layout_width="fill_parent" android:layout_height="@dimen/al_read_item_header_h">
+                <ImageView android:id="@id/al_readers_note_item_info_annotation_top_type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/readernote_icon_highlight" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/al_readers_note_item_info_annotation_top_pagenum" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="p.2" style="?app_fontcolor_header" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/al_font" android:gravity="right" android:layout_gravity="center" android:id="@id/al_readers_note_item_info_annotation_top_datetext" android:paddingLeft="3.0dip" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="2015.11.19" android:singleLine="true" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="center_vertical" android:background="#ff6e6e6e" android:layout_width="1.0dip" android:layout_height="18.0dip" />
+                    <LinearLayout android:id="@id/al_readers_note_item_info_annotation_top_edit_icon_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <ImageButton android:layout_gravity="center_vertical" android:id="@id/al_readers_note_item_info_annotation_top_edit_icon" android:background="@drawable/al_button_white_clear" android:layout_width="35.0dip" android:layout_height="fill_parent" android:src="@drawable/readernote_icon_edit" />
+                        <ImageView android:layout_gravity="center_vertical" android:background="#ff6e6e6e" android:layout_width="1.0dip" android:layout_height="18.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/al_readers_note_item_info_annotation_top_share_icon_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <ImageButton android:layout_gravity="center_vertical" android:id="@id/al_readers_note_item_info_annotation_top_share_icon" android:background="@drawable/al_button_white_clear" android:layout_width="35.0dip" android:layout_height="fill_parent" android:src="@drawable/readernote_icon_share" />
+                        <ImageView android:layout_gravity="center_vertical" android:background="#ff6e6e6e" android:layout_width="1.0dip" android:layout_height="18.0dip" />
+                    </LinearLayout>
+                    <ImageButton android:layout_gravity="center_vertical" android:id="@id/al_readers_note_item_info_annotation_top_del_icon" android:background="@drawable/al_button_white_clear" android:layout_width="35.0dip" android:layout_height="fill_parent" android:src="@drawable/readernote_icon_del" />
+                </LinearLayout>
+            </LinearLayout>
+            <kr.co.aladin.lib.widget.JustifyTextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/al_readers_note_item_info_annotation_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="" />
+            <LinearLayout android:id="@id/al_readers_note_item_info_annotation_memo_view" android:background="@color/al_back_6" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:src="@drawable/readernote_icon_memonote" />
+                <TextView android:textSize="14.0sp" android:id="@id/al_readers_note_item_info_annotation_memo_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="22.0dip" android:text="\ 123523623346236523652364" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

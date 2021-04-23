@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tts_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="right" android:id="@id/tts_bt_bookmark_hidden" android:background="#00000000" android:visibility="gone" android:layout_width="@dimen/viewer_bookmarkon_imgw" android:layout_height="@dimen/viewer_bookmarkon_imgh" android:layout_marginRight="@dimen/viewer_bookmarkon_rightmargin" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/tts_footer_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/al_tts_footer_height" android:layout_marginTop="38.0dip" style="?app_color_bottom">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/tts_footer_ibt_setting" android:background="@drawable/al_button_black_clear" android:layout_width="@dimen/al_tts_footer_height" android:layout_height="fill_parent" style="?viewer_tts_setting" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="@dimen/al_tts_layout_buttons_layout_size" android:layout_height="fill_parent">
+                <ImageButton android:id="@id/tts_footer_prev_button" android:background="@drawable/al_button_black_clear" android:layout_width="@dimen/al_tts_footer_height" android:layout_height="fill_parent" android:layout_alignParentLeft="true" style="?viewer_tts_prev" />
+                <ImageButton android:id="@id/tts_footer_play_button" android:background="@drawable/al_button_black_clear" android:visibility="gone" android:layout_width="@dimen/al_tts_footer_height" android:layout_height="fill_parent" android:layout_centerInParent="true" style="?viewer_tts_play" />
+                <ImageButton android:id="@id/tts_footer_pause_button" android:background="@drawable/al_button_black_clear" android:layout_width="@dimen/al_tts_footer_height" android:layout_height="fill_parent" android:layout_centerInParent="true" style="?viewer_tts_pause" />
+                <ImageButton android:id="@id/tts_footer_next_button" android:background="@drawable/al_button_black_clear" android:layout_width="@dimen/al_tts_footer_height" android:layout_height="fill_parent" android:layout_alignParentRight="true" style="?viewer_tts_next" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center|right" android:id="@id/tts_footer_timer_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/tts_footer_timer_img" android:background="@drawable/al_button_black_clear" android:layout_width="@dimen/al_tts_footer_height" android:layout_height="fill_parent" style="?viewer_tts_timer" />
+                <TextView android:textSize="@dimen/al_font_setTitle" android:gravity="center" android:id="@id/tts_footer_timer_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="타이머" style="?app_fontcolor_header" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="40.0dip">
+            <ImageButton android:id="@id/tts_close_bt" android:background="@color/Transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?viewer_tts_closeicon" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

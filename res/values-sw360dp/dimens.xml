@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="al_draw_oval">44.0dip</dimen>
+    <dimen name="al_draw_oval_font">11.0sp</dimen>
+    <dimen name="al_layout_header_item_w">40.0dip</dimen>
+    <dimen name="al_layout_header_sub_h">42.0dip</dimen>
+    <dimen name="al_pen_minimum">320.0dip</dimen>
+    <dimen name="al_shelf_headersub_w">306.0dip</dimen>
+    <dimen name="al_tts_layout_buttons_layout_size">210.0dip</dimen>
+    <dimen name="audio_book_footer_layout_button_w">44.0dip</dimen>
+    <dimen name="audio_book_height">186.0dip</dimen>
+    <dimen name="audio_book_width">130.0dip</dimen>
+    <dimen name="audio_button_bottom_margin">7.0dip</dimen>
+    <dimen name="audio_text_margin">10.0dip</dimen>
+</resources>

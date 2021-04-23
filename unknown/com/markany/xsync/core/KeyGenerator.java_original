@@ -1,0 +1,99 @@
+package com.markany.xsync.core;
+
+import com.markany.xsync.XSyncException;
+
+
+/**
+ * Device를 이용하여 키를 생성하는 클래스
+ * 
+ * 
+ * @author jspong
+ *
+ */
+public class KeyGenerator {
+
+	private byte[] key = null;
+	/**
+	 * 네이티브 단에서 키 생성 성공
+	 */
+	private static final int SUCCESS = 0;
+	/**
+	 * 잘못된 키 사이즈
+	 */
+	private static final int INVALID_KEY_SIZE = 1;
+	/**
+	 * API가 만료
+	 */
+	//private static final int API_EXPIRED = 2;
+	
+	
+
+	static {
+		System.loadLibrary("xsync-keygen");
+	}
+	
+	
+	/**
+	 * 기본 라이센스 키 사이즈
+	 */
+	private static final int LICENSE_KEY_SIZE = 256;
+	
+	
+	
+	/**
+	 * 입력된 시드를 이용하여 바이트 키 값을 생성한다/
+	 * 
+	 * @param seed				Seed 바이트. 기본 디바이스 키.
+	 * @return					키.
+	 * @throws XSyncException
+	 */
+	protected byte[] generateKey(byte[] seed) throws XSyncException {
+		int retCode = generateKey(seed, LICENSE_KEY_SIZE);
+		
+		if(retCode == SUCCESS) {
+			return getKey();
+		} else if (retCode == INVALID_KEY_SIZE) {
+			throw new XSyncException(XSyncException.XDRM_E_FAIL, "invalid key size.");
+		} else {
+			throw new XSyncException(XSyncException.XDRM_E_FAIL, "xsync api expired.");
+		}
+	}
+	
+	/**
+	 * 키 사이즈와 시드값을 입력받아 키를 생성
+	 * 
+	 * 
+	 * @param seedBytes			Seed 바이트. 기본 디바이스 키.
+	 * @param licenseKeySize	키 사이즈
+	 * @return					키
+	 */
+	protected native int generateKey(byte[] seedBytes, int licenseKeySize);
+	
+	
+	/**
+	 * 생성된 키를 반환
+	 * 
+	 * @return		키
+	 */
+	protected byte[] getKey() {
+		return key;
+	}
+	
+	
+	/**
+	 * 생성된 키를 설정한다
+	 * 
+	 * @param key	키
+	 */
+	protected void setKey(byte[] key) {
+		this.key = key;
+	}
+	
+	
+	/**
+	 * @return
+	 */
+	public static final int getTime() {
+		return (int)(System.currentTimeMillis()/100000);
+	}
+}

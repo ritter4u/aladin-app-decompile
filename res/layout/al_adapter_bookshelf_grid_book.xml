@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/grid_book" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?shelf_grid_itembg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:layout_gravity="center_horizontal" android:id="@id/grid_view_layout" android:layout_width="wrap_content" style="?shelf_grid_item">
+        <FrameLayout android:layout_gravity="bottom|center" android:id="@id/grid_view_coverlayout" android:padding="0.5dip" android:layout_width="@dimen/al_bookShelf_grid_item_w" android:layout_height="@dimen/al_bookShelf_grid_item_h" style="?app_color_e6e6e6">
+            <com.keph.crema.module.ui.AsyncImageView android:id="@id/grid_book_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/cover_book_bg1" android:scaleType="centerCrop" />
+            <kr.co.aladin.lib.widget.EllipsizingTextView android:textSize="@dimen/al_bookShelf_grid_item_font" android:textColor="@color/al_font_w" android:gravity="left" android:id="@id/grid_text_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="13.0dip" android:text="" />
+            <ImageView android:layout_gravity="center" android:id="@id/alShelfGrid_Image_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cover_lock_icon" />
+            <ImageView android:layout_gravity="center|left|top" android:id="@id/image_thumnail_book_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cover_new_icon" />
+            <ImageView android:id="@id/shelfGrid_image_rental" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_timer_on" />
+            <ImageView android:id="@id/shelfGrid_image_userBook" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sd_card_on" />
+            <ImageView android:id="@id/button_thumbview_book_check" android:background="@drawable/checkoff_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" />
+            <ImageView android:layout_gravity="center|right|top" android:id="@id/grid_bookmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/cover_bookmark_icon" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/grid_booklabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:src="@drawable/cover_epub_icon" />
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                <Button android:textSize="@dimen/al_btfont_1" android:id="@id/grid_btn_bundle" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="22.0dip" style="?button_blue_set" />
+                <ImageButton android:textSize="@dimen/al_btfont_2" android:id="@id/btn_buypayback" android:background="@drawable/buyback_bt1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/shelfGrid_view_rental_end" android:background="#cc333333" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/ic_timer_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/al_font_w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="기간만료" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/grid_btn_audio_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_cover" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/grid_view_einkline" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+</LinearLayout>

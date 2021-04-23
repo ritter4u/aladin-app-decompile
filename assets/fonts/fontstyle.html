@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content=target-densitydpi=medium-dpi,width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+
+	<title>
+		HTML/CSS Sample		
+	</title>
+	<style type="text/css">
+	
+		@font-face {
+			font-family: 'DroidSans';
+			src: url('DroidSans.ttf');
+		}
+		
+		.Style01 {
+			margin:0;
+			padding:0;
+			position:relative;
+			top:0px;
+			left:0px;
+			text-indent:0px;
+			background:default;
+			color:default;
+		}
+		.Style02 {
+			margin-bottom:0;
+		}
+	</style>
+	
+	<script type="text/javascript">		
+	window.addEventListener('pageshow', onInitial, true);
+	var standardFontPX = "12px";
+	function onInitial(){
+		document.body.style.fontSize = standardFontPX;
+		document.getElementsByTagName("html")[0].style.fontSize = standardFontPX;
+	}
+		function changeStyleSheet(element, value) {
+			onInitial();
+			 onChangeStyleSheet(document, element, value);
+		}
+		
+		function changeStyleSheet2(element1, value1, element2, value2) {
+			 onChangeStyleSheet(document, element1, value1);
+			 onChangeStyleSheet(document, element2, value2);
+		}
+		function changeStyleSheetAll(element1, value1, element2, value2, element3, value3, 
+									element4, value4, element5, value5, element6, value6, 
+									element7, value7, element8, value8, element9, value9) 
+		{
+			 onChangeStyleSheet(document, element1, value1);
+			 onChangeStyleSheet(document, element2, value2);
+			 onChangeStyleSheet(document, element3, value3);
+			 onChangeStyleSheet(document, element4, value4);
+			 onChangeStyleSheet(document, element5, value5);
+			 onChangeStyleSheet(document, element6, value6);
+			 onChangeStyleSheet(document, element7, value7);
+			 onChangeStyleSheet(document, element8, value8);
+			 onChangeStyleSheet(document, element9, value9);
+		}
+		
+		function onChangeStyleSheet(target_document, element, value) {
+			
+			//window.Dialog.response("onChangeStyleSheet element :" +element+", value" + value );
+//			console.log("onChangeStyleSheet element :" +element+", value" + value );
+			
+			/* 호환성 유지 코드 --; */
+			var cssRules = document.all?'rules':'cssRules';
+
+			/* 모든 css rule 을 찾아서  */
+			var styleSheets = target_document.styleSheets;
+			var styleLength = styleSheets.length;
+			
+			for(var nindex = 0; nindex < styleLength; nindex++) 
+			{
+				var selectedRules = styleSheets[nindex][cssRules];
+				var cssRulesLength = selectedRules.length;
+				//window.Dialog.response("onChangeStyleSheet cssRulesLength :" +cssRulesLength);
+				for (var jindex = 0; jindex < cssRulesLength; jindex++) 
+				{
+					var theClassName = selectedRules[jindex].selectorText;
+//			console.log("onChangeStyleSheet theClassName :" +theClassName);
+					if (theClassName != null) 
+					{
+//			console.log("onChangeStyleSheet element :" +element+", theClassName : " + theClassName );
+//			console.log("onChangeStyleSheet element==margin ?" +(element == "margin")+", theClassName==Style2 ? " + (theClassName == ".Style02") );
+						if(element == "margin" && theClassName == ".Style02")
+							continue;
+						var result = selectedRules[jindex].style[element];
+						selectedRules[jindex].style[element] = value;
+					}
+				}
+			}			
+		}
+	</script>
+</head>
+
+<body class=Style01>
+	<div>
+	<!--	<p>로마인은 패배하면 반드시 거기에서 무언가를 배우고, 그것을 토대로 하여 기존 개념에 얽매이지 않는 새로운 방식으로 자신을 개량하여 다시 일어나는 성향 을 가지고 있었다.</p>
+		<p>로마인은 느리긴 해도 착실하게 나아갈것이다.</p>
+		<p>가나다라마바사아</p>
+		<p>abcdefghijABCDEFGHIJ</p>
+		<p>1234567890</p> -->
+		<p class=Style02>나는 생각했다. 이 별들 중에서 가장 예쁘고, 아름답게 빛나는 별 하나가 길을 잃고 내 어깨에 기대어 잠들어 있다고.</p>
+		<p class=Style02>I imagined one of the stars, the finest and the most brilliant, having lost her way, and lying on my shoulder to sleep.</p>
+	</div>
+	<!-- form action="#" onsubmit="changeStyleSheet('font-family', 'readon_font4')">
+		<input type='submit'>
+	</form -->
+</body>
+</html>
+

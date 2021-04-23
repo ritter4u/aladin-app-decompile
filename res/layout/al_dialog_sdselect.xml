@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:paddingLeft="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:textSize="@dimen/al_font" android:id="@id/dlg_sdselect_in" android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_h" android:text="@string/internal_storage" />
+        <RadioButton android:textSize="@dimen/al_font" android:id="@id/dlg_sdselect_out" android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_h" android:text="@string/external_storage" />
+    </RadioGroup>
+</LinearLayout>

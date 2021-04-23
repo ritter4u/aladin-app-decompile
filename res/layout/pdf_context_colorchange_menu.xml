@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/popup_bg_mtrl" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="2.0dip" android:layout_width="160.0dip" android:layout_height="24.0dip" android:divider="@drawable/al_divider_vertical_line" android:showDividers="middle">
+        <ImageButton android:id="@id/pdf_contextmenu_color_button_set_yellow_bt" android:background="@drawable/al_button_black_clear" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/al_highlight_oval_y" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/pdf_contextmenu_color_button_set_green_bt" android:background="@drawable/al_button_black_clear" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/al_highlight_oval_g" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/pdf_contextmenu_color_button_set_blue_bt" android:background="@drawable/al_button_black_clear" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/al_highlight_oval_b" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/pdf_contextmenu_color_button_set_pink_bt" android:background="@drawable/al_button_black_clear" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/al_highlight_oval_pink" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/pdf_contextmenu_color_button_set_puple_bt" android:background="@drawable/al_button_black_clear" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/al_highlight_oval_purple" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

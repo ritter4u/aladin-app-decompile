@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/al_layout_margin_LR_1" android:layout_marginTop="@dimen/al_layout_margin_TB_1" android:layout_marginRight="@dimen/al_layout_margin_LR_1" android:layout_marginBottom="@dimen/al_layout_margin_TB_1">
+        <TextView android:textSize="@dimen/al_font" android:textColor="@color/al_font" android:id="@id/searchWordItemCremadic_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <TextView android:textSize="@dimen/al_font" android:textColor="@color/al_font_content" android:id="@id/searchWordItemCremadic_text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/al_layout_margin_TB_1" android:text="" />
+    </LinearLayout>
+</LinearLayout>

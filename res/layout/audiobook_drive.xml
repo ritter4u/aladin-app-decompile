@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/al_color_w" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/audio_ll_drive_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:id="@id/audio_ll_drive_header" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/audio_iv_drive_close" android:background="@drawable/al_button_black_clear" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_left_drive" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip">
+                <RelativeLayout android:id="@id/audio_drive_cover" android:background="@drawable/al_button_black_clear" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="15.0dip" android:layout_above="@id/audio_tv_drive_audio_time" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/audio_iv_drive_book" android:background="@drawable/border_book" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/cover_book_bg1" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/audio_iv_drive_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_circle_drive" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/al_font" android:id="@id/audio_tv_drive_audio_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/audio_line_bottom" android:background="@color/al_line_1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/audio_ll_drive_buttons" android:layout_width="fill_parent" android:layout_height="@dimen/audio_drive_controller_h" android:layout_weight="0.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/audio_btn_drive_replay" android:background="@drawable/al_button_black_clear" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/replay_drive" android:layout_centerInParent="true" />
+                    <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="@color/al_font_black" android:gravity="center_vertical" android:id="@id/audio_tv_drive_replay" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:text="30" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <View android:background="@color/al_line_1" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <LinearLayout android:gravity="center" android:id="@id/audio_btn_drive_bookmark" android:background="@drawable/al_button_black_clear" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookmark_drive" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/audio_ll_drive_speed_controller" android:background="@drawable/top_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:gravity="center|right" android:orientation="vertical" android:id="@id/audio_btn_drive_speed_reduce" android:background="@drawable/al_button_black_clear" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speed_left_drive" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/audio_btn_drive_speed_popup" android:background="@drawable/al_button_black_clear" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.8">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speed_drive" />
+                    <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="@color/al_color_black" android:gravity="center_horizontal" android:id="@id/audio_tv_drive_speed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="1.0X" />
+                </LinearLayout>
+                <RelativeLayout android:gravity="center|left" android:orientation="vertical" android:id="@id/audio_btn_drive_speed_increase" android:background="@drawable/al_button_black_clear" android:paddingLeft="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speed_right_drive" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

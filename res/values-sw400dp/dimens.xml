@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="audio_book_height">215.0dip</dimen>
+    <dimen name="audio_book_width">150.0dip</dimen>
+    <dimen name="content_margin_left_right">30.0dip</dimen>
+    <dimen name="font_share_author">14.0dip</dimen>
+    <dimen name="font_share_bigger">19.5dip</dimen>
+    <dimen name="font_share_biggest">20.5dip</dimen>
+    <dimen name="font_share_content">18.5dip</dimen>
+    <dimen name="font_share_smaller">17.5dip</dimen>
+    <dimen name="font_share_title">16.5dip</dimen>
+</resources>

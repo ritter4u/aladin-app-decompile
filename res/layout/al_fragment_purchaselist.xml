@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?app_color_back_w"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/al_templete_backheader" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" style="?app_color_headersub">
+        <LinearLayout android:id="@id/alPurchase_submenu" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <kr.co.aladin.lib.widget.ButtonHeader android:id="@id/alPurchase_ButtonHeader_filter" android:background="@drawable/al_button_black_clear" android:layout_width="wrap_content" android:layout_height="fill_parent" app:buttonIcon="@drawable/ic_filter_icon_blue" app:buttonText="@string/purchaseList_filter" app:buttonTextColor="@color/al_font" app:phoneWidth="@dimen/al_layout_header_button_w" />
+            <kr.co.aladin.lib.widget.ButtonHeader android:id="@id/alPurchase_ButtonHeader_search" android:background="@drawable/al_button_black_clear" android:layout_width="wrap_content" android:layout_height="fill_parent" app:buttonIcon="@drawable/search_icon" app:buttonText="@string/viewerTopmenu_search" app:buttonTextColor="@color/al_font" app:imageFilter="#ff333333" app:phoneWidth="@dimen/al_layout_header_button_w" />
+            <kr.co.aladin.lib.widget.ButtonHeader android:id="@id/alPurchase_ButtonHeader_sorting" android:background="@drawable/al_button_black_clear" android:layout_width="wrap_content" android:layout_height="fill_parent" app:buttonIcon="@drawable/align_icon" app:buttonText="정렬" app:buttonTextColor="@color/al_font" app:imageFilter="#ff333333" app:phoneWidth="@dimen/al_layout_header_button_w" />
+            <kr.co.aladin.lib.widget.ButtonHeader android:id="@id/alPurchase_ButtonHeader_set" android:background="@drawable/al_button_black_clear" android:layout_width="wrap_content" android:layout_height="fill_parent" app:buttonIcon="@drawable/tops_set_off_icon" app:buttonText="@string/al_bookshelf_toBundleClear" app:buttonTextColor="@color/al_font" app:imageFilter="#ff333333" app:phoneWidth="@dimen/al_layout_header_button_w" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/al_font" android:layout_gravity="center" android:id="@id/alPurchase_Button_downloadAll" android:background="@drawable/al_button_black_clear" android:layout_width="@dimen/al_purcase_alldown_w" android:layout_height="fill_parent" android:text="@string/al_purchase_select_all" android:singleLine="true" style="?app_fontcolor" />
+        </LinearLayout>
+        <include android:id="@id/alPurchase_submenu_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/al_templete_submenu_search" />
+    </FrameLayout>
+    <View android:background="@color/al_line_1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <kr.co.aladin.lib.widget.ALSwipeRefreshBase android:id="@id/alPurchase_swipe" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <GridView android:id="@id/alPurchase_ListView" android:focusable="false" android:focusableInTouchMode="false" android:fadingEdge="none" android:clickable="false" android:longClickable="false" android:persistentDrawingCache="all" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="#00000000" android:choiceMode="none" android:smoothScrollbar="true" />
+    </kr.co.aladin.lib.widget.ALSwipeRefreshBase>
+</LinearLayout>

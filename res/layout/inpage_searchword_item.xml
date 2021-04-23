@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@android:color/black" android:id="@id/search_result_contents" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="검색 결과..." android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <TextView android:textSize="11.0sp" android:textColor="#ff6d6d6d" android:gravity="center|left" android:id="@id/search_result_date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff6d6d6d" android:gravity="center|right" android:id="@id/search_result_page" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

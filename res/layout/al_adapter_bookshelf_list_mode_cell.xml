@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/al_bookShelf_list_layout_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/shelfList_view_parent" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_bookShelf_list_layout_h" style="?shelf_list_itembg">
+        <FrameLayout android:id="@id/shelfList_view_coverlayout" android:padding="0.5dip" android:layout_width="@dimen/al_bookShelf_list_item_w" android:layout_height="@dimen/al_bookShelf_list_item_h" android:layout_marginTop="15.0dip" style="?app_color_e6e6e6">
+            <com.keph.crema.module.ui.AsyncImageView android:id="@id/shelfList_image_cover" android:background="@drawable/bg_shelf_listview_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/cover_book_bg1" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="center" android:id="@id/shelfList_image_secret" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cover_lock_icon" />
+            <ImageView android:layout_gravity="center|left|top" android:id="@id/shelfList_image_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cover_new_icon" />
+            <ImageView android:id="@id/shelfList_image_rental" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_timer_on" />
+            <ImageView android:id="@id/shelfList_image_userBook" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sd_card_on" />
+            <ImageView android:layout_gravity="center|left|top" android:id="@id/shelfList_image_check" android:background="@drawable/checkoff_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" />
+            <ImageView android:layout_gravity="center|right|top" android:id="@id/shlefList_image_bookmark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/cover_bookmark_icon" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/shelfList_image_booktype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/cover_epub_icon_org" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/shelfList_view_rental_end" android:background="#cc333333" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/ic_timer_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/shelfList_btn_audio_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_cover" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/shelfList_layout_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" android:layout_weight="1.0">
+            <kr.co.aladin.lib.widget.EllipsizingTextView android:textSize="@dimen/al_font" android:textStyle="bold" android:ellipsize="middle" android:gravity="left" android:id="@id/shelfList_text_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2" style="?app_fontcolor_lb" />
+            <TextView android:textSize="@dimen/al_font_bookContent" android:ellipsize="middle" android:gravity="left" android:id="@id/shelfList_text_publisher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" android:singleLine="true" style="?app_fontcolor_content" />
+            <RatingBar android:layout_gravity="center_vertical" android:id="@id/shelfList_Ratingbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" android:progressDrawable="@drawable/al_rating_info" android:numStars="5" android:isIndicator="true" style="?android:ratingBarStyleIndicator" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/shelfList_img_dateEnd" android:background="@drawable/clock_pink" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="2.0dip" />
+                <TextView android:textSize="@dimen/al_font_bookContent" android:ellipsize="marquee" android:gravity="left" android:id="@id/shelfList_text_date" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="?app_fontcolor_content" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/al_font_bookContent" android:ellipsize="middle" android:gravity="left" android:id="@id/shelfList_text_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="" android:singleLine="true" style="?app_fontcolor_content" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="right" android:id="@id/shelfList_view_circular" android:layout_width="49.0dip" android:layout_height="49.0dip" android:layout_marginTop="15.0dip">
+                <ProgressBar android:id="@id/shelfList_circularProgressbar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="0" android:secondaryProgress="100" android:indeterminate="false" style="?progress_circle" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="11.0sp" android:gravity="bottom|center|right" android:id="@id/shlefList_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:text="" style="?app_fontcolor_lb" />
+                    <TextView android:textSize="11.0sp" android:gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" style="?app_fontcolor_lb" />
+                </LinearLayout>
+            </FrameLayout>
+            <RelativeLayout android:layout_gravity="center" android:id="@id/shelfList_view_download" android:visibility="gone" android:layout_width="@dimen/al_button_download" android:layout_height="25.0dip">
+                <ProgressBar android:id="@id/shelfList_progress_download" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="0" style="?progress_down_radius" />
+                <Button android:textSize="@dimen/al_btfont_1" android:textColor="@color/al_button_blue" android:id="@id/shelfList_Button_download" android:background="@drawable/al_button_blue_solid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/download" android:singleLine="true" />
+                <View android:id="@id/shelfList_img_aniBack" android:background="@drawable/al_button_blue_set" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:id="@id/shelfList_img_ani" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="9.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ImageButton android:textSize="@dimen/al_btfont_1" android:layout_gravity="bottom|center|right" android:id="@id/btn_buypayback" android:background="@drawable/buyback_bt1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/shelfList_view_einkline" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</FrameLayout>

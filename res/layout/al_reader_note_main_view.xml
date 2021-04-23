@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/al_readernote_main_view" android:layout_width="@dimen/al_layout_dlg_setting_w" android:layout_height="@dimen/al_layout_dlg_h" style="?app_color_back4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/al_readernote_listview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/al_readernote_view_edit" android:background="@color/al_back_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h">
+        <Button android:textSize="@dimen/al_font" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/al_readernote_but_delete" android:background="@drawable/al_button_white_clear" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="@string/al_readernote_delete_text" />
+        <Button android:textSize="@dimen/al_font" android:textColor="#ffffffff" android:id="@id/al_readernote_but_entire_delete" android:background="@drawable/al_button_white_clear" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="@string/al_readernote_entire_delete_text" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/al_font" android:textColor="@color/al_font_w" android:id="@id/al_readernote_but_retrun" android:background="@drawable/al_button_white_clear" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="@string/al_readernote_return_text" />
+    </LinearLayout>
+    <include layout="@layout/al_templete_bottom_updown" />
+</LinearLayout>

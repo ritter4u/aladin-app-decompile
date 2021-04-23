@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" style="?app_color_headersub"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/al_font" android:textColor="@drawable/al_text_enable" android:gravity="center" android:id="@id/alBookshelf_button_editSelectAll" android:background="@drawable/al_button_black_clear" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="@string/select_all" />
+    <Button android:textSize="@dimen/al_font" android:textColor="@drawable/al_text_enable" android:gravity="center" android:id="@id/alBookshelf_button_editMove" android:background="@drawable/al_button_black_clear" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="@string/bookshelf_book_move" />
+    <Button android:textSize="@dimen/al_font" android:textColor="@drawable/al_text_enable" android:gravity="center" android:id="@id/alBookshelf_button_editDelete" android:background="@drawable/al_button_black_clear" android:layout_width="53.0dip" android:layout_height="fill_parent" android:text="@string/delete" />
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <Button android:textSize="@dimen/al_font" android:textColor="@drawable/al_text_enable" android:gravity="center" android:id="@id/alBookshelf_button_editClose" android:background="@drawable/al_button_black_clear" android:layout_width="53.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="@string/close" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="al_bookShelf_grid_item_h">146.0dip</dimen>
+    <dimen name="al_bookShelf_grid_item_w">102.0dip</dimen>
+    <dimen name="al_bookShelf_grid_layout_h_eink">180.0dip</dimen>
+    <dimen name="al_draw_oval">56.0dip</dimen>
+    <dimen name="al_draw_oval_font">13.0sp</dimen>
+    <dimen name="al_font">15.0sp</dimen>
+    <dimen name="al_font_bookContent">11.0sp</dimen>
+    <dimen name="al_font_content">14.0sp</dimen>
+    <dimen name="al_font_header">18.0sp</dimen>
+    <dimen name="al_font_setTitle">16.0sp</dimen>
+    <dimen name="al_font_space">4.0sp</dimen>
+    <dimen name="al_font_toucharea_item">21.0sp</dimen>
+    <dimen name="al_layout_header_button_w">60.0dip</dimen>
+    <dimen name="al_pen_minimum">410.0dip</dimen>
+    <dimen name="al_shelf_headersub_w">360.0dip</dimen>
+    <dimen name="al_tts_footer_height">90.0dip</dimen>
+</resources>

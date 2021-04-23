@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/read_on_tts_setting_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/al_font_setTitle" android:textStyle="bold" android:textColor="@color/al_font_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/al_ttsSetting_h" android:text="@string/al_ttsSetting_speaker" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="@dimen/al_tts_speaker_selection_width" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/al_tts_speaker_selection_yujin" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+                    <TextView android:textSize="@dimen/al_font_content" android:textStyle="bold" android:textColor="@color/al_font" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/al_ttsSetting_speaker_yujin" />
+                    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageButton android:layout_gravity="center_vertical" android:id="@id/al_tts_speaker_selection_check_yujin" android:background="@color/translate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_selection_font_check" />
+                </LinearLayout>
+                <include layout="@layout/al_templete_setting_line" />
+                <LinearLayout android:id="@id/al_tts_speaker_selection_sujin" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+                    <TextView android:textSize="@dimen/al_font_content" android:textStyle="bold" android:textColor="@color/al_font" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/al_ttsSetting_speaker_sujin" />
+                    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageButton android:layout_gravity="center_vertical" android:id="@id/al_tts_speaker_selection_check_sujin" android:background="@color/translate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_selection_font_check" />
+                </LinearLayout>
+                <include layout="@layout/al_templete_setting_line" />
+                <LinearLayout android:id="@id/al_tts_speaker_selection_minjun" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+                    <TextView android:textSize="@dimen/al_font_content" android:textStyle="bold" android:textColor="@color/al_font" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/al_ttsSetting_speaker_minjun" />
+                    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageButton android:layout_gravity="center_vertical" android:id="@id/al_tts_speaker_selection_check_minjun" android:background="@color/translate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_selection_font_check" />
+                </LinearLayout>
+                <include layout="@layout/al_templete_setting_line" />
+                <LinearLayout android:id="@id/al_tts_speaker_selection_inner" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+                    <TextView android:textSize="@dimen/al_font_content" android:textStyle="bold" android:textColor="@color/al_font" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/al_ttsSetting_speaker_innertts" />
+                    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageButton android:layout_gravity="center_vertical" android:id="@id/al_tts_speaker_selection_check_inner" android:background="@color/translate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_selection_font_check" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/al_tts_speaker_selection_inner_setting" android:paddingRight="@dimen/al_layout_margin_LR_1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+                    <TextView android:textSize="@dimen/al_font_content" android:textStyle="bold" android:textColor="@color/al_color_grey" android:layout_gravity="center" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_ttsSetting_set" />
+                    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageButton android:id="@id/al_tts_setting_gomainsetting" android:background="@drawable/al_button_black_clear" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/viewer_setting_black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/al_templete_setting_line" />
+        <FrameLayout android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/al_font_setTitle" android:textStyle="bold" android:textColor="@color/al_font_black" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_ttsSetting_speed" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center|right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+                    <ImageButton android:id="@id/read_on_tts_setting_speed_down_btn" android:background="@drawable/al_button_black_clear" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/tts_wheel_left" />
+                    <TextView android:textSize="@dimen/al_ttsSetting_wheel_text" android:textStyle="bold" android:textColor="@color/al_font" android:gravity="center" android:id="@id/read_on_tts_setting_speed_text" android:layout_width="@dimen/al_ttsSetting_wheel_w" android:layout_height="fill_parent" android:text="1.0" />
+                    <ImageButton android:id="@id/read_on_tts_setting_speed_up_btn" android:background="@drawable/al_button_black_clear" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/tts_wheel_right" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <kr.co.aladin.epubreader.custom.ui.WheelView android:id="@id/read_on_tts_setting_speed_wheel_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/al_tts_setting_wheel_height" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <include layout="@layout/al_templete_setting_line" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/al_font_setTitle" android:textStyle="bold" android:textColor="@color/al_font_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/al_ttsSetting_tone" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/al_ttsSetting_h">
+                    <ImageButton android:id="@id/read_on_tts_setting_tone_down_btn" android:background="@drawable/al_button_black_clear" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/tts_wheel_left" />
+                    <TextView android:textSize="@dimen/al_ttsSetting_wheel_text" android:textStyle="bold" android:textColor="@color/al_font" android:gravity="center" android:id="@id/read_on_tts_setting_tone_text" android:layout_width="@dimen/al_ttsSetting_wheel_w" android:layout_height="fill_parent" android:text="1.0" />
+                    <ImageButton android:id="@id/read_on_tts_setting_tone_up_btn" android:background="@drawable/al_button_black_clear" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/tts_wheel_right" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <kr.co.aladin.epubreader.custom.ui.WheelView android:id="@id/read_on_tts_setting_tone_wheel_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/al_tts_setting_wheel_height" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/al_templete_setting_line" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_TB_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+            <TextView android:textSize="@dimen/al_font_setTitle" android:textStyle="bold" android:textColor="@color/al_font_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_ttsSetting_readOption" />
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/al_font" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="@string/al_ttsSetting_readOption_parentheses" />
+            <CheckBox android:id="@id/read_on_tts_setting_split" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/read_on_tts_setting_skipch_layout" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_TB_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+                <TextView android:textSize="@dimen/al_font_setTitle" android:textStyle="bold" android:textColor="@color/al_color_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textColor="@color/al_font" android:gravity="center" android:id="@id/read_on_tts_setting_skipch_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="@string/al_ttsSetting_readOption_skipch" />
+                <CheckBox android:id="@id/read_on_tts_setting_skipch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/read_on_tts_setting_eng_changer_layout" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_TB_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+                <TextView android:textSize="@dimen/al_font_setTitle" android:textStyle="bold" android:textColor="@color/al_color_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textColor="@color/al_font" android:gravity="center" android:id="@id/read_on_tts_setting_eng_changer_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="@string/al_ttsSetting_read_eng_changer" />
+                <CheckBox android:id="@id/read_on_tts_setting_eng_changer" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/read_on_tts_setting_eng_changer_sub_layout" android:background="@color/al_button_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h" android:alpha="0.3" />
+        </FrameLayout>
+        <include layout="@layout/al_templete_setting_line" />
+        <LinearLayout android:id="@id/read_on_tts_setting_localContinueReading" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_TB_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+                <TextView android:textSize="@dimen/al_font_setTitle" android:textStyle="bold" android:textColor="@color/al_color_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textColor="@color/al_font" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="@string/al_ttsSetting_continueReading" />
+                <CheckBox android:id="@id/read_on_tts_chb_localContinueReading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/al_templete_setting_line" />
+        <LinearLayout android:id="@id/read_on_tts_setting_otherMediaPlaying" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_TB_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_ttsSetting_h">
+                <TextView android:textSize="@dimen/al_font_setTitle" android:textStyle="bold" android:textColor="@color/al_color_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textColor="@color/al_font" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="@string/al_ttsSetting_otherMediaPlaying" />
+                <CheckBox android:id="@id/read_on_tts_chb_otherMediaPlaying" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

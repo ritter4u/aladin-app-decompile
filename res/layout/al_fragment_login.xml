@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/al_back_w" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/alLogin_view_mainHeader" layout="@layout/al_templete_closeheader" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/alLogin_view_all" android:paddingLeft="@dimen/layout_login_padding_side" android:paddingTop="30.0dip" android:paddingRight="@dimen/layout_login_padding_side" android:paddingBottom="35.0dip" android:layout_width="@dimen/al_login_w" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/alLogin_view_edit" android:padding="1.0dip" android:layout_width="0.0dip" android:layout_height="69.0dip" android:layout_weight="1.0" style="?app_color_setting_line">
+                        <EditText android:textSize="@dimen/al_font_content" android:textColor="@color/al_font" android:textColorHint="@color/al_font_content" android:id="@id/alLogin_edit_id" android:background="#ffffffff" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/al_login_id_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="textEmailAddress" android:imeOptions="actionNext" />
+                        <EditText android:textSize="@dimen/al_font_content" android:textColor="@color/al_font" android:textColorHint="@color/al_font_content" android:id="@id/alLogin_edit_pw" android:background="#ffffffff" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:hint="@string/al_login_pwd_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="textPassword" android:imeOptions="actionDone" />
+                    </LinearLayout>
+                    <Button android:textSize="@dimen/al_font_setTitle" android:id="@id/alLogin_Button_regist" android:layout_width="77.0dip" android:layout_height="fill_parent" android:layout_marginLeft="11.0dip" android:text="@string/login" style="?button_blue_solid" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <CheckBox android:id="@id/alLogin_CheckBox_pwdview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/al_font" android:textColor="@color/al_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/al_login_pwd_view" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/al_font" android:textColor="@color/al_font" android:id="@id/alLogin_text_idSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/al_login_id" />
+                    <TextView android:textSize="@dimen/al_font" android:textColor="@color/al_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / " />
+                    <TextView android:textSize="@dimen/al_font" android:textColor="@color/al_font" android:id="@id/alLogin_text_pwdSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/al_login_pwd" />
+                    <View android:layout_width="5.0dip" android:layout_height="1.0dip" />
+                </LinearLayout>
+                <Button android:textSize="@dimen/al_btfont_1" android:layout_gravity="center_horizontal" android:id="@id/alLogin_button_join" android:layout_width="fill_parent" android:layout_height="@dimen/al_login_h" android:layout_marginTop="22.0dip" android:text="@string/al_login_join" style="?button_blue" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/al_login_by_generic_underline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip">
+                    <View android:background="@color/bp_darkgrey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff4d4b4b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="또는" />
+                    <View android:background="@color/bp_darkgrey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/alLogin_button_naver" android:paddingLeft="@dimen/btn_login_left_margin" android:layout_width="fill_parent" android:layout_height="@dimen/btn_login_height" android:layout_marginBottom="@dimen/btn_login_bottom_margin" style="?button_gray">
+                    <ImageView android:layout_gravity="center" android:layout_width="@dimen/icon_sns_login_width" android:layout_height="wrap_content" android:src="@drawable/logo_naver" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/al_login_naver_text" style="@style/LoginTextStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/alLogin_button_google" android:paddingLeft="@dimen/btn_login_left_margin" android:layout_width="fill_parent" android:layout_height="@dimen/btn_login_height" android:layout_marginBottom="@dimen/btn_login_bottom_margin" style="?button_gray">
+                    <ImageView android:layout_gravity="center" android:layout_width="@dimen/icon_sns_login_width" android:layout_height="wrap_content" android:src="@drawable/logo_google" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/al_login_google_text" style="@style/LoginTextStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/alLogin_button_kakao" android:paddingLeft="@dimen/btn_login_left_margin" android:layout_width="fill_parent" android:layout_height="@dimen/btn_login_height" android:layout_marginBottom="@dimen/btn_login_bottom_margin" style="?button_gray">
+                    <ImageView android:layout_gravity="center" android:layout_width="@dimen/icon_sns_login_width" android:layout_height="wrap_content" android:src="@drawable/logo_kakao" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/al_login_kakao_text" style="@style/LoginTextStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/alLogin_button_twitter" android:paddingLeft="@dimen/btn_login_left_margin" android:layout_width="fill_parent" android:layout_height="@dimen/btn_login_height" android:layout_marginBottom="@dimen/btn_login_bottom_margin" style="?button_gray">
+                    <ImageView android:layout_gravity="center" android:layout_width="@dimen/icon_sns_login_width" android:layout_height="wrap_content" android:src="@drawable/logo_twitter" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/al_login_twitter_text" style="@style/LoginTextStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/alLogin_button_spass" android:paddingLeft="@dimen/btn_login_left_margin" android:layout_width="fill_parent" android:layout_height="@dimen/btn_login_height" android:layout_marginBottom="@dimen/btn_login_bottom_margin" style="?button_gray">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_logo_login_spass" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="@string/al_login_spass_text" style="@style/LoginTextStyle" />
+                </LinearLayout>
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

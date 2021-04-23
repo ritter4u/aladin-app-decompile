@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/audio_iv_bookmark_check" android:background="@drawable/al_audio_check_selector" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip">
+                <ImageView android:id="@id/audio_item_iv_bookmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookmark_list" />
+            </LinearLayout>
+            <TextView android:textSize="15.0dip" android:textColor="@color/al_font" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/audio_item_tv_chapter" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="챕터명" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/al_font_setTitle" android:textColor="@color/al_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="|" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/al_font" android:gravity="center_vertical" android:id="@id/audio_item_tv_audio_time" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="00:12:32" android:layout_weight="1.8" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/audio_ll_bookmark_mono" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mono" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/al_appColor" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/audio_item_tv_mono" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="40.0dip" android:text="메모" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip">
+                <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookmark_list" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/al_font" android:ellipsize="middle" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="등록일 : " android:singleLine="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/al_font" android:gravity="center_vertical" android:id="@id/audio_item_tv_bookmark_time" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="2018-12-17  00:12:32" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

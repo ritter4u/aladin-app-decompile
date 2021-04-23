@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip">
+        <ProgressBar android:id="@id/audio_item_progress" android:layout_width="@dimen/audio_playlist_progress_size" android:layout_height="@dimen/audio_playlist_progress_size" android:max="100" android:progress="0" android:secondaryProgress="100" android:indeterminate="false" android:progressDrawable="@drawable/al_progress_circle_audiobook" android:layout_centerInParent="true" style="?android:progressBarStyleHorizontal" />
+        <ImageView android:id="@id/audio_item_iv_play" android:layout_width="@dimen/audio_playlist_play_size" android:layout_height="@dimen/audio_playlist_play_size" android:src="@drawable/play" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="15.0dip" android:textColor="@color/al_font" android:ellipsize="middle" android:id="@id/audio_item_tv_chapter" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="챕터 1" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/al_font" android:id="@id/audio_item_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:25:01" />
+    </LinearLayout>
+</LinearLayout>

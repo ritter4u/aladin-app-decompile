@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.default" parent="@style/AppTheme">
+        <item name="app_color_back4">@style/app_color_back4</item>
+        <item name="app_color_back4_lb">@style/app_color_back4</item>
+        <item name="app_color_back8">@style/app_color_back8</item>
+        <item name="app_color_back_w">@style/app_color_back_w</item>
+        <item name="app_color_bottom">@style/app_color</item>
+        <item name="app_color_bottom_grey">@style/app_color_back4</item>
+        <item name="app_color_e6e6e6">@style/app_color_e6e6e6</item>
+        <item name="app_color_header">@style/app_color_back_w_dark</item>
+        <item name="app_color_headersub">@style/app_color_headsub</item>
+        <item name="app_color_setting_line">@style/app_color_setting_line</item>
+        <item name="app_fontcolor">@style/app_fontcolor</item>
+        <item name="app_fontcolor_appsetting_header">@style/app_fontcolor_appsetting_header</item>
+        <item name="app_fontcolor_blue">@style/app_fontcolor_blue</item>
+        <item name="app_fontcolor_content">@style/app_fontcolor_content</item>
+        <item name="app_fontcolor_header">@style/app_fontcolor_header</item>
+        <item name="app_fontcolor_lb">@style/app_fontcolor_eink</item>
+        <item name="app_fontcolor_viewersetting_selector">@style/app_fontcolor_viewersetting_selector</item>
+        <item name="app_fontcolor_w">@style/app_fontcolor_w</item>
+        <item name="app_intro_back">@style/app_intro_back</item>
+        <item name="back_img">@style/back_img</item>
+        <item name="back_pwddel_img">@style/back_pwddel_img</item>
+        <item name="bookcase_src">@style/bookcase_src</item>
+        <item name="bookinverse_src">@style/bookinverse_src</item>
+        <item name="bookmark_src">@style/bookmark_src</item>
+        <item name="button_appcolor_solid">@style/button_appcolor_solid</item>
+        <item name="button_blue">@style/button_blue</item>
+        <item name="button_blue_set">@style/button_blue_set</item>
+        <item name="button_blue_solid">@style/button_blue_solid</item>
+        <item name="button_blue_whiteback">@style/button_blue_whiteback</item>
+        <item name="button_circle_blue">@style/button_circle_blue</item>
+        <item name="button_gray">@style/button_gray</item>
+        <item name="button_red_solid">@style/button_red_solid</item>
+        <item name="dividerline">@style/dividerline</item>
+        <item name="edit_white">@style/edit_white</item>
+        <item name="line_appColor">@color/al_appColor</item>
+        <item name="line_color">@color/al_material_grey_600</item>
+        <item name="popup_bg">@style/popup_bg</item>
+        <item name="popup_msg">@style/popup_msg</item>
+        <item name="progress">@style/progress</item>
+        <item name="progress_circle">@style/progress_circle</item>
+        <item name="progress_down">@style/progress_down</item>
+        <item name="progress_down_radius">@style/progress_down_radius</item>
+        <item name="progress_grey">@style/progress_grey</item>
+        <item name="progress_play">@style/progress_play</item>
+        <item name="readernote_src">@style/readernote_src</item>
+        <item name="setting_back">@style/app_color_setting_back</item>
+        <item name="shelf_grid">@style/shelf_grid</item>
+        <item name="shelf_grid_item">@style/shelf_grid_item</item>
+        <item name="shelf_grid_itembg">@style/shelf_grid_itembg</item>
+        <item name="shelf_list_itembg">@style/shelf_list_itembg</item>
+        <item name="shelf_plus_img">@style/shelf_plus_img</item>
+        <item name="vector_path_color_white">#ffffffff</item>
+        <item name="viewer_setting_viewback">@style/app_color_headsub</item>
+        <item name="viewer_setting_viewline">@style/app_color_headsub</item>
+        <item name="viewer_tts_closeicon">@style/viewer_tts_closeicon</item>
+        <item name="viewer_tts_menuup">@style/viewer_tts_menuup</item>
+        <item name="viewer_tts_next">@style/viewer_tts_next</item>
+        <item name="viewer_tts_pause">@style/viewer_tts_pause</item>
+        <item name="viewer_tts_play">@style/viewer_tts_play</item>
+        <item name="viewer_tts_prev">@style/viewer_tts_prev</item>
+        <item name="viewer_tts_setting">@style/viewer_tts_setting</item>
+        <item name="viewer_tts_starticon">@style/viewer_tts_starticon</item>
+        <item name="viewer_tts_timer">@style/viewer_tts_timer</item>
+    </style>
+    <style name="AppThemeLib" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textColorSecondary">?vector_path_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorAccent">@color/al_appColor</item>
+        <item name="colorPrimary">@color/al_appColor</item>
+        <item name="colorPrimaryDark">@color/al_appColor_back</item>
+    </style>
+    <style name="AppThemeLib.default" parent="@style/AppThemeLib">
+        <item name="app_color_bottom">@style/app_color</item>
+        <item name="app_color_header">@style/app_color2</item>
+        <item name="app_fontcolor">@style/app_fontcolor_ed</item>
+        <item name="app_fontcolor_content">@style/app_fontcolor_d</item>
+        <item name="button_appcolor_solid">@style/button_appcolor_solid200</item>
+        <item name="dividerline">@style/dividerline</item>
+        <item name="line_appColor">@color/al_appColor</item>
+        <item name="line_color">#ff80868b</item>
+        <item name="progress_down">@style/progress_down</item>
+        <item name="vector_path_color">#ff80868b</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth" />
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog" />
+    <style name="Theme.MaterialComponents.DayNight.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog" parent="@style/Theme.MaterialComponents.Dialog" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert" parent="@style/Theme.MaterialComponents.Dialog.Alert" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Alert.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize" parent="@style/Theme.MaterialComponents.Dialog.FixedSize" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge" parent="@style/Theme.MaterialComponents.Dialog.FixedSize.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth" parent="@style/Theme.MaterialComponents.Dialog.MinWidth" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge" parent="@style/Theme.MaterialComponents.Dialog.MinWidth.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="@style/Theme.MaterialComponents.DialogWhenLarge" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="@style/Theme.MaterialComponents.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="@style/Theme.MaterialComponents.NoActionBar.Bridge" />
+    <style name="ThemeOverlay.AppCompat.DayNight" parent="@style/ThemeOverlay.AppCompat.Dark" />
+    <style name="ThemeOverlay.MaterialComponents.DayNight.BottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog" />
+    <style name="Widget.MaterialComponents.ActionBar.PrimarySurface" parent="@style/Widget.MaterialComponents.ActionBar.Surface" />
+    <style name="Widget.MaterialComponents.AppBarLayout.PrimarySurface" parent="@style/Widget.MaterialComponents.AppBarLayout.Surface" />
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface" parent="@style/Widget.MaterialComponents.BottomAppBar" />
+    <style name="Widget.MaterialComponents.BottomNavigationView.PrimarySurface" parent="@style/Widget.MaterialComponents.BottomNavigationView" />
+    <style name="Widget.MaterialComponents.TabLayout.PrimarySurface" parent="@style/Widget.MaterialComponents.TabLayout" />
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface" parent="@style/Widget.MaterialComponents.Toolbar.Surface" />
+    <style name="app_color_back_w_dark">
+        <item name="android:background">@color/al_appColor</item>
+    </style>
+    <style name="app_fontcolor_d">
+        <item name="android:textColor">#ff80868b</item>
+    </style>
+    <style name="app_fontcolor_ed">
+        <item name="android:textColor">#ffededed</item>
+    </style>
+    <style name="button_appcolor_solid200">
+        <item name="android:textColor">@color/al_appColor_back</item>
+        <item name="android:background">@drawable/al_button_appcolor_solid</item>
+    </style>
+    <style name="viewLine">
+        <item name="android:background">#ff666666</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+</resources>

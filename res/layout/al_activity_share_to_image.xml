@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_back" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/share_frame" android:background="@color/share_background" android:layout_width="@dimen/share_view_w" android:layout_height="@dimen/share_view_h">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_h">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/share_btn_close" android:background="@drawable/al_button_black_clear" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/imageshare_icon_prew" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="16.0sp" android:textColor="@color/al_color_black" android:gravity="center" android:id="@id/share_btn_share" android:background="@drawable/al_button_black_clear" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="공유" android:layout_alignParentRight="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/al_color_black" android:gravity="center" android:id="@id/share_btn_save" android:background="@drawable/al_button_black_clear" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="저장" android:layout_toLeftOf="@id/share_btn_share" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/share_divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <ScrollView android:scrollbarStyle="outsideOverlay" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/share_container" android:layout_width="fill_parent" android:layout_height="360.0dip">
+                    <ImageView android:id="@id/share_iv_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/share_ll_book_text" android:paddingLeft="@dimen/content_margin_left_right" android:paddingRight="@dimen/content_margin_left_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <kr.co.aladin.lib.widget.WordBreakTextView android:textSize="@dimen/font_share_content" android:textColor="@color/al_color_w" android:gravity="fill_horizontal" android:id="@id/share_tv_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.5" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/share_ll_book_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/share_ll_book_text">
+                            <TextView android:textSize="@dimen/font_share_title" android:textColor="@color/al_color_w" android:gravity="left" android:id="@id/share_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <TextView android:textSize="@dimen/font_share_author" android:textColor="@color/al_color_w" android:gravity="left" android:id="@id/share_tv_author" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:id="@id/share_iv_logo" android:paddingRight="@dimen/content_margin_left_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:src="@drawable/imageshare_logo_w" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:alpha="0.6" />
+                </RelativeLayout>
+                <View android:background="@color/share_divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <HorizontalScrollView android:scrollbarStyle="outsideOverlay" android:id="@id/share_scroll_horizon" android:paddingLeft="20.0dip" android:paddingRight="13.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/share_ll_image_list_view" android:layout_width="fill_parent" android:layout_height="@dimen/list_image_h">
+                        <ImageButton android:id="@id/share_btn_gallery" android:background="@drawable/al_circle_140px_b" android:layout_width="@dimen/image_thumbnail_w" android:layout_height="@dimen/image_thumbnail_w" android:layout_marginRight="7.0dip" android:src="@drawable/imageshare_icon_picplus" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <RadioGroup android:orientation="horizontal" android:id="@id/share_radio_group_cropstyle" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RadioButton android:textSize="@dimen/font_size_share_button" android:textColor="@color/al_text_selector" android:id="@id/share_btn_crop_basic" android:background="@color/Transparent" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/al_crop_style_basic_selector" android:text="기본형" />
+                        <RadioButton android:textSize="@dimen/font_size_share_button" android:textColor="@color/al_text_selector" android:id="@id/share_btn_crop_long" android:background="@color/Transparent" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:button="@drawable/al_crop_style_long_selector" android:text="세로형" />
+                    </RadioGroup>
+                </LinearLayout>
+                <View android:background="@color/share_divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <HorizontalScrollView android:scrollbarStyle="outsideOverlay" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_font_h">
+                        <RadioGroup android:orientation="horizontal" android:id="@id/share_radio_group_color" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <RadioButton android:textColor="@color/al_color_w" android:gravity="center" android:id="@id/share_btn_color_white" android:background="@drawable/al_circle_86px_b_selector" android:layout_marginRight="14.0dip" android:checked="true" style="@style/share_font_button" />
+                            <RadioButton android:gravity="center" android:id="@id/share_btn_color_black" android:background="@drawable/al_circle_86px_w_selector" android:layout_marginRight="14.0dip" style="@style/share_font_button" />
+                            <RadioButton android:textColor="@color/annoation_color_1" android:gravity="center" android:id="@id/share_btn_color_ann1" android:background="@drawable/al_circle_86px_w_selector" android:layout_marginRight="14.0dip" style="@style/share_font_button" />
+                            <RadioButton android:textColor="@color/annoation_color_2" android:gravity="center" android:id="@id/share_btn_color_ann2" android:background="@drawable/al_circle_86px_w_selector" android:layout_marginRight="14.0dip" style="@style/share_font_button" />
+                            <RadioButton android:textColor="@color/annoation_color_3" android:gravity="center" android:id="@id/share_btn_color_ann3" android:background="@drawable/al_circle_86px_w_selector" android:layout_marginRight="14.0dip" style="@style/share_font_button" />
+                            <RadioButton android:textColor="@color/annoation_color_4" android:gravity="center" android:id="@id/share_btn_color_ann4" android:background="@drawable/al_circle_86px_w_selector" android:layout_marginRight="14.0dip" style="@style/share_font_button" />
+                            <RadioButton android:textColor="@color/annoation_color_5" android:gravity="center" android:id="@id/share_btn_color_ann5" android:background="@drawable/al_circle_86px_w_selector" style="@style/share_font_button" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/share_ll_font_list_view" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="@dimen/font_size_share_button" android:textColor="@color/al_text_selector" android:id="@id/share_btn_font_kopub" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kopub 바탕" android:layout_weight="1.0" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/al_text_selector" android:gravity="center" android:id="@id/share_btn_font_myeongjo" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="나눔 명조" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/font_size_share_button" android:textColor="@color/al_text_selector" android:gravity="right" android:id="@id/share_btn_font_gothic" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="나눔 고딕" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/share_ll_fontsize_list" android:paddingLeft="16.0dip" android:paddingTop="5.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_size_share_button" android:textColor="@color/al_text_selector" android:id="@id/share_btn_font_smallest" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-2" android:layout_weight="1.0" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_size_share_button" android:textColor="@color/al_text_selector" android:id="@id/share_btn_font_smaller" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-1" android:layout_weight="1.0" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <ImageView android:id="@id/share_btn_font_basic" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/al_imgshare_fontsize_basic_selector" android:layout_weight="1.0" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_size_share_button" android:textColor="@color/al_text_selector" android:id="@id/share_btn_font_bigger" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+1" android:layout_weight="1.0" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/font_size_share_button" android:textColor="@color/al_text_selector" android:gravity="center|right" android:id="@id/share_btn_font_biggest" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+2" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="14.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <LinearLayout android:id="@id/share_ll_shadow_onoff" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/font_size_share_button" android:textColor="@color/al_text_selector" android:id="@id/share_tv_shadow_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="그림자효과" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/share_btn_shadow_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/imageshare_icon_shadowcheck_on" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/share_ll_justify_list" android:paddingLeft="16.0dip" android:paddingTop="5.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="20.0dip">
+                    <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <ImageView android:id="@id/share_btn_justify_inter_word" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/align_interword_selector" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <ImageView android:id="@id/share_btn_justify_left" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/align_left_selector" android:scaleType="fitStart" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <ImageView android:id="@id/share_btn_justify_center" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/align_center_selector" android:scaleType="fitStart" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:gravity="right" android:id="@id/share_btn_justify_right" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/align_right_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

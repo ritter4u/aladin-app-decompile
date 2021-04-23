@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/al_back_w" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/al_layout_dlg_w" android:layout_height="@dimen/al_layout_dlg_h">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_h" style="?app_color_header">
+            <Button android:textSize="@dimen/al_font" android:gravity="center" android:layout_gravity="center|left" android:id="@id/button_edit" android:background="@drawable/al_button_white_clear" android:layout_width="@dimen/al_layout_header_h" android:layout_height="fill_parent" android:text="@string/edit" style="?app_fontcolor_header" />
+            <TextView android:textSize="@dimen/al_font_header" android:ellipsize="middle" android:gravity="center" android:layout_gravity="center" android:id="@id/text_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="54.0dip" android:layout_marginRight="54.0dip" android:text="" android:singleLine="true" style="?app_fontcolor_header" />
+            <Button android:textSize="@dimen/al_font" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/button_debug" android:background="@drawable/al_button_white_clear" android:visibility="gone" android:layout_width="@dimen/al_layout_header_h" android:layout_height="fill_parent" android:text="디버그" style="?app_fontcolor_header" />
+            <Button android:textSize="@dimen/al_font" android:gravity="center" android:layout_gravity="center|right" android:id="@id/button_close" android:background="@drawable/al_button_white_clear" android:layout_width="@dimen/al_layout_header_h" android:layout_height="fill_parent" android:text="@string/close" style="?app_fontcolor_header" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/searchword_allLayout" android:paddingLeft="@dimen/al_layout_margin_LR_1" android:paddingRight="@dimen/al_layout_margin_LR_1" android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h" style="?app_color_headersub">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <EditText android:textColor="@color/al_font_blue" android:layout_gravity="center" android:id="@id/search_word_text" android:paddingLeft="10.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:singleLine="true" android:imeOptions="actionSearch" style="?edit_white" />
+                <ImageButton android:layout_gravity="center|right" android:id="@id/searchword_text_del_button" android:background="@drawable/x_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+            </FrameLayout>
+            <ImageButton android:id="@id/searchword_text_icon" android:background="@drawable/al_button_black_clear" android:layout_width="37.0dip" android:layout_height="fill_parent" android:src="@drawable/search_icon" />
+        </LinearLayout>
+        <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/bgcolor_compilation_nonpressed" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/al_font_setTitle" android:textColor="@color/al_font" android:gravity="center" android:id="@id/no_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/list_no" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/layout_edit_panel" android:background="@color/al_back_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_sub_h">
+            <Button android:textSize="@dimen/al_font" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center|left" android:id="@id/button_select_all" android:background="@drawable/al_button_white_clear" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="@string/select_all" />
+            <Button android:textSize="@dimen/al_font" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center|right" android:id="@id/button_delete" android:background="@drawable/al_button_white_clear" android:layout_width="@dimen/al_layout_header_sub_h" android:layout_height="fill_parent" android:text="@string/al_readernote_delete_text" />
+        </FrameLayout>
+        <include layout="@layout/al_templete_bottom_updown" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/alllist_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+</FrameLayout>

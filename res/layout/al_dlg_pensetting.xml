@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/penSettingView_dialog_main" android:paddingLeft="@dimen/al_layout_header_sub_h" android:paddingTop="@dimen/al_layout_header_sub_h" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/penSettingView_dialog_inner" android:background="@drawable/popup_bg_mtrl" android:layout_width="@dimen/al_pen_minimum" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/penSettingView_color" android:layout_width="wrap_content" android:layout_height="@dimen/al_draw_oval">
+            <TextView android:textSize="@dimen/al_font_content" android:textColor="#ff000000" android:gravity="center" android:layout_width="@dimen/al_draw_oval" android:layout_height="fill_parent" android:text="색상" />
+            <FrameLayout android:id="@id/penSettingView_color_red" android:background="@drawable/al_ic_pdf_pen_draw_color_select_red" android:layout_width="@dimen/al_draw_oval" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/al_draw_oval_font" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/penSettingView_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="빨" />
+                <ImageView android:id="@id/penSettingView_img_red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_pdf_pen_draw_check" android:scaleType="center" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/penSettingView_color_orange" android:background="@drawable/al_ic_pdf_pen_draw_color_select_orange" android:layout_width="@dimen/al_draw_oval" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/al_draw_oval_font" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/penSettingView_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="주" />
+                <ImageView android:id="@id/penSettingView_img_orange" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_pdf_pen_draw_check" android:scaleType="center" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/penSettingView_color_green" android:background="@drawable/al_ic_pdf_pen_draw_color_select_green" android:layout_width="@dimen/al_draw_oval" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/al_draw_oval_font" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/penSettingView_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="초" />
+                <ImageView android:id="@id/penSettingView_img_green" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_pdf_pen_draw_check" android:scaleType="center" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/penSettingView_color_bgreen" android:background="@drawable/al_ic_pdf_pen_draw_color_select_bgreen" android:layout_width="@dimen/al_draw_oval" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/al_draw_oval_font" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/penSettingView_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="파" />
+                <ImageView android:id="@id/penSettingView_img_bgreen" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_pdf_pen_draw_check" android:scaleType="center" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/penSettingView_color_pupple" android:background="@drawable/al_ic_pdf_pen_draw_color_select_pupple" android:layout_width="@dimen/al_draw_oval" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/al_draw_oval_font" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/penSettingView_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="보" />
+                <ImageView android:id="@id/penSettingView_img_pupple" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_pdf_pen_draw_check" android:scaleType="center" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/penSettingView_color_black" android:background="@drawable/al_ic_pdf_pen_draw_color_select_black" android:layout_width="@dimen/al_draw_oval" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/al_draw_oval_font" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/penSettingView_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="검" />
+                <ImageView android:id="@id/penSettingView_img_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_pdf_pen_draw_check" android:scaleType="center" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/al_draw_oval">
+            <TextView android:textSize="@dimen/al_font_content" android:textColor="#ff000000" android:gravity="center" android:layout_width="@dimen/al_draw_oval" android:layout_height="fill_parent" android:text="굵기" />
+            <FrameLayout android:layout_width="@dimen/al_draw_oval" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:id="@id/penSettingView_img_widthChange" android:background="@drawable/al_draw_oval_back" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+            </FrameLayout>
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/penSettingView_seekbar" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:max="9" android:progress="2" android:thumbOffset="0.0dip" android:layout_weight="1.0" style="?progress_grey" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/al_draw_oval">
+            <TextView android:textSize="@dimen/al_font_content" android:textColor="#ff000000" android:gravity="center" android:layout_width="@dimen/al_draw_oval" android:layout_height="fill_parent" android:text="투명" />
+            <TextView android:textSize="@dimen/al_font_content" android:textColor="#ff000000" android:gravity="center" android:id="@id/penSettingView_txt_alpha" android:layout_width="@dimen/al_draw_oval" android:layout_height="fill_parent" android:text="%" />
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/penSettingView_seekbar_alpha" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:max="7" android:thumbOffset="0.0dip" android:layout_weight="1.0" style="?progress_grey" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:id="@id/penSettingView_pressure" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/al_draw_oval">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="필압" />
+            <CheckBox android:id="@id/penSettingView_chb_pressure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:id="@id/penSettingView_debug" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/al_draw_oval">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="디버그용- 필압 그리기 이미지 저장" />
+            <CheckBox android:id="@id/penSettingView_chb_fileSave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

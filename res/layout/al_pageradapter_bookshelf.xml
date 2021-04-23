@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/albookshelf_progressBar" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="4.0dip" android:indeterminateOnly="true" android:layout_centerInParent="true" android:scaleY="4.0" style="?android:progressBarStyleHorizontal" />
+    <kr.co.aladin.lib.widget.ALSwipeToRefresh android:id="@id/albookshelf_swipe" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <GridView android:scrollbarStyle="outsideOverlay" android:gravity="center" android:id="@id/albookshelf_grid_book" android:paddingTop="12.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:stretchMode="columnWidth" android:numColumns="auto_fit" android:layout_weight="1.0" style="?shelf_grid" />
+    </kr.co.aladin.lib.widget.ALSwipeToRefresh>
+</RelativeLayout>

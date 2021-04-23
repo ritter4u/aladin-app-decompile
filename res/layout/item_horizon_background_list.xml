@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/share_item_iv_thumbnail" android:clickable="true" android:layout_width="@dimen/image_thumbnail_w" android:layout_height="@dimen/image_thumbnail_w" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/share_item_iv_user" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/imageshare_icon_mypic" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/share_item_iv_selected" android:background="@drawable/al_circle_140px_selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/imageshare_icon_check" android:layout_centerInParent="true" />
+</RelativeLayout>

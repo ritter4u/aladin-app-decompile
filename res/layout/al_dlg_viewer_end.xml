@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:background="@color/al_color_w" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="25.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="19.0sp" android:textColor="@color/al_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/viewerend_description" />
+        <kr.co.aladin.lib.widget.ALRatingBar android:layout_gravity="center_horizontal" android:id="@id/alDlgViewerEnd_Ratingbar" android:focusable="false" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginTop="20.0dip" android:progressDrawable="@drawable/al_rating_viewer" android:numStars="5" android:isIndicator="true" style="?android:ratingBarStyleIndicator" />
+        <TextView android:textSize="@dimen/al_font_content" android:textColor="@color/al_font_content" android:id="@id/alDlgViewerEnd_text_RatingExplanation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/viewerend_rating" />
+    </LinearLayout>
+    <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="vertical" android:background="#ffebebeb" android:paddingLeft="25.0dip" android:paddingTop="20.0dip" android:paddingRight="25.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/al_font_setTitle" android:id="@id/alDlgViewerEnd_btn_nextbook" android:layout_width="fill_parent" android:layout_height="35.0dip" style="?button_blue_solid" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <Button android:textSize="@dimen/al_font" android:id="@id/alDlgViewerEnd_btn_firstPage" android:layout_width="0.0dip" android:layout_height="35.0dip" android:text="@string/viewerend_firstPage" android:layout_weight="1.0" style="?button_blue_whiteback" />
+            <View android:layout_width="4.0dip" android:layout_height="35.0dip" />
+            <Button android:textSize="@dimen/al_font" android:id="@id/alDlgViewerEnd_btn_end" android:layout_width="0.0dip" android:layout_height="35.0dip" android:text="@string/viewerend_end" android:layout_weight="1.0" style="?button_blue_whiteback" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

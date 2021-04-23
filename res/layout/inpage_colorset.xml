@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/inpage_colorpicker_colorwheel" android:layout_width="wrap_content" android:layout_height="145.0dip" android:layout_marginTop="@dimen/al_layout_margin_TB_1">
+        <kr.co.aladin.epubreader.readonbook.bookrender.inpagemenu.setting.ColorPickerView android:id="@id/ep_colorpicker_colorwheel_view" android:background="@drawable/setting_color_wheel_correct" android:layout_width="143.0dip" android:layout_height="143.0dip" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="bottom|center|right" android:orientation="horizontal" android:layout_width="80.0dip" android:layout_height="40.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="80.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\#" />
+            <EditText android:textSize="14.0dip" android:gravity="center" android:id="@id/inpage_colorpicker_edit_view" android:layout_width="65.0dip" android:layout_height="wrap_content" android:maxLength="6" android:inputType="textVisiblePassword|textCapCharacters|textNoSuggestions" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/al_font" android:id="@id/inpage_colorpicker_default" android:background="@drawable/al_button_gray" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="40.0dip" android:text="기본 값" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <androidx.cardview.widget.CardView android:id="@id/inpage_colorpicker_sameple_view" android:background="@drawable/al_draw_gray_whiteback" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginRight="14.0dip" android:foreground="?android:selectableItemBackground" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:cardBackgroundColor="#fff2f2f2" app:cardCornerRadius="5.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false">
+            <View android:id="@id/inpage_colorpicker_sample_color" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/inpage_colorpicker_sample_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="ABC" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/al_layout_margin_TB_1">
+        <kr.co.aladin.epubreader.readonbook.bookrender.inpagemenu.setting.ColorPickerBrightnessView android:id="@id/ep_colorpicker_brightness_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

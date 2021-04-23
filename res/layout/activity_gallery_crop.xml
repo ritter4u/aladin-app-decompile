@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/share_background" android:layout_width="fill_parent" android:layout_height="@dimen/al_layout_header_h">
+        <ImageButton android:id="@id/crop_ImageButton_back" android:background="@drawable/al_button_black_clear" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/imageshare_icon_prew" />
+        <TextView android:textSize="@dimen/al_font_header" android:textStyle="bold" android:textColor="@color/al_appColor" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="이미지 자르기 " android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/al_color_black" android:gravity="center" android:id="@id/crop_Button_ok" android:background="@drawable/al_button_black_clear" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/alert_ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <kr.co.aladin.lib.ui.crop.CropImageView android:id="@id/crop_CropImageView" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

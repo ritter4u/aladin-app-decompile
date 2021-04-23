@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffd8d8d8" android:padding="2.0dip" android:focusable="false" android:clickable="true" android:layout_width="70.0dip" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="11.0">
+        <TextView android:textSize="@dimen/al_btfont_1" android:textColor="@color/al_font" android:gravity="center" android:id="@id/widgetCheckboxOnoff_TextView_off" android:background="#ffc4c2c2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/checkboxOff" android:layout_weight="6.0" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+        <TextView android:textSize="@dimen/al_btfont_1" android:textColor="@color/al_font" android:gravity="center" android:id="@id/widgetCheckboxOnoff_TextView_on" android:background="@color/al_appColor" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/checkboxOn" android:layout_weight="6.0" />
+    </LinearLayout>
+</RelativeLayout>
